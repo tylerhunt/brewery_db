@@ -1,43 +1,16 @@
 require 'spec_helper'
 
 describe BreweryDB do
-  context '.config' do
-    subject { described_class.config }
+  subject { described_class }
 
-    its(:endpoint) { should == 'http://api.brewerydb.com/v2' }
-    its(:api_key) { should be_nil }
-  end
+  its(:client) { should be_a(BreweryDB::Client) }
 
-  context '.configure' do
-    subject do
-      described_class.configure do |config|
-        config.endpoint = 'http://api.playground.brewerydb.com'
-        config.api_key = 'A1029384756B'
+  context 'delegation' do
+    BreweryDB::Client.instance_methods(false).sort.each do |method|
+      it "delegates ##{method} to #client" do
+        described_class.client.should_receive(method)
+        described_class.send(method)
       end
     end
-
-    its(:endpoint) { should == 'http://api.playground.brewerydb.com' }
-    its(:api_key) { should == 'A1029384756B' }
-  end
-end
-
-describe BreweryDB::Client do
-  context '.config' do
-    subject { described_class.new.config }
-
-    its(:endpoint) { should == 'http://api.brewerydb.com/v2' }
-    its(:api_key) { should be_nil }
-  end
-
-  context '.configure' do
-    subject do
-      described_class.new.configure do |config|
-        config.endpoint = 'http://api.playground.brewerydb.com'
-        config.api_key = 'A1029384756B'
-      end
-    end
-
-    its(:endpoint) { should == 'http://api.playground.brewerydb.com' }
-    its(:api_key) { should == 'A1029384756B' }
   end
 end

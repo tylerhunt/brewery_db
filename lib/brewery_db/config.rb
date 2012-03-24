@@ -1,12 +1,12 @@
 module BreweryDB
   class Config
-    DEFAULT_ENDPOINT = 'http://api.brewerydb.com/v2'
+    ENDPOINT = 'http://api.brewerydb.com/v2'
 
     attr_accessor :endpoint
     attr_accessor :api_key
 
     def initialize
-      self.endpoint = DEFAULT_ENDPOINT
+      self.endpoint = ENDPOINT
     end
   end
 end
