@@ -22,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You must have a valid API key to use the BreweryDB API. If you don't yet have
+one, you may [request one here][api-key].
+
+[api-key]: http://www.brewerydb.com/developers
+
+Use the following method to configure your API key:
+
+    BreweryDB.configure do |config|
+      config.api_key = API_KEY
+    end
+
+If you'd like to use multiple instance of the API with different keys, you may
+instantiate the `BreweryDB::Client` directly and treat those instances the same
+as the `BreweryDB` module:
+
+    brewery_db = BreweryDB::Client.new
+
+    brewery_db.configure do |config|
+      config.api_key = API_KEY
+    end
 
 
 ## Contributing
