@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = 'brewery_db'
   gem.require_paths = ['lib']
   gem.version       = BreweryDB::VERSION
+
+  gem.add_development_dependency 'rspec'
 end
