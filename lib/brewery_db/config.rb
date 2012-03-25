@@ -1,6 +1,8 @@
+require 'faraday'
+
 module BreweryDB
   class Config
-    ADAPTER = :net_http
+    ADAPTER = Faraday.default_adapter
     ENDPOINT = 'http://api.brewerydb.com/v2'
 
     attr_accessor :adapter

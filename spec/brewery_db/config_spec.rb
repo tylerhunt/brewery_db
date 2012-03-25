@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe BreweryDB::Config do
   {
-    ADAPTER: :net_http,
+    ADAPTER: Faraday.default_adapter,
     ENDPOINT: 'http://api.brewerydb.com/v2'
   }.each do |constant, value|
     context constant do
