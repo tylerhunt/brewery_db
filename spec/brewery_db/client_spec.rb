@@ -32,6 +32,8 @@ describe BreweryDB::Client do
 
     it { should be_a(Faraday::Connection) }
 
+    its(:'builder.handlers') { should include(FaradayMiddleware::ParseJson) }
+
     its(:scheme) { should == endpoint.scheme }
     its(:host) { should == endpoint.host }
     its(:path_prefix) { should == endpoint.path }

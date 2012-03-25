@@ -1,4 +1,5 @@
 require 'faraday'
+require 'faraday_middleware'
 
 module BreweryDB
   class Client
@@ -16,6 +17,7 @@ module BreweryDB
         url: config.endpoint,
         headers: { user_agent: config.user_agent }
       ) do |connection|
+        connection.response(:json, content_type: /\bjson$/)
         connection.adapter(config.adapter)
       end
     end
