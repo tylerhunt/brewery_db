@@ -4,6 +4,7 @@ describe BreweryDB::Config do
   {
     ADAPTER: Faraday.default_adapter,
     ENDPOINT: 'http://api.brewerydb.com/v2',
+    MIDDLEWARE: [],
     USER_AGENT: "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
   }.each do |constant, value|
     context constant do
@@ -14,9 +15,10 @@ describe BreweryDB::Config do
   end
 
   context 'defaults' do
-    its(:endpoint) { should == described_class::ENDPOINT }
-    its(:api_key) { should == nil }
     its(:adapter) { should == described_class::ADAPTER }
+    its(:api_key) { should == nil }
+    its(:endpoint) { should == described_class::ENDPOINT }
+    its(:middleware) { should == described_class::MIDDLEWARE }
   end
 
   context '#adapter=' do
@@ -40,6 +42,14 @@ describe BreweryDB::Config do
       expect {
         subject.endpoint = 'http://api.playground.brewerydb.com'
       }.to change(subject, :endpoint).to('http://api.playground.brewerydb.com')
+    end
+  end
+
+  context '#middleware=' do
+    specify do
+      expect {
+        subject.middleware << Faraday::Response::Logger
+      }.to change(subject, :middleware).to([Faraday::Response::Logger])
     end
   end
 end
