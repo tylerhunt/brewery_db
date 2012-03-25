@@ -3,8 +3,6 @@ require 'faraday_middleware'
 
 module BreweryDB
   class Client
-    include Breweries
-
     def config
       @config ||= Config.new
     end
@@ -12,6 +10,10 @@ module BreweryDB
     def configure
       yield(config)
       config
+    end
+
+    def breweries
+      @breweries ||= Breweries.new(self)
     end
 
     def connection
@@ -26,14 +28,13 @@ module BreweryDB
       end
     end
 
+    def get(path, params={})
+      connection.get(path, default_params.merge(params))
+    end
+
     def default_params
       { key: config.api_key }
     end
     private :default_params
-
-    def get(path, params={})
-      connection.get(path, default_params.merge(params))
-    end
-    private :get
   end
 end

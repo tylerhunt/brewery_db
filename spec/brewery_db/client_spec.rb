@@ -44,24 +44,12 @@ describe BreweryDB::Client do
   end
 
   context '#breweries' do
-    let(:client) { described_class.new }
+    subject { described_class.new }
 
-    before do
-      client.configure do |config|
-        config.api_key = 'A1029384756B'
-        config.endpoint = 'http://api.playground.brewerydb.com'
-      end
+    specify do
+      breweries = BreweryDB::Breweries.new(subject)
+      BreweryDB::Breweries.should_receive(:new).and_return(breweries)
+      subject.breweries.should == breweries
     end
-
-    around do |example|
-      VCR.use_cassette('breweries') { example.call }
-    end
-
-    subject { client.breweries(established: 2006) }
-
-    it { should be_success }
-
-    its(:body) { should be_a(Hashie::Mash) }
-    its(:'body.data') { should be_a(Array) }
   end
 end
