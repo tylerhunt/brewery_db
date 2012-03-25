@@ -3,6 +3,8 @@ require 'faraday_middleware'
 
 module BreweryDB
   class Client
+    include Breweries
+
     def config
       @config ||= Config.new
     end
@@ -12,10 +14,6 @@ module BreweryDB
       config
     end
 
-    def breweries(params={})
-      get('/breweries', params)
-    end
-
     def connection
       Faraday.new(
         url: config.endpoint,
@@ -23,6 +21,7 @@ module BreweryDB
       ) do |connection|
         connection.response(:mashify)
         connection.response(:json, content_type: /\bjson$/)
+
         connection.adapter(config.adapter)
       end
     end

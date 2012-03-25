@@ -1,6 +1,7 @@
 require 'brewery_db/version'
 
 module BreweryDB
+  autoload :Breweries, 'brewery_db/breweries'
   autoload :Client, 'brewery_db/client'
   autoload :Config, 'brewery_db/config'
 
