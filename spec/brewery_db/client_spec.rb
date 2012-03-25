@@ -42,4 +42,21 @@ describe BreweryDB::Client do
       should == { 'User-Agent' => BreweryDB::Config::USER_AGENT }
     end
   end
+
+  context '#breweries' do
+    let(:client) { described_class.new }
+
+    before do
+      client.configure do |config|
+        config.api_key = 'A1029384756B'
+        config.endpoint = 'http://api.playground.brewerydb.com'
+      end
+    end
+
+    subject { client.breweries(established: 2006) }
+
+    it { should be_success }
+
+    its(:body) { should have_key('data') }
+  end
 end

@@ -12,6 +12,10 @@ module BreweryDB
       config
     end
 
+    def breweries(params={})
+      get('/breweries', params)
+    end
+
     def connection
       Faraday.new(
         url: config.endpoint,
@@ -21,5 +25,15 @@ module BreweryDB
         connection.adapter(config.adapter)
       end
     end
+
+    def default_params
+      { key: config.api_key }
+    end
+    private :default_params
+
+    def get(path, params={})
+      connection.get(path, default_params.merge(params))
+    end
+    private :get
   end
 end
