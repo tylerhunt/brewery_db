@@ -2,13 +2,9 @@ require 'faraday'
 require 'faraday_middleware'
 
 module BreweryDB
-  class Breweries
-    def initialize(client)
-      @client = client
-    end
-
+  class Breweries < Resource
     def all(params={})
-      @client.get('/breweries', params)
+      get('/breweries', params)
     end
   end
 end

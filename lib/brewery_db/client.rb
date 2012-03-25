@@ -27,14 +27,5 @@ module BreweryDB
         connection.adapter(config.adapter)
       end
     end
-
-    def get(path, params={})
-      connection.get(path, default_params.merge(params))
-    end
-
-    def default_params
-      { key: config.api_key }
-    end
-    private :default_params
   end
 end
