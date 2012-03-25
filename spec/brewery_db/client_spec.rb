@@ -53,6 +53,10 @@ describe BreweryDB::Client do
       end
     end
 
+    around do |example|
+      VCR.use_cassette('breweries') { example.call }
+    end
+
     subject { client.breweries(established: 2006) }
 
     it { should be_success }
