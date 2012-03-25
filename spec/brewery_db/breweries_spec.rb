@@ -11,7 +11,7 @@ describe BreweryDB::Breweries do
   end
 
   around do |example|
-    VCR.use_cassette('breweries') { example.call }
+    VCR.use_cassette('breweries', record: :new_episodes) { example.call }
   end
 
   context '#all' do
@@ -21,5 +21,17 @@ describe BreweryDB::Breweries do
 
     its(:body) { should be_a(Hashie::Mash) }
     its(:'body.data') { should be_a(Array) }
+    its(:'body.data.first') { should be_a(Hashie::Mash) }
+    its(:'body.data.first.name') { should == '612 Brew LLC' }
+  end
+
+  context '#find' do
+    subject { described_class.new(client).find('d1zSa7') }
+
+    it { should be_success }
+
+    its(:body) { should be_a(Hashie::Mash) }
+    its(:'body.data') { should be_a(Hashie::Mash) }
+    its(:'body.data.name') { should == 'Lonerider Brewing Company' }
   end
 end

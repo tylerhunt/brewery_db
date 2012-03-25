@@ -361,4 +361,49 @@ http_interactions:
         04:00:43"}],"status":"success"}'
     http_version: 
   recorded_at: Sun, 25 Mar 2012 23:23:28 GMT
+- request:
+    method: get
+    uri: http://api.playground.brewerydb.com/brewery/d1zSa7?key=A1029384756B
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sun, 25 Mar 2012 23:52:33 GMT
+      server:
+      - Apache/2.2.21 (Amazon)
+      x-powered-by:
+      - PHP/5.3.10
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '1256'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Request Successful","data":{"id":"d1zSa7","name":"Lonerider
+        Brewing Company","description":"We opened our doors on January 23rd, 2009
+        and since then we have been impressed with the enthusiasm of craft beer aficionados
+        we meet daily. The craft brewing industry is booming and you can find a tremendous
+        variety out there. North Carolina has undoubtedly become the Southern State
+        for beer with Asheville reigning supreme and Raleigh\/Durham\/CH not far behind.
+        We hope you continue to support the variety and encourage new brewers to experiment
+        with and craft new styles for everybody\u2019s pleasure.\r\n\r\n\"Effect change;
+        don''t be an audience. Walk your own path, and instead of thinking outside
+        the box, imagine if there was no box.\"","website":"http:\/\/www.loneriderbeer.com\/","established":"2009","isOrganic":"N","images":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/d1zSa7\/upload_kwaFB7-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/d1zSa7\/upload_kwaFB7-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/d1zSa7\/upload_kwaFB7-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-03-25
+        04:00:30","updateDate":"2012-03-25 04:40:10"},"status":"success"}'
+    http_version: 
+  recorded_at: Sun, 25 Mar 2012 23:52:35 GMT
 recorded_with: VCR 2.0.0
