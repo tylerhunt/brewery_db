@@ -57,6 +57,7 @@ describe BreweryDB::Client do
 
     it { should be_success }
 
-    its(:body) { should have_key('data') }
+    its(:body) { should be_a(Hashie::Mash) }
+    its(:'body.data') { should be_a(Array) }
   end
 end

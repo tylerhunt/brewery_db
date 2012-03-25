@@ -17,5 +17,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'faraday', '0.8.0.rc2'
   gem.add_dependency 'faraday_middleware'
+  gem.add_dependency 'hashie'
   gem.add_development_dependency 'rspec'
 end
