@@ -19,6 +19,7 @@ describe BreweryDB::Config do
     its(:api_key) { should == nil }
     its(:endpoint) { should == described_class::ENDPOINT }
     its(:middleware) { should == described_class::MIDDLEWARE }
+    its(:user_agent) { should == described_class::USER_AGENT }
   end
 
   context '#adapter=' do
@@ -50,6 +51,14 @@ describe BreweryDB::Config do
       expect {
         subject.middleware << Faraday::Response::Logger
       }.to change(subject, :middleware).to([Faraday::Response::Logger])
+    end
+  end
+
+  context '#user_agent=' do
+    specify do
+      expect {
+        subject.user_agent = 'A BreweryDB Application'
+      }.to change(subject, :user_agent).to('A BreweryDB Application')
     end
   end
 end
