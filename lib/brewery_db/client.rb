@@ -12,7 +12,10 @@ module BreweryDB
     end
 
     def connection
-      Faraday.new(url: config.endpoint) do |builder|
+      Faraday.new(
+        url: config.endpoint,
+        headers: { user_agent: config.user_agent }
+      ) do |builder|
         builder.adapter(config.adapter)
       end
     end

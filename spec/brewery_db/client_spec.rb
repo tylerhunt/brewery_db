@@ -35,5 +35,9 @@ describe BreweryDB::Client do
     its(:scheme) { should == endpoint.scheme }
     its(:host) { should == endpoint.host }
     its(:path_prefix) { should == endpoint.path }
+
+    its(:headers) do
+      should == { 'User-Agent' => BreweryDB::Config::USER_AGENT }
+    end
   end
 end
