@@ -3,7 +3,8 @@ require 'spec_helper'
 describe BreweryDB::Config do
   {
     ADAPTER: Faraday.default_adapter,
-    ENDPOINT: 'http://api.brewerydb.com/v2'
+    ENDPOINT: 'http://api.brewerydb.com/v2',
+    USER_AGENT: "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
   }.each do |constant, value|
     context constant do
       subject { described_class.const_get(constant) }
