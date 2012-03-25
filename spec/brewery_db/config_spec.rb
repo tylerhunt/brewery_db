@@ -1,17 +1,28 @@
 require 'spec_helper'
 
 describe BreweryDB::Config do
-  specify do
-    described_class::ENDPOINT.should == 'http://api.brewerydb.com/v2'
+  {
+    ADAPTER: :net_http,
+    ENDPOINT: 'http://api.brewerydb.com/v2'
+  }.each do |constant, value|
+    context constant do
+      subject { described_class.const_get(constant) }
+
+      it { should == value }
+    end
   end
 
-  its(:endpoint) { should == described_class::ENDPOINT }
+  context 'defaults' do
+    its(:endpoint) { should == described_class::ENDPOINT }
+    its(:api_key) { should == nil }
+    its(:adapter) { should == described_class::ADAPTER }
+  end
 
-  context '#endpoint=' do
+  context '#adapter=' do
     specify do
       expect {
-        subject.endpoint = 'http://api.playground.brewerydb.com'
-      }.to change(subject, :endpoint).to('http://api.playground.brewerydb.com')
+        subject.adapter = :typhoeus
+      }.to change(subject, :adapter).to(:typhoeus)
     end
   end
 
@@ -20,6 +31,14 @@ describe BreweryDB::Config do
       expect {
         subject.api_key = 'A1029384756B'
       }.to change(subject, :api_key).to('A1029384756B')
+    end
+  end
+
+  context '#endpoint=' do
+    specify do
+      expect {
+        subject.endpoint = 'http://api.playground.brewerydb.com'
+      }.to change(subject, :endpoint).to('http://api.playground.brewerydb.com')
     end
   end
 end
