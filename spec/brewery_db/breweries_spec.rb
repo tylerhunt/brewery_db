@@ -19,8 +19,8 @@ describe BreweryDB::Breweries do
 
     subject { response }
 
-    its(:currentPage) { should == 1 }
-    its(:numberOfPages) { should == 1 }
+    its(:current_page) { should == 1 }
+    its(:number_of_pages) { should == 1 }
     its(:status) { should == 'success' }
 
     context 'data' do
