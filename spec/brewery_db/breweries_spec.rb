@@ -15,23 +15,34 @@ describe BreweryDB::Breweries do
   end
 
   context '#all' do
-    subject { described_class.new(client).all(established: 2006) }
+    let(:response) { described_class.new(client).all(established: 2006) }
 
-    it { should be_success }
+    subject { response }
 
-    its(:body) { should be_a(Hashie::Mash) }
-    its(:'body.data') { should be_a(Array) }
-    its(:'body.data.first') { should be_a(Hashie::Mash) }
-    its(:'body.data.first.name') { should == '612 Brew LLC' }
+    its(:currentPage) { should == 1 }
+    its(:numberOfPages) { should == 1 }
+    its(:status) { should == 'success' }
+
+    context 'data' do
+      subject { response.data }
+
+      it { should be_a(Array) }
+
+      its(:'first.name') { should == '612 Brew LLC' }
+    end
   end
 
   context '#find' do
-    subject { described_class.new(client).find('d1zSa7') }
+    let(:response) { described_class.new(client).find('d1zSa7') }
 
-    it { should be_success }
+    subject { response }
 
-    its(:body) { should be_a(Hashie::Mash) }
-    its(:'body.data') { should be_a(Hashie::Mash) }
-    its(:'body.data.name') { should == 'Lonerider Brewing Company' }
+    its(:status) { should == 'success' }
+
+    context 'data' do
+      subject { response.data }
+
+      its(:name) { should == 'Lonerider Brewing Company' }
+    end
   end
 end

@@ -5,7 +5,7 @@ module BreweryDB
     end
 
     def get(path, params={})
-      @client.connection.get(path, default_params.merge(params))
+      @client.connection.get(path, default_params.merge(params)).body
     end
     private :get
 
