@@ -13,10 +13,6 @@ module BreweryDB
 
   extend self
 
-  def client
-    @client ||= Client.new
-  end
-
   def respond_to?(method, include_private=false)
     client.respond_to?(method) || super
   end
@@ -28,4 +24,9 @@ module BreweryDB
       super
     end
   end
+
+  def client
+    @client ||= Client.new
+  end
+  private :client
 end
