@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe BreweryDB::Breweries do
+describe BreweryDB::Resources::Breweries do
   let(:client) { BreweryDB::Client.new }
 
   before do

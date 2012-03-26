@@ -1,12 +1,15 @@
 require 'brewery_db/version'
 
 module BreweryDB
-  autoload :Beers, 'brewery_db/beers'
-  autoload :Breweries, 'brewery_db/breweries'
   autoload :Client, 'brewery_db/client'
   autoload :Config, 'brewery_db/config'
   autoload :Resource, 'brewery_db/resource'
   autoload :Response, 'brewery_db/response'
+
+  module Resources
+    autoload :Beers, 'brewery_db/resources/beers'
+    autoload :Breweries, 'brewery_db/resources/breweries'
+  end
 
   extend self
 

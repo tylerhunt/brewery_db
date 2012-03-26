@@ -13,11 +13,11 @@ module BreweryDB
     end
 
     def beers
-      @beers ||= Beers.new(self)
+      @beers ||= Resources::Beers.new(self)
     end
 
     def breweries
-      @breweries ||= Breweries.new(self)
+      @breweries ||= Resources::Breweries.new(self)
     end
 
     def connection

@@ -47,8 +47,8 @@ describe BreweryDB::Client do
     subject { described_class.new }
 
     specify do
-      beers = BreweryDB::Beers.new(subject)
-      BreweryDB::Beers.should_receive(:new).and_return(beers)
+      beers = BreweryDB::Resources::Beers.new(subject)
+      BreweryDB::Resources::Beers.should_receive(:new).and_return(beers)
       subject.beers.should == beers
     end
   end
@@ -57,8 +57,8 @@ describe BreweryDB::Client do
     subject { described_class.new }
 
     specify do
-      breweries = BreweryDB::Breweries.new(subject)
-      BreweryDB::Breweries.should_receive(:new).and_return(breweries)
+      breweries = BreweryDB::Resources::Breweries.new(subject)
+      BreweryDB::Resources::Breweries.should_receive(:new).and_return(breweries)
       subject.breweries.should == breweries
     end
   end
