@@ -12,6 +12,10 @@ module BreweryDB
       config
     end
 
+    def beers
+      @beers ||= Beers.new(self)
+    end
+
     def breweries
       @breweries ||= Breweries.new(self)
     end

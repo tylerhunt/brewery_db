@@ -43,6 +43,16 @@ describe BreweryDB::Client do
     end
   end
 
+  context '#beers' do
+    subject { described_class.new }
+
+    specify do
+      beers = BreweryDB::Beers.new(subject)
+      BreweryDB::Beers.should_receive(:new).and_return(beers)
+      subject.beers.should == beers
+    end
+  end
+
   context '#breweries' do
     subject { described_class.new }
 
