@@ -20,7 +20,7 @@ Or install it yourself as:
     $ gem install brewery_db
 
 
-## Usage
+## Configuration
 
 You must have a valid API key to use the BreweryDB API. If you don't yet have
 one, you may [request one here][api-key].
@@ -42,6 +42,27 @@ as the `BreweryDB` module:
     brewery_db.configure do |config|
       config.api_key = API_KEY
     end
+
+You can set the client to use the [playground environment][playground], as well:
+
+[playground]: http://developer.pintlabs.com/brewerydb/api-playground/
+
+    BreweryDB.configure do |config|
+      config.api_key = 'A1029384756B'
+      config.endpoing = 'http://api.playground.brewerydb.com'
+    end
+
+
+## Usage
+
+Once the API key has been configured, resources may be called off the module
+directly or off your client instances:
+
+    BreweryDB.beers.all(abv: '5.5')
+    BreweryDB.beers.find('vYlBZQ')
+
+    BreweryDB.breweries.all(established: 2006)
+    BreweryDB.breweries.find('d1zSa7')
 
 
 ## Contributing
