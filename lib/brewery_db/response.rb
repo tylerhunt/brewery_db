@@ -9,5 +9,10 @@ module BreweryDB
       key.tr('-', '_').downcase
     end
     protected :convert_key
+
+    def convert_value(value, duping=false)
+      value.is_a?(String) ? super.gsub("\r\n", "\n") : super
+    end
+    protected :convert_value
   end
 end

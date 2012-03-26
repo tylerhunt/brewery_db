@@ -34,7 +34,7 @@ describe BreweryDB::Breweries do
 
       its(:id) { should == 'Qt4daP' }
       its(:name) { should == '612 Brew LLC' }
-      its(:description) { should == "At 612Brew, the newest beer company in the 612, we want to make your newest favorite beer you’ve never had.\r\n\r\nWith our operation moving to a larger location in Uptown, we have the opportunity to make and test out much larger batches of hand crafted beer and present them for you to try. You never know what we may brew next, a Porter, a Pilsner, a Bock or a Belgian. We are excited for each new beer that we make and hope you get excited to try them." }
+      its(:description) { should == "At 612Brew, the newest beer company in the 612, we want to make your newest favorite beer you’ve never had.\n\nWith our operation moving to a larger location in Uptown, we have the opportunity to make and test out much larger batches of hand crafted beer and present them for you to try. You never know what we may brew next, a Porter, a Pilsner, a Bock or a Belgian. We are excited for each new beer that we make and hope you get excited to try them." }
       its(:website) { should == 'http://612brew.com/' }
       its(:established) { should == '2006' }
       its(:is_organic) { should == 'N' }
@@ -60,7 +60,7 @@ describe BreweryDB::Breweries do
 
       its(:id) { should == 'd1zSa7' }
       its(:name) { should == 'Lonerider Brewing Company' }
-      its(:description) { should == "We opened our doors on January 23rd, 2009 and since then we have been impressed with the enthusiasm of craft beer aficionados we meet daily. The craft brewing industry is booming and you can find a tremendous variety out there. North Carolina has undoubtedly become the Southern State for beer with Asheville reigning supreme and Raleigh/Durham/CH not far behind. We hope you continue to support the variety and encourage new brewers to experiment with and craft new styles for everybody’s pleasure.\r\n\r\n\"Effect change; don't be an audience. Walk your own path, and instead of thinking outside the box, imagine if there was no box.\"" }
+      its(:description) { should == "We opened our doors on January 23rd, 2009 and since then we have been impressed with the enthusiasm of craft beer aficionados we meet daily. The craft brewing industry is booming and you can find a tremendous variety out there. North Carolina has undoubtedly become the Southern State for beer with Asheville reigning supreme and Raleigh/Durham/CH not far behind. We hope you continue to support the variety and encourage new brewers to experiment with and craft new styles for everybody’s pleasure.\n\n\"Effect change; don't be an audience. Walk your own path, and instead of thinking outside the box, imagine if there was no box.\"" }
       its(:website) { should == 'http://www.loneriderbeer.com/' }
       its(:established) { should == '2009' }
       its(:is_organic) { should == 'N' }
