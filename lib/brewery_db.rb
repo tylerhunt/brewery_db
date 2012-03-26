@@ -13,6 +13,10 @@ module BreweryDB
     @client ||= Client.new
   end
 
+  def respond_to?(method, include_private=false)
+    client.respond_to?(method) || super
+  end
+
   def method_missing(method, *args, &block)
     if client.respond_to?(method)
       client.send(method, *args, &block)
