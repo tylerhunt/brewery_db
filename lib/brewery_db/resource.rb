@@ -1,3 +1,6 @@
+require 'faraday'
+require 'faraday_middleware'
+
 module BreweryDB
   class Resource
     def initialize(client)

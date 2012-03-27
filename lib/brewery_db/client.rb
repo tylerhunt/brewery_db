@@ -1,6 +1,3 @@
-require 'faraday'
-require 'faraday_middleware'
-
 module BreweryDB
   class Client
     def config
