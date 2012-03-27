@@ -49,7 +49,7 @@ You can set the client to use the [playground environment][playground], as well:
 
     BreweryDB.configure do |config|
       config.api_key = 'A1029384756B'
-      config.endpoing = 'http://api.playground.brewerydb.com'
+      config.endpoint = 'http://api.playground.brewerydb.com'
     end
 
 
