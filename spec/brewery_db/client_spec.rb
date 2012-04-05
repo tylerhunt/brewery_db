@@ -35,6 +35,16 @@ describe BreweryDB::Client do
     end
   end
 
+  context '#categories' do
+    subject { described_class.new }
+
+    specify do
+      categories = BreweryDB::Resources::Categories.new(subject)
+      BreweryDB::Resources::Categories.should_receive(:new).and_return(categories)
+      subject.categories.should == categories
+    end
+  end
+
   context '#breweries' do
     subject { described_class.new }
 
@@ -42,6 +52,16 @@ describe BreweryDB::Client do
       breweries = BreweryDB::Resources::Breweries.new(subject)
       BreweryDB::Resources::Breweries.should_receive(:new).and_return(breweries)
       subject.breweries.should == breweries
+    end
+  end
+
+  context '#styles' do
+    subject { described_class.new }
+
+    specify do
+      styles = BreweryDB::Resources::Styles.new(subject)
+      BreweryDB::Resources::Styles.should_receive(:new).and_return(styles)
+      subject.styles.should == styles
     end
   end
 end
