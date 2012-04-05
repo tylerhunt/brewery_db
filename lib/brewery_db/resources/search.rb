@@ -5,12 +5,12 @@ module BreweryDB
         get('search', params)
       end
 
-      def breweries(params={})
-        all(params.merge(type: 'brewery'))
-      end
-
       def beers(params={})
         all(params.merge(type: 'beer'))
+      end
+
+      def breweries(params={})
+        all(params.merge(type: 'brewery'))
       end
 
       def guilds(params={})
