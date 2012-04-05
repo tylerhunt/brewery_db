@@ -25,53 +25,19 @@ describe BreweryDB::Client do
     its(:endpoint) { should == 'http://api.playground.brewerydb.com' }
   end
 
-  context '#beers' do
-    subject { described_class.new }
-
-    specify do
-      beers = BreweryDB::Resources::Beers.new(subject)
-      BreweryDB::Resources::Beers.should_receive(:new).and_return(beers)
-      subject.beers.should == beers
-    end
-  end
-
-  context '#breweries' do
-    subject { described_class.new }
-
-    specify do
-      breweries = BreweryDB::Resources::Breweries.new(subject)
-      BreweryDB::Resources::Breweries.should_receive(:new).and_return(breweries)
-      subject.breweries.should == breweries
-    end
-  end
-
-  context '#categories' do
-    subject { described_class.new }
-
-    specify do
-      categories = BreweryDB::Resources::Categories.new(subject)
-      BreweryDB::Resources::Categories.should_receive(:new).and_return(categories)
-      subject.categories.should == categories
-    end
-  end
-
-  context '#glassware' do
-    subject { described_class.new }
-
-    specify do
-      glassware = BreweryDB::Resources::Glassware.new(subject)
-      BreweryDB::Resources::Glassware.should_receive(:new).and_return(glassware)
-      subject.glassware.should == glassware
-    end
-  end
-
-  context '#styles' do
-    subject { described_class.new }
-
-    specify do
-      styles = BreweryDB::Resources::Styles.new(subject)
-      BreweryDB::Resources::Styles.should_receive(:new).and_return(styles)
-      subject.styles.should == styles
+  {
+    beers: BreweryDB::Resources::Beers,
+    breweries: BreweryDB::Resources::Breweries,
+    categories: BreweryDB::Resources::Categories,
+    glassware: BreweryDB::Resources::Glassware,
+    styles: BreweryDB::Resources::Styles
+  }.each do |method, resource|
+    context "##{method}" do
+      specify do
+        endpoint = resource.new(subject)
+        resource.should_receive(:new).and_return(endpoint)
+        subject.send(method).should == endpoint
+      end
     end
   end
 end
