@@ -64,6 +64,21 @@ directly or off your client instances:
     BreweryDB.breweries.all(established: 2006)
     BreweryDB.breweries.find('d1zSa7')
 
+    BreweryDB.categories.all
+    BreweryDB.categories.find(1)
+
+    BreweryDB.glassware.all
+    BreweryDB.glassware.find(1)
+
+    BreweryDB.search.all(q: 'IPA')
+    BreweryDB.search.beers(q: 'IPA')
+    BreweryDB.search.breweries(q: 'IPA')
+    BreweryDB.search.guilds(q: 'IPA')
+    BreweryDB.search.events(q: 'IPA')
+
+    BreweryDB.styles.all
+    BreweryDB.styles.find(1)
+
 
 ## Contributing
 
