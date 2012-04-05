@@ -1,0 +1,314 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.playground.brewerydb.com/search?key=A1029384756B&q=IPA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Thu, 05 Apr 2012 16:30:03 GMT
+      server:
+      - Apache/2.2.21 (Amazon)
+      x-powered-by:
+      - PHP/5.3.10
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"currentPage":1,"numberOfPages":14,"data":[{"id":"ZnS2BI","name":"IPA","abv":"6","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"AKui0J","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"D5wMbK","name":"IPA","abv":"6.9","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"Te6IBQ","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"E09Awy","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"lpOvQw","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"REXjKC","name":"IPA","description":"A hophead''s delight!
+        Our proud flagship ale, big and flowery with a long and lingering finish.","abv":"7.2","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"A0GdgI","name":"IPA","description":"Brewed with Centennial,
+        Galena and Ahtanum for dry hopping, this unfiltered American-style IPA packs
+        a big hop character from start to finish. Big floral\/citrus aroma with a
+        satisfying hop bitterness.","abv":"7.3","ibu":"89","glasswareId":5,"availableId":4,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Seasonal","description":"Available
+        at the same time of year, every year."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"aRZUOu","name":"IPA","description":"Authentic India Pale
+        Ale\r\nWild Rose IPA (India Pale Ale) is a beautiful copper- coloured ale,
+        rich in caramel malt character and well balanced with plenty of hops.\r\n\r\nAn
+        authentic India Pale Ale, this IPA is handcrafted for the true ale drinker.","abv":"6","ibu":"45","glasswareId":5,"srmId":15,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"srm":{"name":"15","hex":"BB5100"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"LM6Ms8","name":"IPA","description":"This unique India Pale
+        Ale features our favorite hops\u2014Simcoe\u00ae, Amarillo\u00ae and Nugget.
+        A generous Amarillo and Simcoe dry hop provide for an assertive, hop-forward
+        nose and front palate. We don\u2019t use traditional bittering hops in our
+        IPA, providing nothing but stimulating citrus and floral characteristics.\r\n\r\nInspired
+        by a recipe from our good friend and fellow homebrewer Tim from the North
+        Shore Homebrewers Club.","abv":"7.2","ibu":"76","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"aQF1Am","name":"IPA","description":"Copper in color with
+        herbal and earthy hops being most prevalent. Light caramel flavors balance
+        out this unique ale. Hop lovers will enjoy this unfiltered, dry-hopped IPA","abv":"7.2","ibu":"64","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"DfkpX8","name":"IPA","description":"OUR FLAGSHIP BEER,
+        the one for which we''re known throughout the Puget Sound. Copper-colored
+        with a malty character up front. Intensely bitter with hits of grapefruit
+        & cedar imparted by multiple heavy-handed additions of Galena & Columbus hops.","abv":"6.2","ibu":"40","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"k6clFa","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"PQ86cu","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"3j7wWa","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"4HbwEG","name":"IPA","abv":"7.5","ibu":"75","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"KMG60Y","name":"IPA","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"u2Kgjt","name":"IPA","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"LnSe22","name":"IPA","abv":"7","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"oLPyDs","name":"IPA","description":"Characterized by its
+        intense hop profile, flavor and aroma, this beer has medium alcohol content.  It
+        is further characterized by its fruity, floral and citrus-like hop character.  It
+        is crisp and dry and deep copper in color.","abv":"5.7","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"WqUDwL","name":"IPA","abv":"5.5","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"NxqoHT","name":"IPA","abv":"6.7","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"OmQA7B","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"1jquVJ","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"VMDDki","name":"IPA","description":"A Northwest style IPA
+        utilizing locally grown hops with plenty of malt backbone to give a smooth
+        and pleasant finish.","abv":"6.5","ibu":"75","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"RW7LU4","name":"IPA","description":"A honey-amber colored
+        India Pale Ale with good body, fairly strong alcohol content and an aggressive
+        \"fresh hop\" quality.  This is a very refreshing beer that can be enjoyed
+        by itself for its many interesting flavor highlights.","abv":"7","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"FqiIIA","name":"IPA","abv":"6.8","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"FPM18G","name":"IPA","description":"A complex, layered
+        hop mixture makes this a well rounded IPA with strong grapefruit and pine
+        flavors with a hint of pepper.  This beer has great head retention and strong
+        hop aroma. 2010 New Mexico State Fair Winner: Bronze in the IPA category","abv":"5.8","ibu":"78","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"3t4OKK","name":"IPA","description":"A smooth amber malt
+        Cascading with hops. It''s an East Coast style with a European touch that
+        packs a real punch.","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"XCcYIC","name":"IPA","abv":"5.5","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"1SHILR","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"ghDvWm","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"zNWabw","name":"IPA","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"IuEWZI","name":"IPA","description":"We took the traditional
+        IPA, originally shipped from England to India in the 1700''s, and made it
+        bolder and more flavorful \u2013 American Style. We\u2019ve added new varieties
+        of highly aromatic American hops to create a distinctive bitterness profile
+        and an incredible hop character.","abv":"7","ibu":"60","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"MPGoo2","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"XOYhw8","name":"IPA","abv":"5.5","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"8MiQIz","name":"IPA","description":"Deep golden to light
+        amber color, and a nice off-white head, with good retention when properly
+        served. Starts off with pleasantly strong hop flavors, balanced by a firm
+        malt backdrop, then fades to a dry finish with a lingering hoppiness.\r\n\r\nMedium
+        straw color, pale tan head. Rich malty aroma with a HUGE dose of hops. Medium-full
+        body with sweet malty flavors and a delicious abundance of aromatic a bittering
+        hops.","abv":"7.25","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"NJTd9g","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"jbN0Vl","name":"IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"iLRNW9","name":"IPA","description":"This is our unique
+        version of an ancient style. A style as old as the ocean trade routes of the
+        last centuries Great Ships. Not as old as the equator they had to cross twice
+        enroute, nor as old as the 10,000 or so miles of Di-Hydrogen Oxide and Sodium
+        upon which they sailed, but older than the Circulithium-4 Lentloid that binds
+        the Lupulin Quartnate onto your taste buds. Weird. Think about it. Now stop.
+        OK, go again, now stop. Think again, and stop. But we digress. Made with 43
+        different hops and 65 various malts, this redolent ale will likely float your
+        boat, whatever planet you''re on.","abv":"5.7","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"KO04wZ","name":"IPA","description":"Not for the faint of
+        heart. True India Pale Ales had to withstand long sea voyages before quenching
+        the thirst of cranky British troops stationed in India. Our IPA is true to
+        this style, it\u2019s bracing, bitter and higher in alcohol (6.5%alc.\/vol)
+        and made with the trademark Propeller quality. It\u2019s full-bodied ale for
+        full throttle beer lovers!","abv":"6.5","ibu":"68","glasswareId":5,"availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"available":{"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"Z4GPxL","name":"IPA","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"v2qCDX","name":"IPA","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"TP5gNL","name":"IPA","description":"The Big Up Music &
+        Arts Festival","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"TlE0jC","name":"IPA","abv":"6.2","ibu":"60","glasswareId":5,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"ClhnzC","name":"IPA","abv":"7.5","glasswareId":5,"styleId":48,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:50","glass":{"id":5,"name":"Pint","createDate":"2012-04-05 04:00:04"},"style":{"id":48,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"A","name":"English
+        IPA","simpleUrl":"english-ipa","ibuMin":"40","ibuMax":"60","abvMin":"5","abvMax":"7.5","srmMin":"8","srmMax":"14","ogMin":"1.05","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"MAVvu8","name":"Duke IPA","abv":"5.1","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:32","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"rABJb6","name":"Centennial IPA","description":"Selected
+        as a benchmark for the Beer Judge Certification Program used in all American
+        based beer judging. Centennial IPA has quickly become the IPA of choice. Pour
+        yourself a pint of this complex flavorful ale and bask in the frothy head''s
+        floral bouquet. Relish the immense citrus accents, achieved by the abundance
+        of dry hopping. This ale''s sweet, malty undertones balance the hop character
+        with a finish that never turns too bitter.","abv":"7.2","ibu":"65","availableId":1,"styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:23","available":{"name":"Year Round","description":"Available year round
+        as a staple beer."},"style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"cq3IwB","name":"Imperial IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:01:48","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}},{"id":"WiRXsK","name":"Underground IPA","styleId":49,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-05
+        04:02:40","style":{"id":49,"categoryId":14,"category":{"id":14,"name":"India
+        Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05 04:00:04"},"bjcpSubcategory":"B","name":"American
+        IPA","simpleUrl":"american-ipa","ibuMin":"40","ibuMax":"70","abvMin":"5.5","abvMax":"7.5","srmMin":"6","srmMax":"15","ogMin":"1.056","ogMax":"1.075","fgMin":"1.01","fgMax":"1.018","createDate":"2012-04-05
+        04:00:04"}}],"status":"success"}'
+    http_version: 
+  recorded_at: Thu, 05 Apr 2012 16:30:03 GMT
+recorded_with: VCR 2.0.0

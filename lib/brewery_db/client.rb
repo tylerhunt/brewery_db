@@ -25,6 +25,10 @@ module BreweryDB
       @glassware ||= Resources::Glassware.new(self)
     end
 
+    def search
+      @search ||= Resources::Search.new(self)
+    end
+
     def styles
       @styles ||= Resources::Styles.new(self)
     end

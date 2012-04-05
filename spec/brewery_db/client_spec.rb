@@ -30,6 +30,7 @@ describe BreweryDB::Client do
     breweries: BreweryDB::Resources::Breweries,
     categories: BreweryDB::Resources::Categories,
     glassware: BreweryDB::Resources::Glassware,
+    search: BreweryDB::Resources::Search,
     styles: BreweryDB::Resources::Styles
   }.each do |method, resource|
     context "##{method}" do
