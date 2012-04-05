@@ -9,6 +9,7 @@ module BreweryDB
   module Resources
     autoload :Beers, 'brewery_db/resources/beers'
     autoload :Breweries, 'brewery_db/resources/breweries'
+    autoload :Categories, 'brewery_db/resources/categories'
     autoload :Styles, 'brewery_db/resources/styles'
   end
 

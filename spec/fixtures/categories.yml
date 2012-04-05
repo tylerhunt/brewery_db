@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.playground.brewerydb.com/categories?key=A1029384756B
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Thu, 05 Apr 2012 15:20:09 GMT
+      server:
+      - Apache/2.2.21 (Amazon)
+      x-powered-by:
+      - PHP/5.3.10
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '2576'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Request Successful","data":[{"id":1,"name":"Light Lager","bjcpCategory":"1","createDate":"2012-04-05
+        04:00:04"},{"id":2,"name":"Pilsner","bjcpCategory":"2","createDate":"2012-04-05
+        04:00:04"},{"id":3,"name":"European Amber Lager","bjcpCategory":"3","createDate":"2012-04-05
+        04:00:04"},{"id":4,"name":"Dark Lager","bjcpCategory":"4","createDate":"2012-04-05
+        04:00:04"},{"id":5,"name":"Bock","bjcpCategory":"5","createDate":"2012-04-05
+        04:00:04"},{"id":6,"name":"Light Hybrid Beer","bjcpCategory":"6","createDate":"2012-04-05
+        04:00:04"},{"id":7,"name":"Amber Hybrid Beer","bjcpCategory":"7","createDate":"2012-04-05
+        04:00:04"},{"id":8,"name":"English Pale Ale","bjcpCategory":"8","createDate":"2012-04-05
+        04:00:04"},{"id":9,"name":"Scottish & Irish Ale","bjcpCategory":"9","createDate":"2012-04-05
+        04:00:04"},{"id":10,"name":"American Ale","bjcpCategory":"10","createDate":"2012-04-05
+        04:00:04"},{"id":11,"name":"English Brown Ale","bjcpCategory":"11","createDate":"2012-04-05
+        04:00:04"},{"id":12,"name":"Porter","bjcpCategory":"12","createDate":"2012-04-05
+        04:00:04"},{"id":13,"name":"Stout","bjcpCategory":"13","createDate":"2012-04-05
+        04:00:04"},{"id":14,"name":"India Pale Ale (IPA)","bjcpCategory":"14","createDate":"2012-04-05
+        04:00:04"},{"id":15,"name":"German Wheat & Rye Beer","bjcpCategory":"15","createDate":"2012-04-05
+        04:00:04"},{"id":16,"name":"Belgian & French Ale","bjcpCategory":"16","createDate":"2012-04-05
+        04:00:04"},{"id":17,"name":"Sour Ale","bjcpCategory":"17","createDate":"2012-04-05
+        04:00:04"},{"id":18,"name":"Belgian Strong Ale","bjcpCategory":"18","createDate":"2012-04-05
+        04:00:04"},{"id":19,"name":"Strong Ale","bjcpCategory":"19","createDate":"2012-04-05
+        04:00:04"},{"id":20,"name":"Fruit Beer","bjcpCategory":"20","createDate":"2012-04-05
+        04:00:04"},{"id":21,"name":"Spice\/Herb\/Vegetable Beer","bjcpCategory":"21","createDate":"2012-04-05
+        04:00:04"},{"id":22,"name":"Smoke-Flavored & Wood-Aged Beer","bjcpCategory":"22","createDate":"2012-04-05
+        04:00:04"},{"id":23,"name":"Specialty Beer","bjcpCategory":"23","createDate":"2012-04-05
+        04:00:04"},{"id":24,"name":"Traditional Mead","bjcpCategory":"24","createDate":"2012-04-05
+        04:00:04"},{"id":25,"name":"Melomel (Fruit Mead)","bjcpCategory":"25","createDate":"2012-04-05
+        04:00:04"},{"id":26,"name":"Other Mead","bjcpCategory":"26","createDate":"2012-04-05
+        04:00:04"},{"id":27,"name":"Standard Cider & Perry","bjcpCategory":"27","createDate":"2012-04-05
+        04:00:04"},{"id":28,"name":"Specialty Cider & Perry","bjcpCategory":"28","createDate":"2012-04-05
+        04:00:04"}],"status":"success"}'
+    http_version: 
+  recorded_at: Thu, 05 Apr 2012 15:20:09 GMT
+- request:
+    method: get
+    uri: http://api.playground.brewerydb.com/category/1?key=A1029384756B
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Thu, 05 Apr 2012 15:20:10 GMT
+      server:
+      - Apache/2.2.21 (Amazon)
+      x-powered-by:
+      - PHP/5.3.10
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '142'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"Request Successful","data":{"id":1,"name":"Light Lager","bjcpCategory":"1","createDate":"2012-04-05
+        04:00:04"},"status":"success"}'
+    http_version: 
+  recorded_at: Thu, 05 Apr 2012 15:20:11 GMT
+recorded_with: VCR 2.0.0
