@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.playground.brewerydb.com/breweries?key=A1029384756B&established=2006
+    uri: http://api.brewerydb.com/v2/breweries?key=<%= api_key %>&established=2006
     body:
       encoding: US-ASCII
       string: ''
@@ -363,7 +363,7 @@ http_interactions:
   recorded_at: Sun, 25 Mar 2012 23:23:28 GMT
 - request:
     method: get
-    uri: http://api.playground.brewerydb.com/brewery/d1zSa7?key=A1029384756B
+    uri: http://api.brewerydb.com/v2/brewery/d1zSa7?key=<%= api_key %>
     body:
       encoding: US-ASCII
       string: ''

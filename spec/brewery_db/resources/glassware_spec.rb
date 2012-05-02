@@ -3,56 +3,45 @@
 require 'spec_helper'
 
 describe BreweryDB::Resources::Glassware do
-  let(:client) { BreweryDB::Client.new }
+  it_behaves_like 'a resource' do
+    context '#all' do
+      let(:response) { described_class.new(client).all }
 
-  before do
-    client.configure do |config|
-      config.api_key = 'A1029384756B'
-      config.endpoint = 'http://api.playground.brewerydb.com'
+      subject { response }
+
+      its(:current_page) { should be_nil }
+      its(:number_of_pages) { should be_nil }
+      its(:status) { should == 'success' }
+      its(:data) { should be_a(Array) }
+      its(:data) { should have(15).results }
+
+      context 'result' do
+        subject { response.data.first }
+
+        it { should have(3).keys }
+
+        its(:id) { should == 1 }
+        its(:name) { should == 'Flute' }
+        its(:create_date) { should == '2012-01-03 02:41:33' }
+      end
     end
-  end
 
-  around do |example|
-    VCR.use_cassette('glassware', record: :new_episodes) { example.call }
-  end
+    context '#find' do
+      let(:response) { described_class.new(client).find(1) }
 
-  context '#all' do
-    let(:response) { described_class.new(client).all }
+      subject { response }
 
-    subject { response }
+      its(:status) { should == 'success' }
 
-    its(:current_page) { should be_nil }
-    its(:number_of_pages) { should be_nil }
-    its(:status) { should == 'success' }
-    its(:data) { should be_a(Array) }
-    its(:data) { should have(15).results }
+      context 'data' do
+        subject { response.data }
 
-    context 'result' do
-      subject { response.data.first }
+        it { should have(3).keys }
 
-      it { should have(3).keys }
-
-      its(:id) { should == 1 }
-      its(:name) { should == 'Flute' }
-      its(:create_date) { should == '2012-01-03 02:41:33' }
-    end
-  end
-
-  context '#find' do
-    let(:response) { described_class.new(client).find(1) }
-
-    subject { response }
-
-    its(:status) { should == 'success' }
-
-    context 'data' do
-      subject { response.data }
-
-      it { should have(3).keys }
-
-      its(:id) { should == 1 }
-      its(:name) { should == 'Flute' }
-      its(:create_date) { should == '2012-01-03 02:41:33' }
+        its(:id) { should == 1 }
+        its(:name) { should == 'Flute' }
+        its(:create_date) { should == '2012-01-03 02:41:33' }
+      end
     end
   end
 end

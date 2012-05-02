@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.playground.brewerydb.com/beers?key=A1029384756B&abv=5.5
+    uri: http://api.brewerydb.com/v2/beers?key=<%= api_key %>&abv=5.5
     body:
       encoding: US-ASCII
       string: ''
@@ -399,47 +399,7 @@ http_interactions:
   recorded_at: Mon, 26 Mar 2012 16:40:27 GMT
 - request:
     method: get
-    uri: http://api.playground.brewerydb.com/beer/KR4X6i?key=A1029384756B
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      date:
-      - Mon, 26 Mar 2012 16:40:28 GMT
-      server:
-      - Apache/2.2.21 (Amazon)
-      x-powered-by:
-      - PHP/5.3.10
-      x-ratelimit-limit:
-      - Unlimited
-      x-ratelimit-remaining:
-      - Unlimited
-      content-length:
-      - '604'
-      connection:
-      - close
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Request Successful","data":{"id":"KR4X6i","name":"Caramel
-        Rye","styleId":3,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-03-26
-        04:01:18","style":{"id":3,"categoryId":1,"category":{"id":1,"name":"Light
-        Lager","bjcpCategory":"1","createDate":"2012-03-26 04:00:04"},"bjcpSubcategory":"C","name":"Premium
-        American Lager","simpleUrl":"premium-american-lager","ibuMin":"15","ibuMax":"25","abvMin":"4.6","abvMax":"6","srmMin":"2","srmMax":"6","ogMin":"1.046","ogMax":"1.056","fgMin":"1.008","fgMax":"1.012","createDate":"2012-03-26
-        04:00:04"}},"status":"success"}'
-    http_version: 
-  recorded_at: Mon, 26 Mar 2012 16:40:29 GMT
-- request:
-    method: get
-    uri: http://api.playground.brewerydb.com/beer/vYlBZQ?key=A1029384756B
+    uri: http://api.brewerydb.com/v2/beer/vYlBZQ?key=<%= api_key %>
     body:
       encoding: US-ASCII
       string: ''

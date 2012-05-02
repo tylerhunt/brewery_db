@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.playground.brewerydb.com/styles?key=A1029384756B
+    uri: http://api.brewerydb.com/v2/styles?key=<%= api_key %>
     body:
       encoding: US-ASCII
       string: ''
@@ -278,44 +278,7 @@ http_interactions:
   recorded_at: Wed, 04 Apr 2012 15:25:03 GMT
 - request:
     method: get
-    uri: http://api.playground.brewerydb.com/style/d1zSa7?key=A1029384756B
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      date:
-      - Wed, 04 Apr 2012 15:25:04 GMT
-      server:
-      - Apache/2.2.21 (Amazon)
-      x-powered-by:
-      - PHP/5.3.10
-      x-ratelimit-limit:
-      - Unlimited
-      x-ratelimit-remaining:
-      - Unlimited
-      content-length:
-      - '412'
-      connection:
-      - close
-      content-type:
-      - application/json
-    body:
-      encoding: US-ASCII
-      string: ! '{"message":"Request Successful","data":{"id":17,"categoryId":5,"category":{"id":5,"name":"Bock","bjcpCategory":"5","createDate":"2012-04-04
-        04:00:04"},"bjcpSubcategory":"D","name":"Eisbock","simpleUrl":"eisbock","ibuMin":"25","ibuMax":"35","abvMin":"9","abvMax":"14","srmMin":"18","srmMax":"30","ogMin":"1.078","ogMax":"1.12","fgMin":"1.02","fgMax":"1.035","createDate":"2012-04-04
-        04:00:04"},"status":"success"}'
-    http_version: 
-  recorded_at: Wed, 04 Apr 2012 15:25:04 GMT
-- request:
-    method: get
-    uri: http://api.playground.brewerydb.com/style/1?key=A1029384756B
+    uri: http://api.brewerydb.com/v2/style/1?key=<%= api_key %>
     body:
       encoding: US-ASCII
       string: ''
