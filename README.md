@@ -49,17 +49,6 @@ brewery_db.configure do |config|
 end
 ```
 
-You can set the client to use the [playground environment][playground], as well:
-
-[playground]: http://developer.pintlabs.com/brewerydb/api-playground/
-
-``` ruby
-BreweryDB.configure do |config|
-  config.api_key = 'A1029384756B'
-  config.endpoint = 'http://api.playground.brewerydb.com'
-end
-```
-
 
 ## Usage
 
