@@ -1,23 +1,22 @@
-# -*- encoding: utf-8 -*-
-require File.expand_path('../lib/brewery_db/version', __FILE__)
+require './lib/brewery_db/version'
 
 Gem::Specification.new do |gem|
-  gem.authors       = ['Tyler Hunt']
-  gem.email         = ['tyler@tylerhunt.com']
-  gem.description   = %q{A Ruby library for interfacing with the BreweryDB API.}
-  gem.summary       = %q{A Ruby library for interfacing with the BreweryDB API.}
-  gem.homepage      = 'http://github.com/tylerhunt/brewery_db'
+  gem.name = 'brewery_db'
+  gem.version = BreweryDB::VERSION
+  gem.summary = 'A Ruby library for interfacing with the BreweryDB API.'
+  gem.homepage = 'http://github.com/tylerhunt/brewery_db'
+  gem.author = 'Tyler Hunt'
 
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  gem.files         = `git ls-files`.split("\n")
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.name          = 'brewery_db'
-  gem.require_paths = ['lib']
-  gem.version       = BreweryDB::VERSION
+  gem.required_ruby_version = '>= 1.9'
 
   gem.add_dependency 'faraday', '0.8.0.rc2'
   gem.add_dependency 'faraday_middleware'
   gem.add_dependency 'hashie'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'vcr'
+
+  gem.files = `git ls-files`.split($\)
+  gem.executables = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
+  gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
+  gem.require_paths = ['lib']
 end
