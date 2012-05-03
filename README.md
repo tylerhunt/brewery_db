@@ -1,5 +1,10 @@
 # BreweryDB
 
+[![Build Status][travis]][travis-web]
+
+[travis]: https://secure.travis-ci.org/tylerhunt/brewery_db.png
+[travis-web]: http://travis-ci.org/tylerhunt/brewery_db
+
 A Ruby library for interfacing with the [BreweryDB][] API.
 
 [brewerydb]: http://www.brewerydb.com/
