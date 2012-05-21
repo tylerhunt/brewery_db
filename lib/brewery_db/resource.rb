@@ -9,14 +9,11 @@ module BreweryDB
 
     # TODO: Make this private once the appropriate test coverage is in place.
     def connection
-      # TODO: Use an instance-level option once faraday_middleware is updated.
-      FaradayMiddleware::Mashify.mash_class = Response
-
       Faraday.new(
         url: @client.config.endpoint,
         headers: { user_agent: @client.config.user_agent }
       ) do |connection|
-        connection.response(:mashify)
+        connection.response(:mashify, mash_class: Response)
         connection.response(:json, content_type: /\bjson$/)
 
         connection.adapter(@client.config.adapter)
