@@ -3,7 +3,7 @@ require './lib/brewery_db/version'
 Gem::Specification.new do |gem|
   gem.name = 'brewery_db'
   gem.version = BreweryDB::VERSION
-  gem.summary = 'A Ruby library for interfacing with the BreweryDB API.'
+  gem.summary = 'A Ruby library for using the BreweryDB API.'
   gem.homepage = 'http://github.com/tylerhunt/brewery_db'
   gem.author = 'Tyler Hunt'
 
