@@ -9,6 +9,7 @@ describe BreweryDB::Client do
     its(:adapter) { should == BreweryDB::Config::ADAPTER }
     its(:api_key) { should == nil }
     its(:endpoint) { should == BreweryDB::Config::ENDPOINT }
+    its(:user_agent) { should == BreweryDB::Config::USER_AGENT }
   end
 
   context '#configure' do
@@ -17,12 +18,14 @@ describe BreweryDB::Client do
         config.adapter = :typhoeus
         config.api_key = 'A1029384756B'
         config.endpoint = 'http://api.playground.brewerydb.com'
+        config.user_agent = 'A BreweryDB Application'
       end
     end
 
     its(:adapter) { should == :typhoeus }
     its(:api_key) { should == 'A1029384756B' }
     its(:endpoint) { should == 'http://api.playground.brewerydb.com' }
+    its(:user_agent) { should == 'A BreweryDB Application' }
   end
 
   {
