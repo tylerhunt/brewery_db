@@ -93,6 +93,14 @@ BreweryDB.styles.find(1)
 5. Create a new Pull Request.
 
 
+## Contributors
+
+Thanks to the following people who have contributed patches or helpful
+suggestions:
+
+  * [Steven Harman](https://github.com/stevenharman)
+
+
 ## Copyright
 
 Copyright © 2012 Tyler Hunt. See LICENSE for details.
