@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe BreweryDB::Config do
   {
-    ADAPTER: Faraday.default_adapter,
     ENDPOINT: 'http://api.brewerydb.com/v2',
     USER_AGENT: "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
   }.each do |constant, value|
@@ -14,7 +13,7 @@ describe BreweryDB::Config do
   end
 
   context 'defaults' do
-    its(:adapter) { should == described_class::ADAPTER }
+    its(:adapter) { should == Faraday.default_adapter }
     its(:api_key) { should == nil }
     its(:endpoint) { should == described_class::ENDPOINT }
     its(:user_agent) { should == described_class::USER_AGENT }

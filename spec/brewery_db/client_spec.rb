@@ -6,7 +6,7 @@ describe BreweryDB::Client do
 
     it { should be_a(BreweryDB::Config) }
 
-    its(:adapter) { should == BreweryDB::Config::ADAPTER }
+    its(:adapter) { should == Faraday.default_adapter }
     its(:api_key) { should == nil }
     its(:endpoint) { should == BreweryDB::Config::ENDPOINT }
     its(:user_agent) { should == BreweryDB::Config::USER_AGENT }
