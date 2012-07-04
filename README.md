@@ -34,7 +34,7 @@ one, you may [request one here][api-key].
 
 [api-key]: http://www.brewerydb.com/developers
 
-Use the following method to configure your API key:
+You can use the following method to configure your API key:
 
 ``` ruby
 BreweryDB.configure do |config|
@@ -42,9 +42,9 @@ BreweryDB.configure do |config|
 end
 ```
 
-If you'd like to use multiple instance of the API with different keys, you may
-instantiate the `BreweryDB::Client` directly and treat those instances the same
-as the `BreweryDB` module:
+If you'd like to use multiple instances of the API with different keys, you may
+instantiate `BreweryDB::Client` directly and treat those instances the same as
+you would the `BreweryDB` module:
 
 ``` ruby
 brewery_db = BreweryDB::Client.new
