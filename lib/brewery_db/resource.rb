@@ -20,14 +20,14 @@ module BreweryDB
       end
     end
 
+    private
+
     def get(path, params={})
       connection.get(path, default_params.merge(params)).body
     end
-    private :get
 
     def default_params
       { key: @client.config.api_key }
     end
-    private :default_params
   end
 end
