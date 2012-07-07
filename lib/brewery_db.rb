@@ -29,8 +29,9 @@ module BreweryDB
     end
   end
 
+  private
+
   def client
     @client ||= Client.new
   end
-  private :client
 end
