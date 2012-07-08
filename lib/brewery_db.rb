@@ -18,15 +18,12 @@ module BreweryDB
   extend self
 
   def respond_to?(method, include_private=false)
-    super || client.respond_to?(method, include_private)
+    client.respond_to?(method, include_private) || super(method, include_private)
   end
 
   def method_missing(method, *args, &block)
-    if client.respond_to?(method)
-      client.send(method, *args, &block)
-    else
-      super
-    end
+    return super unless client.respond_to?(method)
+    client.send(method, *args, &block)
   end
 
   def client
