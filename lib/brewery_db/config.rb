@@ -4,7 +4,7 @@ module BreweryDB
   class Config
     ENDPOINT = 'http://api.brewerydb.com/v2'
     MIDDLEWARE = []
-    USER_AGENT = "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
+    USER_AGENT = "BreweryDB Ruby Gem #{BreweryDB::VERSION}".freeze
 
     attr_accessor :adapter
     attr_accessor :api_key
