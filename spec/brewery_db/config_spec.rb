@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe BreweryDB::Config do
   {
-    ENDPOINT: 'http://api.brewerydb.com/v2',
+    BASE_URI: 'http://api.brewerydb.com/v2',
     USER_AGENT: "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
   }.each do |constant, value|
     context constant do
@@ -12,19 +12,10 @@ describe BreweryDB::Config do
     end
   end
 
-  context 'defaults' do
-    its(:adapter) { should == Faraday.default_adapter }
-    its(:api_key) { should == nil }
-    its(:endpoint) { should == described_class::ENDPOINT }
-    its(:user_agent) { should == described_class::USER_AGENT }
-  end
+  subject { Class.new { include BreweryDB::Config }.new }
 
-  context '#adapter=' do
-    specify do
-      expect {
-        subject.adapter = :typhoeus
-      }.to change(subject, :adapter).to(:typhoeus)
-    end
+  context 'defaults' do
+    its(:api_key) { should be_nil }
   end
 
   context '#api_key=' do
@@ -32,22 +23,6 @@ describe BreweryDB::Config do
       expect {
         subject.api_key = 'A1029384756B'
       }.to change(subject, :api_key).to('A1029384756B')
-    end
-  end
-
-  context '#endpoint=' do
-    specify do
-      expect {
-        subject.endpoint = 'http://api.playground.brewerydb.com'
-      }.to change(subject, :endpoint).to('http://api.playground.brewerydb.com')
-    end
-  end
-
-  context '#user_agent=' do
-    specify do
-      expect {
-        subject.user_agent = 'A BreweryDB Application'
-      }.to change(subject, :user_agent).to('A BreweryDB Application')
     end
   end
 end

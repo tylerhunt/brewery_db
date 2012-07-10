@@ -1,18 +1,17 @@
 require 'spec_helper'
 
 describe BreweryDB do
-  subject { described_class }
+  [
+    Relax::Client.instance_methods(false),
+    BreweryDB::Client.instance_methods(false)
+  ].flatten.each do |method|
+    it "responds to .#{method}" do
+      described_class.should respond_to(method)
+    end
 
-  BreweryDB::Client.instance_methods(false).sort.each do |method|
-    context "##{method}" do
-      it 'responds to method' do
-        described_class.should respond_to(method)
-      end
-
-      it 'delegates to #client' do
-        BreweryDB::Client.any_instance.should_receive(method)
-        described_class.send(method)
-      end
+    it "delegates .#{method} to .client" do
+      described_class.send(:client).should_receive(method)
+      described_class.send(method)
     end
   end
 end

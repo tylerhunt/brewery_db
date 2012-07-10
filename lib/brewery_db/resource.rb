@@ -1,24 +1,8 @@
-require 'faraday'
 require 'faraday_middleware'
 
 module BreweryDB
-  class Resource
-    def initialize(client)
-      @client = client
-    end
-
-    # TODO: Make this private once the appropriate test coverage is in place.
-    def connection
-      Faraday.new(
-        url: @client.config.endpoint,
-        headers: { user_agent: @client.config.user_agent }
-      ) do |connection|
-        connection.response(:mashify, mash_class: Response)
-        connection.response(:json, content_type: /\bjson$/)
-
-        connection.adapter(@client.config.adapter)
-      end
-    end
+  module Resource
+    include Relax::Resource
 
     def get(path, params={})
       connection.get(path, default_params.merge(params)).body
@@ -29,5 +13,13 @@ module BreweryDB
       { key: @client.config.api_key }
     end
     private :default_params
+
+    def connection
+      super do |builder|
+        builder.response(:mashify, mash_class: Response)
+        builder.response(:json, content_type: /\bjson$/)
+      end
+    end
+    private :connection
   end
 end

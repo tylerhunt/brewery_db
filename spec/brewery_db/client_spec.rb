@@ -7,25 +7,32 @@ describe BreweryDB::Client do
     it { should be_a(BreweryDB::Config) }
 
     its(:adapter) { should == Faraday.default_adapter }
-    its(:api_key) { should == nil }
-    its(:endpoint) { should == BreweryDB::Config::ENDPOINT }
+    its(:base_uri) { should == BreweryDB::Config::BASE_URI }
     its(:user_agent) { should == BreweryDB::Config::USER_AGENT }
+
+    its(:api_key) { should be_nil }
   end
 
   context '#configure' do
-    subject do
-      described_class.new.configure do |config|
+    let(:client) { described_class.new }
+
+    before do
+      client.configure do |config|
         config.adapter = :typhoeus
-        config.api_key = 'A1029384756B'
-        config.endpoint = 'http://api.playground.brewerydb.com'
+        config.base_uri = 'http://api.playground.brewerydb.com'
         config.user_agent = 'A BreweryDB Application'
+
+        config.api_key = 'A1029384756B'
       end
     end
 
+    subject { client.config }
+
     its(:adapter) { should == :typhoeus }
-    its(:api_key) { should == 'A1029384756B' }
-    its(:endpoint) { should == 'http://api.playground.brewerydb.com' }
+    its(:base_uri) { should == 'http://api.playground.brewerydb.com' }
     its(:user_agent) { should == 'A BreweryDB Application' }
+
+    its(:api_key) { should == 'A1029384756B' }
   end
 
   {
@@ -35,13 +42,9 @@ describe BreweryDB::Client do
     glassware: BreweryDB::Resources::Glassware,
     search: BreweryDB::Resources::Search,
     styles: BreweryDB::Resources::Styles
-  }.each do |method, resource|
+  }.each do |method, resource_class|
     context "##{method}" do
-      specify do
-        endpoint = resource.new(subject)
-        resource.should_receive(:new).and_return(endpoint)
-        subject.send(method).should == endpoint
-      end
+      specify { subject.send(method).should be_a(resource_class) }
     end
   end
 end

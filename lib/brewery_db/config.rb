@@ -1,20 +1,10 @@
-require 'faraday'
-
 module BreweryDB
-  class Config
-    ENDPOINT = 'http://api.brewerydb.com/v2'
-    MIDDLEWARE = []
+  module Config
+    BASE_URI = 'http://api.brewerydb.com/v2'
     USER_AGENT = "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
 
-    attr_accessor :adapter
-    attr_accessor :api_key
-    attr_accessor :endpoint
-    attr_accessor :user_agent
-
-    def initialize
-      self.adapter = Faraday.default_adapter
-      self.endpoint = ENDPOINT
-      self.user_agent = USER_AGENT
-    end
+    # The BreweryDB API key used to authenticate requests.
+    # @return [String]
+    attr :api_key, true
   end
 end

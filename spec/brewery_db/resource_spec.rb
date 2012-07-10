@@ -2,32 +2,23 @@ require 'spec_helper'
 
 describe BreweryDB::Resource do
   let(:client) { BreweryDB::Client.new }
-
-  context '.new' do
-    it 'accepts a client' do
-      described_class.new(client).should be_a(described_class)
-    end
-
-    it 'raises an exception without a client' do
-      expect { described_class.new }.to raise_error
-    end
-  end
+  let(:resource) { Class.new { include BreweryDB::Resource }.new(client) }
 
   context '#connection' do
-    let(:endpoint) { URI.parse(BreweryDB::Config::ENDPOINT) }
+    subject { resource.send(:connection) }
 
-    subject { described_class.new(client).connection }
+    context 'middleware' do
+      let(:handlers) { subject.builder.handlers }
 
-    it { should be_a(Faraday::Connection) }
-
-    its(:'builder.handlers') { should include(FaradayMiddleware::ParseJson) }
-
-    its(:scheme) { should == endpoint.scheme }
-    its(:host) { should == endpoint.host }
-    its(:path_prefix) { should == endpoint.path }
-
-    its(:headers) do
-      should == { 'User-Agent' => BreweryDB::Config::USER_AGENT }
+      [
+        FaradayMiddleware::Mashify,
+        FaradayMiddleware::ParseJson,
+        Faraday::Adapter::NetHttp
+      ].each.with_index do |middleware, index|
+        it "uses #{middleware}" do
+          handlers.index(middleware).should == index
+        end
+      end
     end
   end
 end

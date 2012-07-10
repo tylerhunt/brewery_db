@@ -1,12 +1,12 @@
 module BreweryDB
   class Client
-    def config
-      @config ||= Config.new
-    end
+    include Relax::Client
 
-    def configure
-      yield(config)
-      config
+    # Returns a new client instance and configures its default values.
+    def initialize
+      config.base_uri = Config::BASE_URI
+      config.user_agent = Config::USER_AGENT
+      config.extend(Config)
     end
 
     def beers
