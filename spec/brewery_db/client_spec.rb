@@ -38,13 +38,14 @@ describe BreweryDB::Client do
   {
     beers: BreweryDB::Resources::Beers,
     breweries: BreweryDB::Resources::Breweries,
+    brewery: [BreweryDB::Resources::Brewery, 'KlSsWY'],
     categories: BreweryDB::Resources::Categories,
     glassware: BreweryDB::Resources::Glassware,
     search: BreweryDB::Resources::Search,
     styles: BreweryDB::Resources::Styles
-  }.each do |method, resource_class|
+  }.each do |method, (resource_class, *args)|
     context "##{method}" do
-      specify { subject.send(method).should be_a(resource_class) }
+      specify { subject.send(method, *args).should be_a(resource_class) }
     end
   end
 end

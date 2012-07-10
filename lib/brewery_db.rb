@@ -12,6 +12,7 @@ module BreweryDB
   module Resources
     autoload :Beers, 'brewery_db/resources/beers'
     autoload :Breweries, 'brewery_db/resources/breweries'
+    autoload :Brewery, 'brewery_db/resources/brewery'
     autoload :Categories, 'brewery_db/resources/categories'
     autoload :Glassware, 'brewery_db/resources/glassware'
     autoload :Search, 'brewery_db/resources/search'

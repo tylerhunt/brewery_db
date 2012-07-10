@@ -13,6 +13,14 @@ module BreweryDB
       @beers ||= Resources::Beers.new(self)
     end
 
+    # Builds a new instance of the brewery resource.
+    #
+    # @param id [String] the brewery ID
+    # @return <Resources::Breweries> an instance of the brewery resource
+    def brewery(id)
+      Resources::Brewery.new(self, id: id)
+    end
+
     def breweries
       @breweries ||= Resources::Breweries.new(self)
     end

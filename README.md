@@ -67,6 +67,8 @@ BreweryDB.beers.find('vYlBZQ')
 BreweryDB.breweries.all(established: 2006)
 BreweryDB.breweries.find('d1zSa7')
 
+BreweryDB.brewery('d1zSa7').beers
+
 BreweryDB.categories.all
 BreweryDB.categories.find(1)
 

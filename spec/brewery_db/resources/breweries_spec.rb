@@ -62,14 +62,4 @@ describe BreweryDB::Resources::Breweries do
       end
     end
   end
-
-  context '#beers' do
-    subject { described_class.new(stub) }
-    let(:params) { stub }
-
-    it 'GETs the beers for a brewery' do
-      subject.should_receive(:get).with('brewery/abc123/beers', params)
-      subject.beers('abc123', params)
-    end
-  end
 end
