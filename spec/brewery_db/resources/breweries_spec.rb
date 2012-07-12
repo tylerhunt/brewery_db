@@ -9,14 +9,11 @@ describe BreweryDB::Resources::Breweries do
 
       subject { response }
 
-      its(:current_page) { should == 1 }
-      its(:number_of_pages) { should == 1 }
-      its(:status) { should == 'success' }
-      its(:data) { should be_a(Array) }
-      its(:data) { should have(38).results }
+      it { should be_a(Array) }
+      it { should have(38).results }
 
       context 'result' do
-        subject { response.data.first }
+        subject { response.first }
 
         it { should have(9).keys }
 
@@ -39,26 +36,29 @@ describe BreweryDB::Resources::Breweries do
 
       subject { response }
 
-      its(:status) { should == 'success' }
+      it { should have(11).keys }
 
-      context 'data' do
-        subject { response.data }
+      its(:id) { should == 'd1zSa7' }
+      its(:name) { should == 'Lonerider Brewing Company' }
+      its(:description) { should == "We opened our doors on January 23rd, 2009 and since then we have been impressed with the enthusiasm of craft beer aficionados we meet daily. The craft brewing industry is booming and you can find a tremendous variety out there. North Carolina has undoubtedly become the Southern State for beer with Asheville reigning supreme and Raleigh/Durham/CH not far behind. We hope you continue to support the variety and encourage new brewers to experiment with and craft new styles for everybody’s pleasure.\n\n\"Effect change; don't be an audience. Walk your own path, and instead of thinking outside the box, imagine if there was no box.\"" }
+      its(:website) { should == 'http://www.loneriderbeer.com/' }
+      its(:established) { should == '2009' }
+      its(:is_organic) { should == 'N' }
+      its(:'images.icon') { should == 'http://s3.amazonaws.com/brewerydbapi/brewery/d1zSa7/upload_kwaFB7-icon.png' }
+      its(:'images.medium') { should == 'http://s3.amazonaws.com/brewerydbapi/brewery/d1zSa7/upload_kwaFB7-medium.png' }
+      its(:'images.large') { should == 'http://s3.amazonaws.com/brewerydbapi/brewery/d1zSa7/upload_kwaFB7-large.png' }
+      its(:status) { should == 'verified' }
+      its(:status_display) { should == 'Verified' }
+      its(:create_date) { should == '2012-03-25 04:00:30' }
+      its(:update_date) { should == '2012-03-25 04:40:10' }
+    end
 
-        it { should have(11).keys }
+    context 'a bad request' do
+      subject { described_class.new(client) }
 
-        its(:id) { should == 'd1zSa7' }
-        its(:name) { should == 'Lonerider Brewing Company' }
-        its(:description) { should == "We opened our doors on January 23rd, 2009 and since then we have been impressed with the enthusiasm of craft beer aficionados we meet daily. The craft brewing industry is booming and you can find a tremendous variety out there. North Carolina has undoubtedly become the Southern State for beer with Asheville reigning supreme and Raleigh/Durham/CH not far behind. We hope you continue to support the variety and encourage new brewers to experiment with and craft new styles for everybody’s pleasure.\n\n\"Effect change; don't be an audience. Walk your own path, and instead of thinking outside the box, imagine if there was no box.\"" }
-        its(:website) { should == 'http://www.loneriderbeer.com/' }
-        its(:established) { should == '2009' }
-        its(:is_organic) { should == 'N' }
-        its(:'images.icon') { should == 'http://s3.amazonaws.com/brewerydbapi/brewery/d1zSa7/upload_kwaFB7-icon.png' }
-        its(:'images.medium') { should == 'http://s3.amazonaws.com/brewerydbapi/brewery/d1zSa7/upload_kwaFB7-medium.png' }
-        its(:'images.large') { should == 'http://s3.amazonaws.com/brewerydbapi/brewery/d1zSa7/upload_kwaFB7-large.png' }
-        its(:status) { should == 'verified' }
-        its(:status_display) { should == 'Verified' }
-        its(:create_date) { should == '2012-03-25 04:00:30' }
-        its(:update_date) { should == '2012-03-25 04:40:10' }
+      it 'returns full body' do
+        result = subject.find('NOSUCKEY')
+        result.status.should == 'failure'
       end
     end
   end

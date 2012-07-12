@@ -9,14 +9,11 @@ describe BreweryDB::Resources::Glassware do
 
       subject { response }
 
-      its(:current_page) { should be_nil }
-      its(:number_of_pages) { should be_nil }
-      its(:status) { should == 'success' }
-      its(:data) { should be_a(Array) }
-      its(:data) { should have(15).results }
+      it { should be_a(Array) }
+      it { should have(15).results }
 
       context 'result' do
-        subject { response.data.first }
+        subject { response.first }
 
         it { should have(3).keys }
 
@@ -31,17 +28,11 @@ describe BreweryDB::Resources::Glassware do
 
       subject { response }
 
-      its(:status) { should == 'success' }
+      it { should have(3).keys }
 
-      context 'data' do
-        subject { response.data }
-
-        it { should have(3).keys }
-
-        its(:id) { should == 1 }
-        its(:name) { should == 'Flute' }
-        its(:create_date) { should == '2012-01-03 02:41:33' }
-      end
+      its(:id) { should == 1 }
+      its(:name) { should == 'Flute' }
+      its(:create_date) { should == '2012-01-03 02:41:33' }
     end
   end
 end
