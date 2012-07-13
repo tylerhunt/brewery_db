@@ -15,6 +15,7 @@ describe BreweryDB::Resource do
       let(:handlers) { subject.builder.handlers }
 
       [
+        BreweryDB::ResponseHandler,
         FaradayMiddleware::Mashify,
         FaradayMiddleware::ParseJson,
         Faraday::Adapter::NetHttp

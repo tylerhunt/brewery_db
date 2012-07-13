@@ -12,6 +12,8 @@ module BreweryDB
     def connection
       super do |builder|
         builder.params = default_params
+
+        builder.use(ResponseHandler)
         builder.response(:mashify, mash_class: Mash)
         builder.response(:json, content_type: /\bjson$/)
       end

@@ -9,6 +9,7 @@ module BreweryDB
   autoload :Mash, 'brewery_db/mash'
   autoload :Request, 'brewery_db/request'
   autoload :Resource, 'brewery_db/resource'
+  autoload :ResponseHandler, 'brewery_db/response_handler'
 
   module Resources
     autoload :Beers, 'brewery_db/resources/beers'

@@ -8,12 +8,7 @@ module BreweryDB
     end
 
     def response
-      handle_response @connection.send(@method, @path, @params)
+      @connection.send(@method, @path, @params).body
     end
-
-    def handle_response(response)
-      response.success? ? response.body.data : response.body
-    end
-    private :handle_response
   end
 end
