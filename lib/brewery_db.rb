@@ -7,7 +7,7 @@ module BreweryDB
   autoload :Client, 'brewery_db/client'
   autoload :Config, 'brewery_db/config'
   autoload :Resource, 'brewery_db/resource'
-  autoload :Response, 'brewery_db/response'
+  autoload :Mash, 'brewery_db/mash'
 
   module Resources
     autoload :Beers, 'brewery_db/resources/beers'

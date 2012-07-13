@@ -21,7 +21,7 @@ module BreweryDB
 
     def connection
       super do |builder|
-        builder.response(:mashify, mash_class: Response)
+        builder.response(:mashify, mash_class: Mash)
         builder.response(:json, content_type: /\bjson$/)
       end
     end

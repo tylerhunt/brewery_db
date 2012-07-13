@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe BreweryDB::Response do
+describe BreweryDB::Mash do
   it { should be_a(Hashie::Mash) }
 
   context '#convert_key' do

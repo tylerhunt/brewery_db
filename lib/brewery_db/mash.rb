@@ -1,7 +1,7 @@
 require 'hashie'
 
 module BreweryDB
-  class Response < Hashie::Mash
+  class Mash < Hashie::Mash
     def convert_key(key)
       key = key.to_s.dup
       key.gsub!(/([A-Z]+)([A-Z][a-z])/, '\1_\2')
