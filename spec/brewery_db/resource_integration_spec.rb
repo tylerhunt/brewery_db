@@ -31,14 +31,14 @@ describe BreweryDB::Resource, :resource do
     context 'a bad request' do
       subject { resource.bad_request }
 
-      its(:errorMessage) { should match /data.*invalid/ }
+      its(:error_message) { should match /data.*invalid/ }
       its(:status) { should eq 'failure' }
     end
 
     context 'a not found request' do
       subject { resource.not_found }
 
-      its(:errorMessage) { should match /not\s+found/ }
+      its(:error_message) { should match /not\s+found/ }
       its(:status) { should eq 'failure' }
     end
   end
