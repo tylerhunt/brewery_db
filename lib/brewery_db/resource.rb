@@ -5,10 +5,14 @@ module BreweryDB
     include Relax::Resource
 
     def get(path, params={})
-      response = connection.get(path, default_params.merge(params))
-      response.success? ? response.body.data : response.body
+      handle_response connection.get(path, default_params.merge(params))
     end
     private :get
+
+    def handle_response(response)
+      response.success? ? response.body.data : response.body
+    end
+    private :handle_response
 
     def default_params
       { key: @client.config.api_key }

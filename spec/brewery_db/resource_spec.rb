@@ -18,7 +18,7 @@ describe BreweryDB::Resource do
       response.body.stub(:data) { 'data' }
     end
 
-    it 'delegates to the connection' do
+    it 'delegates to the connection with the default parameters' do
       connection.should_receive(:get).with('path', key: 'secret') { response }
       resource.send(:get, 'path')
     end
@@ -28,14 +28,25 @@ describe BreweryDB::Resource do
       resource.send(:get, 'path', p: 1)
     end
 
+    it 'returns a handled response' do
+      resource.should_receive(:handle_response).with(response) { 'response' }
+      resource.send(:get, 'path').should == 'response'
+    end
+  end
+
+  context '#handle_response' do
+    let(:response) { stub(body: 'body') }
+
+    before { response.body.stub(:data) { 'data' } }
+
     it 'returns the response body data if the request is successful' do
       response.stub(:success?) { true }
-      resource.send(:get, 'path').should == 'data'
+      resource.send(:handle_response, response).should == 'data'
     end
 
     it 'returns the response body if the request is not successful' do
       response.stub(:success?) { false }
-      resource.send(:get, 'path').should == 'body'
+      resource.send(:handle_response, response).should == 'body'
     end
   end
 
