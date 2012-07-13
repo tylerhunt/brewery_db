@@ -5,7 +5,8 @@ module BreweryDB
     include Relax::Resource
 
     def get(path, params={})
-      connection.get(path, default_params.merge(params)).body
+      response = connection.get(path, default_params.merge(params))
+      response.success? ? response.body.data : response.body
     end
     private :get
 
