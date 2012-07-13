@@ -2,9 +2,7 @@
 
 require 'spec_helper'
 
-describe BreweryDB::Resources::Beers do
-  include_context 'a resource'
-
+describe BreweryDB::Resources::Beers, :resource do
   context '#all', vcr: cassette_options do
     let(:response) { described_class.new(client).all(abv: '5.5') }
 
