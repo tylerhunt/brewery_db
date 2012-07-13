@@ -27,27 +27,6 @@ describe BreweryDB::Resource do
       connection.should_receive(:get).with('path', key: 'secret', p: 1) { response }
       resource.send(:get, 'path', p: 1)
     end
-
-    it 'returns a handled response' do
-      resource.should_receive(:handle_response).with(response) { 'response' }
-      resource.send(:get, 'path').should == 'response'
-    end
-  end
-
-  context '#handle_response' do
-    let(:response) { stub(body: 'body') }
-
-    before { response.body.stub(:data) { 'data' } }
-
-    it 'returns the response body data if the request is successful' do
-      response.stub(:success?) { true }
-      resource.send(:handle_response, response).should == 'data'
-    end
-
-    it 'returns the response body if the request is not successful' do
-      response.stub(:success?) { false }
-      resource.send(:handle_response, response).should == 'body'
-    end
   end
 
   context '#connection' do
