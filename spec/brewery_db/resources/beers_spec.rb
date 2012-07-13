@@ -9,14 +9,11 @@ describe BreweryDB::Resources::Beers do
 
       subject { response }
 
-      its(:current_page) { should == 1 }
-      its(:number_of_pages) { should == 8 }
-      its(:status) { should == 'success' }
-      its(:data) { should be_a(Array) }
-      its(:data) { should have(50).results }
+      it { should be_a(Array) }
+      it { should have(50).results }
 
       context 'result' do
-        subject { response.data.first }
+        subject { response.first }
 
         it { should have(14).keys }
 
@@ -54,40 +51,34 @@ describe BreweryDB::Resources::Beers do
 
       subject { response }
 
-      its(:status) { should == 'success' }
+      it { should have(16).keys }
 
-      context 'data' do
-        subject { response.data }
-
-        it { should have(16).keys }
-
-        its(:id) { should == 'vYlBZQ' }
-        its(:name) { should == 'Peacemaker' }
-        its(:description) { should == 'Peace is a dangerous thing.  Peacemaker is a west coast style American Pale Ale that uses several hop varieties to produces a unique and bountiful hop aroma with well balanced bitterness.  A special blend of American and European malts make this a very well rounded, characterful beer.' }
-        its(:abv) { should == '5.7' }
-        its(:glassware_id) { should == 5 }
-        its(:available_id) { should == 1 }
-        its(:is_organic) { should == 'N' }
-        its(:status) { should == 'verified' }
-        its(:status_display) { should == 'Verified' }
-        its(:'glass.id') { should == 5 }
-        its(:'glass.name') { should == 'Pint' }
-        its(:'glass.create_date') { should == '2012-03-26 04:00:04' }
-        its(:'available.name') { should == 'Year Round' }
-        its(:'available.description') { should == 'Available year round as a staple beer.' }
-        its(:style_id) { should == 33 }
-        its(:'style.id') { should == 33 }
-        its(:'style.category.id') { should == 10 }
-        its(:'style.category.name') { should == 'American Ale' }
-        its(:'style.category.bjcp_category') { should == '10' }
-        its(:'style.category.create_date') { should == '2012-03-26 04:00:04' }
-        its(:'style.category_id') { should == 10 }
-        its(:'style.name') { should == 'American Pale Ale' }
-        its(:'style.simple_url') { should == 'american-pale-ale' }
-        its(:'style.create_date') { should == '2012-03-26 04:00:04' }
-        its(:create_date) { should == '2012-03-26 04:02:10' }
-        its(:update_date) { should == '2012-03-26 04:38:49' }
-      end
+      its(:id) { should == 'vYlBZQ' }
+      its(:name) { should == 'Peacemaker' }
+      its(:description) { should == 'Peace is a dangerous thing.  Peacemaker is a west coast style American Pale Ale that uses several hop varieties to produces a unique and bountiful hop aroma with well balanced bitterness.  A special blend of American and European malts make this a very well rounded, characterful beer.' }
+      its(:abv) { should == '5.7' }
+      its(:glassware_id) { should == 5 }
+      its(:available_id) { should == 1 }
+      its(:is_organic) { should == 'N' }
+      its(:status) { should == 'verified' }
+      its(:status_display) { should == 'Verified' }
+      its(:'glass.id') { should == 5 }
+      its(:'glass.name') { should == 'Pint' }
+      its(:'glass.create_date') { should == '2012-03-26 04:00:04' }
+      its(:'available.name') { should == 'Year Round' }
+      its(:'available.description') { should == 'Available year round as a staple beer.' }
+      its(:style_id) { should == 33 }
+      its(:'style.id') { should == 33 }
+      its(:'style.category.id') { should == 10 }
+      its(:'style.category.name') { should == 'American Ale' }
+      its(:'style.category.bjcp_category') { should == '10' }
+      its(:'style.category.create_date') { should == '2012-03-26 04:00:04' }
+      its(:'style.category_id') { should == 10 }
+      its(:'style.name') { should == 'American Pale Ale' }
+      its(:'style.simple_url') { should == 'american-pale-ale' }
+      its(:'style.create_date') { should == '2012-03-26 04:00:04' }
+      its(:create_date) { should == '2012-03-26 04:02:10' }
+      its(:update_date) { should == '2012-03-26 04:38:49' }
     end
   end
 end

@@ -9,14 +9,11 @@ describe BreweryDB::Resources::Search do
 
       subject { response }
 
-      its(:current_page) { should == 1 }
-      its(:number_of_pages) { should == 14 }
-      its(:status) { should == 'success' }
-      its(:data) { should be_a(Array) }
-      its(:data) { should have(50).results }
+      it { should be_a(Array) }
+      it { should have(50).results }
 
       context 'result' do
-        subject { response.data.first }
+        subject { response.first }
 
         it { should have(9).keys }
 
