@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.brewerydb.com/v2/categories?key=<%= api_key %>
+    uri: http://api.brewerydb.com/v2/categories?key=API_KEY
     body:
       encoding: US-ASCII
       string: ''
@@ -65,7 +65,7 @@ http_interactions:
   recorded_at: Thu, 05 Apr 2012 15:20:09 GMT
 - request:
     method: get
-    uri: http://api.brewerydb.com/v2/category/1?key=<%= api_key %>
+    uri: http://api.brewerydb.com/v2/category/1?key=API_KEY
     body:
       encoding: US-ASCII
       string: ''

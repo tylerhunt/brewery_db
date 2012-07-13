@@ -3,30 +3,18 @@
 require 'spec_helper'
 
 describe BreweryDB::Resources::Glassware do
-  it_behaves_like 'a resource' do
-    context '#all' do
-      let(:response) { described_class.new(client).all }
+  include_context 'a resource'
 
-      subject { response }
+  context '#all', vcr: cassette_options do
+    let(:response) { described_class.new(client).all }
 
-      it { should be_a(Array) }
-      it { should have(15).results }
+    subject { response }
 
-      context 'result' do
-        subject { response.first }
+    it { should be_a(Array) }
+    it { should have(15).results }
 
-        it { should have(3).keys }
-
-        its(:id) { should == 1 }
-        its(:name) { should == 'Flute' }
-        its(:create_date) { should == '2012-01-03 02:41:33' }
-      end
-    end
-
-    context '#find' do
-      let(:response) { described_class.new(client).find(1) }
-
-      subject { response }
+    context 'result' do
+      subject { response.first }
 
       it { should have(3).keys }
 
@@ -34,5 +22,17 @@ describe BreweryDB::Resources::Glassware do
       its(:name) { should == 'Flute' }
       its(:create_date) { should == '2012-01-03 02:41:33' }
     end
+  end
+
+  context '#find', vcr: cassette_options do
+    let(:response) { described_class.new(client).find(1) }
+
+    subject { response }
+
+    it { should have(3).keys }
+
+    its(:id) { should == 1 }
+    its(:name) { should == 'Flute' }
+    its(:create_date) { should == '2012-01-03 02:41:33' }
   end
 end

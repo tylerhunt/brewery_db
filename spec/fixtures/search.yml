@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.brewerydb.com/v2/search?key=<%= api_key %>&q=IPA
+    uri: http://api.brewerydb.com/v2/search?key=API_KEY&q=IPA
     body:
       encoding: US-ASCII
       string: ''
