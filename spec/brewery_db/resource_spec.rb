@@ -4,33 +4,12 @@ describe BreweryDB::Resource do
   let(:client) { BreweryDB::Client.new }
   let(:resource) { Class.new { include BreweryDB::Resource }.new(client) }
 
-  context '#get' do
-    let(:connection) { stub }
-    let(:response) { stub }
-
-    before do
-      client.configure { |config| config.api_key = 'secret' }
-      connection.stub(:get) { response }
-      resource.stub(:connection) { connection }
-
-      response.stub(:success?) { false }
-      response.stub(:body).and_return('body')
-      response.body.stub(:data) { 'data' }
-    end
-
-    it 'delegates to the connection with the default parameters' do
-      connection.should_receive(:get).with('path', key: 'secret') { response }
-      resource.send(:get, 'path')
-    end
-
-    it 'merges in any additional parameters' do
-      connection.should_receive(:get).with('path', key: 'secret', p: 1) { response }
-      resource.send(:get, 'path', p: 1)
-    end
-  end
-
   context '#connection' do
+    before { client.config.api_key = 'secret' }
+
     subject { resource.send(:connection) }
+
+    its(:params) { should == { 'key' => 'secret' } }
 
     context 'middleware' do
       let(:handlers) { subject.builder.handlers }
