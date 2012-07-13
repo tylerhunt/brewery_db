@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/breweries?key=API_KEY&name=Rogue+Ales
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 13 Jul 2012 17:43:57 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '393'
+      content-length:
+      - '1709'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"currentPage":1,"numberOfPages":1,"data":[{"id":"X0l98q","name":"Rogue
+        Ales","description":"Rogue Ales was founded in 1988 by Jack Joyce, Rob Strasser
+        and Bob Woodell, three corporate types who wanted to go into the food\/beverage
+        industry. Rogue''s first brewpub was located in Ashland, Oregon and was a
+        10bbl brewsystem. Rogue opened a second brewpub, 15bbl brewsystem, in May
+        1989 located in Newport, Oregon. Rogue closed its Ashland operation in 1997,
+        after the great flood destroyed the place. In 1991, the 15bbl system, named
+        Howard after John Maier''s former boss, from the Newport brewpub was transferred
+        across the bay to the current brewery and upgraded to a 30bbl system. In 1998
+        Rogue bought a 50bbl brewsystem, named Kobe. Kobe is the only brewsystem in
+        use. Tours: We offer brewery tours every day at 3 pm (followed by a distillery
+        tour at 4pm). Go up to the bar inside the brewery (Brewers on the Bay) and
+        check in with the bartender and the tour will commence. Please call ahead
+        if you have a large group and or to verify the tour time...Brewer''s on the
+        Bay phone is 541-867-3664. The view from Brewers on the Bay includes the marina
+        (outside), and the bottling line and brew kettles (inside).","website":"http:\/\/www.rogue.com\/","established":"1988","isOrganic":"N","images":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-02
+        21:42:07","updateDate":"2012-03-21 15:06:08"}],"status":"success"}'
+    http_version: 
+  recorded_at: Fri, 13 Jul 2012 17:43:58 GMT
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/breweries?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 400
+      message: 
+    headers:
+      date:
+      - Fri, 13 Jul 2012 17:43:58 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '392'
+      content-length:
+      - '193'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"errorMessage":"The data passed to this method was invalid","invalidFields":{"required":{"isEmpty":"One
+        of the following fields must be populated: name, established, ids"}},"status":"failure"}'
+    http_version: 
+  recorded_at: Fri, 13 Jul 2012 17:43:58 GMT
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/brewery/NOT_FOUND?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      date:
+      - Fri, 13 Jul 2012 17:43:58 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '392'
+      content-length:
+      - '77'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"errorMessage":"The object you requested was not found.","status":"failure"}'
+    http_version: 
+  recorded_at: Fri, 13 Jul 2012 17:43:58 GMT
+recorded_with: VCR 2.1.1

@@ -10,8 +10,8 @@ VCR.configure do |config|
 end
 
 module VCRHelpers
-  def cassette_options(name=nil, options={})
-    name ||= described_class.name.split(/::/).last.downcase
+  def cassette_options(options={})
+    name = described_class.name.split(/::/).last.downcase
     { cassette_name: name }.merge(options)
   end
   private :cassette_options
