@@ -1,8 +1,13 @@
 module BreweryDB
-  class ResponseHandler < Faraday::Response::Middleware
+  class ResponseHandler
+    def initialize(response)
+      @response = response
+    end
+
     # Set the successful response body to the body's data attribute.
-    def on_complete(env)
-      env[:body] = env[:body].data if env[:body].status == 'success'
+    def response
+      body = @response.body
+      body.status == 'success' ? body.data : body
     end
   end
 end

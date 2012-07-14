@@ -8,7 +8,7 @@ module BreweryDB
     end
 
     def get(path, params={})
-      Request.new(connection, path, params).response.body
+      Request.new(connection, path, params).response
     end
     private :get
 
@@ -18,7 +18,6 @@ module BreweryDB
         builder.headers[:user_agent] = @config.user_agent
         builder.params[:key] = @config.api_key
 
-        builder.use(ResponseHandler)
         builder.response(:mashify, mash_class: Mash)
         builder.response(:json, content_type: /\bjson$/)
 
