@@ -51,13 +51,4 @@ describe BreweryDB::Resources::Breweries, :resource do
     its(:create_date) { should == '2012-03-25 04:00:30' }
     its(:update_date) { should == '2012-03-25 04:40:10' }
   end
-
-  context 'a bad request', vcr: cassette_options do
-    subject { described_class.new(config) }
-
-    it 'returns full body' do
-      result = subject.find('NOSUCKEY')
-      result.status.should == 'failure'
-    end
-  end
 end
