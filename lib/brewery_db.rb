@@ -1,9 +1,6 @@
 require 'brewery_db/version'
-require 'relax'
 
 module BreweryDB
-  extend Relax::Delegator[:client]
-
   autoload :Client, 'brewery_db/client'
   autoload :Config, 'brewery_db/config'
   autoload :Mash, 'brewery_db/mash'
@@ -19,11 +16,4 @@ module BreweryDB
     autoload :Search, 'brewery_db/resources/search'
     autoload :Styles, 'brewery_db/resources/styles'
   end
-
-  # @return a memoized instance of the client
-  # @!visibility private
-  def self.client
-    @client ||= Client.new
-  end
-  private_class_method :client
 end

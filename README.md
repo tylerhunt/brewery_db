@@ -37,19 +37,7 @@ one, you may [request one here][api-key].
 You can use the following method to configure your API key:
 
 ``` ruby
-BreweryDB.configure do |config|
-  config.api_key = API_KEY
-end
-```
-
-If you'd like to use multiple instances of the API with different keys, you may
-instantiate `BreweryDB::Client` directly and treat those instances the same as
-you would the `BreweryDB` module:
-
-``` ruby
-brewery_db = BreweryDB::Client.new
-
-brewery_db.configure do |config|
+brewery_db = BreweryDB::Client.new do |config|
   config.api_key = API_KEY
 end
 ```
@@ -57,32 +45,31 @@ end
 
 ## Usage
 
-Once the API key has been configured, resources may be called off the module
-directly or off your client instances:
+Once an API key has been set, resources can be called on the client instance.
 
 ``` ruby
-BreweryDB.beers.all(abv: '5.5')
-BreweryDB.beers.find('vYlBZQ')
+brewery_db.beers.all(abv: '5.5')
+brewery_db.beers.find('vYlBZQ')
 
-BreweryDB.breweries.all(established: 2006)
-BreweryDB.breweries.find('d1zSa7')
+brewery_db.breweries.all(established: 2006)
+brewery_db.breweries.find('d1zSa7')
 
-BreweryDB.brewery('d1zSa7').beers
+brewery_db.brewery('d1zSa7').beers
 
-BreweryDB.categories.all
-BreweryDB.categories.find(1)
+brewery_db.categories.all
+brewery_db.categories.find(1)
 
-BreweryDB.glassware.all
-BreweryDB.glassware.find(1)
+brewery_db.glassware.all
+brewery_db.glassware.find(1)
 
-BreweryDB.search.all(q: 'IPA')
-BreweryDB.search.beers(q: 'IPA')
-BreweryDB.search.breweries(q: 'IPA')
-BreweryDB.search.guilds(q: 'IPA')
-BreweryDB.search.events(q: 'IPA')
+brewery_db.search.all(q: 'IPA')
+brewery_db.search.beers(q: 'IPA')
+brewery_db.search.breweries(q: 'IPA')
+brewery_db.search.guilds(q: 'IPA')
+brewery_db.search.events(q: 'IPA')
 
-BreweryDB.styles.all
-BreweryDB.styles.find(1)
+brewery_db.styles.all
+brewery_db.styles.find(1)
 ```
 
 

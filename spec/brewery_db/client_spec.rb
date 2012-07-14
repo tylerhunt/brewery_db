@@ -2,50 +2,54 @@ require 'spec_helper'
 
 describe BreweryDB::Client do
   context '#config' do
-    subject { described_class.new.config }
+    it 'returns a configuration instance' do
+      subject.config.should be_a(BreweryDB::Config)
+    end
 
-    it { should be_a(BreweryDB::Config) }
-
-    its(:adapter) { should == Faraday.default_adapter }
-    its(:base_uri) { should == BreweryDB::Config::BASE_URI }
-    its(:user_agent) { should == BreweryDB::Config::USER_AGENT }
-
-    its(:api_key) { should be_nil }
+    it 'memoizes the return value' do
+      BreweryDB::Config.should_receive(:new).once.and_return(stub)
+      2.times { subject.config }
+    end
   end
 
   context '#configure' do
-    let(:client) { described_class.new }
-
-    before do
-      client.configure do |config|
-        config.adapter = :typhoeus
-        config.base_uri = 'http://api.playground.brewerydb.com'
-        config.user_agent = 'A BreweryDB Application'
-
-        config.api_key = 'A1029384756B'
-      end
+    it 'can set the adapter' do
+      expect {
+        subject.configure { |config| config.adapter = :typhoeus }
+      }.to change(subject.config, :adapter).to(:typhoeus)
     end
 
-    subject { client.config }
+    it 'can set the API key' do
+      expect {
+        subject.configure { |config| config.api_key = 'secret' }
+      }.to change(subject.config, :api_key).to('secret')
+    end
 
-    its(:adapter) { should == :typhoeus }
-    its(:base_uri) { should == 'http://api.playground.brewerydb.com' }
-    its(:user_agent) { should == 'A BreweryDB Application' }
+    it 'can set the base URI' do
+      expect {
+        subject.configure { |config| config.base_uri = 'http://example.com' }
+      }.to change(subject.config, :base_uri).to('http://example.com')
+    end
 
-    its(:api_key) { should == 'A1029384756B' }
-  end
+    it 'can set the timeout' do
+      expect {
+        subject.configure { |config| config.timeout = 42 }
+      }.to change(subject.config, :timeout).to(42)
+    end
 
-  {
-    beers: BreweryDB::Resources::Beers,
-    breweries: BreweryDB::Resources::Breweries,
-    brewery: [BreweryDB::Resources::Brewery, 'KlSsWY'],
-    categories: BreweryDB::Resources::Categories,
-    glassware: BreweryDB::Resources::Glassware,
-    search: BreweryDB::Resources::Search,
-    styles: BreweryDB::Resources::Styles
-  }.each do |method, (resource_class, *args)|
-    context "##{method}" do
-      specify { subject.send(method, *args).should be_a(resource_class) }
+    it 'can set the user agent' do
+      expect {
+        subject.configure { |config| config.user_agent = 'Brewdega' }
+      }.to change(subject.config, :user_agent).to('Brewdega')
     end
   end
+
+  its(:beers) { should be_a(BreweryDB::Resources::Beers) }
+  its(:breweries) { should be_a(BreweryDB::Resources::Breweries) }
+  its(:categories) { should be_a(BreweryDB::Resources::Categories) }
+  its(:glassware) { should be_a(BreweryDB::Resources::Glassware) }
+  its(:search) { should be_a(BreweryDB::Resources::Search) }
+  its(:styles) { should be_a(BreweryDB::Resources::Styles) }
+
+  it { subject.brewery('KlSsWY').should be_a(BreweryDB::Resources::Brewery) }
 end

@@ -1,8 +1,11 @@
+require 'faraday'
 require 'faraday_middleware'
 
 module BreweryDB
-  module Resource
-    include Relax::Resource
+  class Resource
+    def initialize(config)
+      @config = config
+    end
 
     def get(path, params={})
       connection.get(path, params).body
@@ -10,19 +13,18 @@ module BreweryDB
     private :get
 
     def connection
-      super do |builder|
-        builder.params = default_params
+      Faraday.new(request: { timeout: @config.timeout }) do |builder|
+        builder.url_prefix = @config.base_uri
+        builder.headers[:user_agent] = @config.user_agent
+        builder.params[:key] = @config.api_key
 
         builder.use(ResponseHandler)
         builder.response(:mashify, mash_class: Mash)
         builder.response(:json, content_type: /\bjson$/)
+
+        builder.adapter(@config.adapter)
       end
     end
     private :connection
-
-    def default_params
-      { key: @client.config.api_key }
-    end
-    private :default_params
   end
 end

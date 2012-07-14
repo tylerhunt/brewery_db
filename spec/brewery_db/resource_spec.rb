@@ -1,29 +1,43 @@
+# encoding: UTF-8
+
 require 'spec_helper'
 
-describe BreweryDB::Resource do
-  let(:client) { BreweryDB::Client.new }
-  let(:resource) { Class.new { include BreweryDB::Resource }.new(client) }
-
-  context '#connection' do
-    before { client.config.api_key = 'secret' }
-
-    subject { resource.send(:connection) }
-
-    its(:params) { should == { 'key' => 'secret' } }
-
-    context 'middleware' do
-      let(:handlers) { subject.builder.handlers }
-
-      [
-        BreweryDB::ResponseHandler,
-        FaradayMiddleware::Mashify,
-        FaradayMiddleware::ParseJson,
-        Faraday::Adapter::NetHttp
-      ].each.with_index do |middleware, index|
-        it "uses #{middleware}" do
-          handlers.index(middleware).should == index
+describe BreweryDB::Resource, :resource do
+  context '#get', vcr: cassette_options do
+    let(:resource) do
+      Class.new(BreweryDB::Resource) {
+        def ok
+          get('breweries', name: 'Rogue Ales')
         end
-      end
+
+        def bad_request
+          get('breweries')
+        end
+
+        def not_found
+          get('brewery/NOT_FOUND')
+        end
+      }.new(config)
+    end
+
+    context 'an OK request' do
+      subject { resource.ok.first }
+
+      its(:name) { should == 'Rogue Ales' }
+    end
+
+    context 'a bad request' do
+      subject { resource.bad_request }
+
+      its(:error_message) { should match /data.*invalid/ }
+      its(:status) { should eq 'failure' }
+    end
+
+    context 'a not found request' do
+      subject { resource.not_found }
+
+      its(:error_message) { should match /not\s+found/ }
+      its(:status) { should eq 'failure' }
     end
   end
 end

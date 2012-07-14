@@ -1,8 +1,6 @@
 module BreweryDB
   module Resources
-    class Categories
-      include Resource
-
+    class Categories < Resource
       def all(params={})
         get('categories', params)
       end

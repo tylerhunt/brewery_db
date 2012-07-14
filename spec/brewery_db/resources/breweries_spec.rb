@@ -4,7 +4,7 @@ require 'spec_helper'
 
 describe BreweryDB::Resources::Breweries, :resource do
   context '#all', vcr: cassette_options do
-    let(:response) { described_class.new(client).all(established: 2006) }
+    let(:response) { described_class.new(config).all(established: 2006) }
 
     subject { response }
 
@@ -31,7 +31,7 @@ describe BreweryDB::Resources::Breweries, :resource do
   end
 
   context '#find', vcr: cassette_options do
-    let(:response) { described_class.new(client).find('d1zSa7') }
+    let(:response) { described_class.new(config).find('d1zSa7') }
 
     subject { response }
 
@@ -53,7 +53,7 @@ describe BreweryDB::Resources::Breweries, :resource do
   end
 
   context 'a bad request', vcr: cassette_options do
-    subject { described_class.new(client) }
+    subject { described_class.new(config) }
 
     it 'returns full body' do
       result = subject.find('NOSUCKEY')

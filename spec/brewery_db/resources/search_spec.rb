@@ -4,7 +4,7 @@ require 'spec_helper'
 
 describe BreweryDB::Resources::Search, :resource do
   context '#all', vcr: cassette_options do
-    let(:response) { described_class.new(client).all(q: 'IPA') }
+    let(:response) { described_class.new(config).all(q: 'IPA') }
 
     subject { response }
 
@@ -55,7 +55,7 @@ describe BreweryDB::Resources::Search, :resource do
     events: 'event'
   }.each do |method, type|
     context "##{method}" do
-      subject { described_class.new(client) }
+      subject { described_class.new(config) }
 
       specify do
         results = mock(:results)

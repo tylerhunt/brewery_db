@@ -1,16 +1,20 @@
 module BreweryDB
   class Client
-    include Relax::Client
+    def initialize(&block)
+      configure(&block) if block_given?
+    end
 
-    # Returns a new client instance and configures its default values.
-    def initialize
-      config.base_uri = Config::BASE_URI
-      config.user_agent = Config::USER_AGENT
-      config.extend(Config)
+    def config
+      @config ||= Config.new
+    end
+
+    def configure
+      yield(config)
+      self
     end
 
     def beers
-      @beers ||= Resources::Beers.new(self)
+      @beers ||= Resources::Beers.new(config)
     end
 
     # Builds a new instance of the brewery resource.
@@ -18,27 +22,27 @@ module BreweryDB
     # @param id [String] the brewery ID
     # @return <Resources::Breweries> an instance of the brewery resource
     def brewery(id)
-      Resources::Brewery.new(self, id: id)
+      Resources::Brewery.new(config, id: id)
     end
 
     def breweries
-      @breweries ||= Resources::Breweries.new(self)
+      @breweries ||= Resources::Breweries.new(config)
     end
 
     def categories
-      @categories ||= Resources::Categories.new(self)
+      @categories ||= Resources::Categories.new(config)
     end
 
     def glassware
-      @glassware ||= Resources::Glassware.new(self)
+      @glassware ||= Resources::Glassware.new(config)
     end
 
     def search
-      @search ||= Resources::Search.new(self)
+      @search ||= Resources::Search.new(config)
     end
 
     def styles
-      @styles ||= Resources::Styles.new(self)
+      @styles ||= Resources::Styles.new(config)
     end
   end
 end

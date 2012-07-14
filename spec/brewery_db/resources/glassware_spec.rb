@@ -4,7 +4,7 @@ require 'spec_helper'
 
 describe BreweryDB::Resources::Glassware, :resource do
   context '#all', vcr: cassette_options do
-    let(:response) { described_class.new(client).all }
+    let(:response) { described_class.new(config).all }
 
     subject { response }
 
@@ -23,7 +23,7 @@ describe BreweryDB::Resources::Glassware, :resource do
   end
 
   context '#find', vcr: cassette_options do
-    let(:response) { described_class.new(client).find(1) }
+    let(:response) { described_class.new(config).find(1) }
 
     subject { response }
 

@@ -1,28 +1,51 @@
 require 'spec_helper'
 
 describe BreweryDB::Config do
-  {
-    BASE_URI: 'http://api.brewerydb.com/v2',
-    USER_AGENT: "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
-  }.each do |constant, value|
-    context constant do
-      subject { described_class.const_get(constant) }
+  context 'defaults' do
+    its(:adapter) { should eq Faraday.default_adapter }
+    its(:api_key) { should be_nil }
+    its(:base_uri) { should eq described_class::BASE_URI }
+    its(:timeout) { should eq described_class::TIMEOUT }
+    its(:user_agent) { should eq described_class::USER_AGENT }
+  end
 
-      it { should == value }
+  context '#adapter=' do
+    it do
+      expect {
+        subject.adapter = :typhoeus
+      }.to change(subject, :adapter).to(:typhoeus)
     end
   end
 
-  subject { Class.new { include BreweryDB::Config }.new }
-
-  context 'defaults' do
-    its(:api_key) { should be_nil }
+  context '#api_key=' do
+    it do
+      expect {
+        subject.api_key = 'secret'
+      }.to change(subject, :api_key).to('secret')
+    end
   end
 
-  context '#api_key=' do
-    specify do
+  context '#base_uri=' do
+    it do
       expect {
-        subject.api_key = 'A1029384756B'
-      }.to change(subject, :api_key).to('A1029384756B')
+        subject.base_uri = 'http://example.com'
+      }.to change(subject, :base_uri).to('http://example.com')
+    end
+  end
+
+  context 'timeout=' do
+    it do
+      expect {
+        subject.timeout = 42
+      }.to change(subject, :timeout).to(42)
+    end
+  end
+
+  context 'user_agent=' do
+    it do
+      expect {
+        subject.user_agent = 'Brewdega'
+      }.to change(subject, :user_agent).to('Brewdega')
     end
   end
 end

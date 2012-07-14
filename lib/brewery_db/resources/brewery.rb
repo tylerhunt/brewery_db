@@ -1,13 +1,11 @@
 module BreweryDB
   module Resources
-    class Brewery
-      include Resource
-
+    class Brewery < Resource
       attr :id
 
-      def initialize(client, options={})
+      def initialize(config, options={})
         @id = options[:id]
-        super
+        super(config)
       end
 
       def beers(params={})
