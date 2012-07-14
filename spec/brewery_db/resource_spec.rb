@@ -31,7 +31,7 @@ describe BreweryDB::Resource, :resource do
         expect { resource.bad_request }.to raise_error(BreweryDB::BadRequest)
       end
 
-      it 'provides the error messageon the exception' do
+      it 'sets the exception message to the error message in the response' do
         exception = resource.bad_request rescue $!
         exception.message.should match /data.*invalid/
       end
@@ -42,7 +42,7 @@ describe BreweryDB::Resource, :resource do
         expect { resource.not_found }.to raise_error(BreweryDB::NotFound)
       end
 
-      it 'provides the error messageon the exception' do
+      it 'sets the exception message to the error message in the response' do
         exception = resource.not_found rescue $!
         exception.message.should match /not\s+found/
       end
