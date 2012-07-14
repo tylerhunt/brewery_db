@@ -1,6 +1,10 @@
 require 'brewery_db/version'
 
 module BreweryDB
+  Error = Class.new(StandardError)
+  BadRequest = Class.new(Error)
+  NotFound = Class.new(Error)
+
   autoload :Client, 'brewery_db/client'
   autoload :Config, 'brewery_db/config'
   autoload :Mash, 'brewery_db/mash'

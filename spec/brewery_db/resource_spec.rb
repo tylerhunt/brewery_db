@@ -27,17 +27,25 @@ describe BreweryDB::Resource, :resource do
     end
 
     context 'a bad request' do
-      subject { resource.bad_request }
+      it 'raises an exception' do
+        expect { resource.bad_request }.to raise_error(BreweryDB::BadRequest)
+      end
 
-      its(:error_message) { should match /data.*invalid/ }
-      its(:status) { should eq 'failure' }
+      it 'provides the error messageon the exception' do
+        exception = resource.bad_request rescue $!
+        exception.message.should match /data.*invalid/
+      end
     end
 
     context 'a not found request' do
-      subject { resource.not_found }
+      it 'raises an exception' do
+        expect { resource.not_found }.to raise_error(BreweryDB::NotFound)
+      end
 
-      its(:error_message) { should match /not\s+found/ }
-      its(:status) { should eq 'failure' }
+      it 'provides the error messageon the exception' do
+        exception = resource.not_found rescue $!
+        exception.message.should match /not\s+found/
+      end
     end
   end
 end

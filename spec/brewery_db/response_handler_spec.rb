@@ -7,14 +7,26 @@ describe BreweryDB::ResponseHandler do
 
     subject { described_class.new(response) }
 
-    it 'returns the response body data if the status is "success"' do
-      body.stub(:status) { 'success' }
+    it 'returns the response body data if the status is 200' do
+      response.stub(:status) { 200 }
       subject.response.should eq body.data
     end
 
-    it 'returns the response body data if the status is not "success"' do
-      body.stub(:status) { 'failure' }
-      subject.response.should eq body
+    it 'raises a bad request error if the status is 400' do
+      response.stub(:status) { 400 }
+      response.stub_chain(:body, :error_message) { 'error' }
+      expect { subject.response }.to raise_error(BreweryDB::BadRequest, 'error')
+    end
+
+    it 'raises a not found error if the status is 404' do
+      response.stub(:status) { 404 }
+      response.stub_chain(:body, :error_message) { 'error' }
+      expect { subject.response }.to raise_error(BreweryDB::NotFound, 'error')
+    end
+
+    it 'raises an error with the status if the status is unknown' do
+      response.stub(:status) { 500 }
+      expect { subject.response }.to raise_error(BreweryDB::Error, '500')
     end
   end
 end
