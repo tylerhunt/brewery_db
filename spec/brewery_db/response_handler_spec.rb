@@ -1,8 +1,9 @@
 require 'spec_helper'
+require 'ostruct'
 
 describe BreweryDB::ResponseHandler do
   context '#response' do
-    let(:body) { stub(data: 'data') }
+    let(:body) { OpenStruct.new(data: 'data') }
     let(:response) { stub(body: body) }
 
     subject { described_class.new(response) }

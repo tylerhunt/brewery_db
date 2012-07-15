@@ -8,8 +8,7 @@ describe BreweryDB::Resources::Glassware, :resource do
 
     subject { response }
 
-    it { should be_a(Array) }
-    it { should have(15).results }
+    its(:length) { should eq 15 }
 
     context 'result' do
       subject { response.first }

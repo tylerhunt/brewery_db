@@ -8,8 +8,7 @@ describe BreweryDB::Resources::Search, :resource do
 
     subject { response }
 
-    it { should be_a(Array) }
-    it { should have(50).results }
+    its(:length) { should eq 50 }
 
     context 'result' do
       subject { response.first }

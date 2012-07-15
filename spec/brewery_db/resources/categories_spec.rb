@@ -8,8 +8,7 @@ describe BreweryDB::Resources::Categories, :resource do
 
     subject { response }
 
-    it { should be_a(Array) }
-    it { should have(28).results }
+    its(:length) { should eq 28 }
 
     context 'result' do
       subject { response.first }

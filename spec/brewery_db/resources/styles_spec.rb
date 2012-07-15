@@ -8,8 +8,7 @@ describe BreweryDB::Resources::Styles, :resource do
 
     subject { response }
 
-    it { should be_a(Array) }
-    it { should have(98).results }
+    its(:length) { should eq 98 }
 
     context 'result' do
       subject { response.first }
