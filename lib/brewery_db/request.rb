@@ -7,7 +7,13 @@ module BreweryDB
     end
 
     def response
-      ResponseHandler.new(get).response
+      body = get.body
+
+      if body.number_of_pages
+        Collection.new(body.data)
+      else
+        body.data
+      end
     end
 
     def get
