@@ -11,7 +11,10 @@ module BreweryDB
   autoload :Mash, 'brewery_db/mash'
   autoload :Request, 'brewery_db/request'
   autoload :Resource, 'brewery_db/resource'
-  autoload :ResponseHandler, 'brewery_db/response_handler'
+
+  module Middleware
+    autoload :ErrorHandler, 'brewery_db/middleware/error_handler'
+  end
 
   module Resources
     autoload :Beers, 'brewery_db/resources/beers'

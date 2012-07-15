@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe BreweryDB::ResponseHandler do
+describe BreweryDB::Middleware::ErrorHandler do
   context '#on_complete' do
     let(:error_body) { stub(error_message: 'error') }
 
