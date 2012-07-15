@@ -6,19 +6,19 @@ module BreweryDB
       @params = params
     end
 
-    def response
-      body = get.body
+    def body
+      response_body = response.body
 
-      if body.number_of_pages
-        Collection.new(body.data)
+      if response_body.number_of_pages
+        Collection.new(response_body.data)
       else
-        body.data
+        response_body.data
       end
     end
 
-    def get
+    def response
       @connection.get(@path, @params)
     end
-    private :get
+    private :response
   end
 end
