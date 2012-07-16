@@ -6,7 +6,7 @@ module BreweryDB
           when 200
           when 400 then raise BadRequest.new(env[:body].error_message)
           when 404 then raise NotFound.new(env[:body].error_message)
-          else raise Error.new(env[:status])
+          else raise Error.new(env[:status].to_s)
         end
       end
     end
