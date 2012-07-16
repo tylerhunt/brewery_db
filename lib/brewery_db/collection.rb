@@ -9,7 +9,7 @@ module BreweryDB
     end
 
     # TODO: add implementation once the API has been updated
-    #def length
+    #def size
     #end
 
     def each

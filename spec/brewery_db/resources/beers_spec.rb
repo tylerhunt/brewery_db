@@ -8,7 +8,7 @@ describe BreweryDB::Resources::Beers, :resource do
 
     subject { response }
 
-    its(:length) { pending 'API update' ; should eq 50 }
+    its(:count) { pending 'API update' ; should eq 50 }
 
     context 'result' do
       subject { response.first }
