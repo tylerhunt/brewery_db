@@ -2,10 +2,10 @@ module BreweryDB
   class Collection
     include Enumerable
 
-    def initialize(collection, page_count, request)
+    def initialize(collection, page_count, response)
       @collection = collection
       @page_count = page_count
-      @request = request
+      @response = response
     end
 
     # TODO: add implementation once the API has been updated
@@ -15,10 +15,10 @@ module BreweryDB
     def each
       return to_enum unless block_given?
 
-      while @request.page_number <= @page_count
+      while @response.page_number <= @page_count
         @collection.each { |element| yield(element) }
-        @request.next_page
-        @collection = @request.body
+        @response = @response.next_page
+        @collection = @response.data
       end
     end
   end

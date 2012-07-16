@@ -8,7 +8,7 @@ module BreweryDB
     end
 
     def get(path, params={})
-      Request.new(connection, path, params)
+      Request.new(connection, path, params).response
     end
     private :get
 

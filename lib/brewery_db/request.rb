@@ -6,39 +6,22 @@ module BreweryDB
       @params = params
     end
 
-    def collection
-      Collection.new(data, page_count, self)
-    end
-
-    def data
-      body.data
-    end
-
-    def page_number
-      @params[:p] ||= 1
-    end
-
-    def page_number=(page_number)
-      @params[:p] = page_number
+    def response
+      Response.new(response_body, self)
     end
 
     def next_page
-      self.page_number += 1
+      self.class.new(@connection, @path, @params.merge(p: page_number + 1))
     end
 
-    def body
-      @body ||= response.body
+    def response_body
+      @connection.get(@path, @params).body
     end
-    private :body
+    private :response_body
 
-    def page_count
-      body.number_of_pages
+    def page_number
+      @params[:p] || 1
     end
-    private :page_count
-
-    def response
-      @connection.get(@path, @params)
-    end
-    private :response
+    private :page_number
   end
 end
