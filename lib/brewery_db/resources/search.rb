@@ -2,7 +2,7 @@ module BreweryDB
   module Resources
     class Search < Resource
       def all(params={})
-        get('search', params)
+        get('search', params).collection
       end
 
       def beers(params={})

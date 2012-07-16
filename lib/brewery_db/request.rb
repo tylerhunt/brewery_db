@@ -6,14 +6,12 @@ module BreweryDB
       @params = params
     end
 
-    def body
-      response_body = response.body
+    def collection
+      Collection.new(data, page_count, self)
+    end
 
-      if !@params[:p] && page_count = response_body.number_of_pages
-        Collection.new(response_body.data, page_count, self)
-      else
-        response_body.data
-      end
+    def data
+      body.data
     end
 
     def page_number
@@ -27,6 +25,16 @@ module BreweryDB
     def next_page
       self.page_number += 1
     end
+
+    def body
+      @body ||= response.body
+    end
+    private :body
+
+    def page_count
+      body.number_of_pages
+    end
+    private :page_count
 
     def response
       @connection.get(@path, @params)

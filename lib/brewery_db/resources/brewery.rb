@@ -9,7 +9,7 @@ module BreweryDB
       end
 
       def beers(params={})
-        get("brewery/#{id}/beers", params)
+        get("brewery/#{id}/beers", params).data
       end
     end
   end

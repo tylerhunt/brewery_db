@@ -7,15 +7,15 @@ describe BreweryDB::Resource, :resource do
     let(:resource) do
       Class.new(BreweryDB::Resource) {
         def ok
-          get('breweries', name: 'Rogue Ales')
+          get('breweries', name: 'Rogue Ales').data
         end
 
         def bad_request
-          get('breweries')
+          get('breweries').data
         end
 
         def not_found
-          get('brewery/NOT_FOUND')
+          get('brewery/NOT_FOUND').data
         end
       }.new(config)
     end

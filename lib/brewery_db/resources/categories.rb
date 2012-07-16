@@ -2,11 +2,11 @@ module BreweryDB
   module Resources
     class Categories < Resource
       def all(params={})
-        get('categories', params)
+        get('categories', params).data
       end
 
       def find(id, params={})
-        get('category/%s' % id, params)
+        get('category/%s' % id, params).data
       end
     end
   end
