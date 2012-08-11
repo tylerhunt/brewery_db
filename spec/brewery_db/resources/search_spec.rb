@@ -3,47 +3,12 @@
 require 'spec_helper'
 
 describe BreweryDB::Resources::Search, :resource do
-  context '#all', vcr: cassette_options do
+  context '#all', :vcr do
     let(:response) { described_class.new(config).all(q: 'IPA') }
 
-    subject { response }
-
-    its(:count) { pending 'API update' ; should eq 50 }
-
-    context 'result' do
-      subject { response.first }
-
-      it { should have(9).keys }
-
-      its(:type) { should be_nil }
-      its(:id) { should == 'ZnS2BI' }
-      its(:name) { should == 'IPA' }
-      its(:abv) { should == '6' }
-      its(:is_organic) { should == 'N' }
-      its(:'style.id') { should == 49 }
-      its(:'style.abv_max') { should == '7.5' }
-      its(:'style.abv_min') { should == '5.5' }
-      its(:'style.bjcp_subcategory') { should == 'B' }
-      its(:'style.category.id') { should == 14 }
-      its(:'style.category.name') { should == 'India Pale Ale (IPA)' }
-      its(:'style.category.bjcp_category') { should == '14' }
-      its(:'style.category.create_date') { should == '2012-04-05 04:00:04' }
-      its(:'style.category_id') { should == 14 }
-      its(:'style.name') { should == 'American IPA' }
-      its(:'style.fg_max') { should == '1.018' }
-      its(:'style.fg_min') { should == '1.01' }
-      its(:'style.ibu_max') { should == '70' }
-      its(:'style.ibu_min') { should == '40' }
-      its(:'style.og_max') { should == '1.075' }
-      its(:'style.og_min') { should == '1.056' }
-      its(:'style.srm_max') { should == '15' }
-      its(:'style.srm_min') { should == '6' }
-      its(:'style.simple_url') { should == 'american-ipa' }
-      its(:'style.create_date') { should == '2012-04-05 04:00:04' }
-      its(:style_id) { should == 49 }
-      its(:status) { should == 'verified' }
-      its(:status_display) { should == 'Verified' }
-      its(:create_date) { should == '2012-04-05 04:01:50' }
+    it 'fetches all of the search results at once' do
+      pending 'API update'
+      results.count.should eq 50
     end
   end
 
