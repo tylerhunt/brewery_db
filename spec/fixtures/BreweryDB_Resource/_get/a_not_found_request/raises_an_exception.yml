@@ -15,7 +15,7 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 22:33:45 GMT
+      - Sat, 11 Aug 2012 23:35:41 GMT
       server:
       - Apache/2.2.22 (Amazon)
       x-powered-by:
@@ -34,5 +34,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"errorMessage":"The object you requested was not found.","status":"failure"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 22:33:45 GMT
+  recorded_at: Sat, 11 Aug 2012 23:35:41 GMT
 recorded_with: VCR 2.2.2

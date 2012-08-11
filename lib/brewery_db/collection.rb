@@ -2,15 +2,14 @@ module BreweryDB
   class Collection
     include Enumerable
 
-    def initialize(collection, page_count, response)
-      @collection = collection
-      @page_count = page_count
-      @response = response
-    end
+    attr_reader :count, :page_count
 
-    # TODO: add implementation once the API has been updated
-    #def size
-    #end
+    def initialize(collection, response)
+      @collection = collection
+      @response = response
+      @count = response.count
+      @page_count = response.page_count
+    end
 
     def each
       return to_enum unless block_given?

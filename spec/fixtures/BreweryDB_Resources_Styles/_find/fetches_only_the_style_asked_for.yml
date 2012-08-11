@@ -15,7 +15,7 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 22:33:47 GMT
+      - Sat, 11 Aug 2012 23:35:45 GMT
       server:
       - Apache/2.2.22 (Amazon)
       x-powered-by:
@@ -46,5 +46,5 @@ http_interactions:
         when at very low levels.","ibuMin":"20","ibuMax":"40","abvMin":"4.5","abvMax":"5.5","srmMin":"5","srmMax":"5","ogMin":"1.04","fgMin":"1.008","fgMax":"1.016","createDate":"2012-03-21
         20:06:45"},"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 22:33:48 GMT
+  recorded_at: Sat, 11 Aug 2012 23:35:45 GMT
 recorded_with: VCR 2.2.2

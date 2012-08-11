@@ -15,7 +15,7 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 22:33:45 GMT
+      - Sat, 11 Aug 2012 23:35:41 GMT
       server:
       - Apache/2.2.22 (Amazon)
       x-powered-by:
@@ -50,5 +50,5 @@ http_interactions:
         (outside), and the bottling line and brew kettles (inside).","website":"http:\/\/www.rogue.com\/","established":"1988","isOrganic":"N","images":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:42:07","updateDate":"2012-03-21 19:06:08"}],"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 22:33:45 GMT
+  recorded_at: Sat, 11 Aug 2012 23:35:41 GMT
 recorded_with: VCR 2.2.2

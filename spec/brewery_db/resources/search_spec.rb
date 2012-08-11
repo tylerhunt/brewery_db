@@ -7,8 +7,7 @@ describe BreweryDB::Resources::Search, :resource do
     let(:response) { described_class.new(config).all(q: 'IPA') }
 
     it 'fetches all of the search results at once' do
-      pending 'API update'
-      results.count.should eq 50
+      response.count.should eq 905
     end
   end
 
