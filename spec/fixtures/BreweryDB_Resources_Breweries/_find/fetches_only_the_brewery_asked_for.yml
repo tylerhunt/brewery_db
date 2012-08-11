@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/brewery/Idm5Y5?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 11 Aug 2012 22:33:46 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '1932'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"READ ONLY MODE: Request Successful","data":{"id":"Idm5Y5","name":"Founders
+        Brewing Company","description":"Founders Brewing Company, founded by Mike
+        Stevens and Dave Engbers produced its first beer in November of 1997. Built
+        out of a dream and a passion for home brewing, what started out as a hobby
+        quickly became a thriving business.  As the years have passed, Founders has
+        built its brewery on the exploration of recipe development and brewing techniques.
+        We are not the standard micro-brewery, rather we have traveled a path that
+        breaks from the standard craft-brewer.\r\n\r\nCarving a niche out of the craft
+        industry, Founders Brewing Company has built its reputation on producing very
+        unique beers. Our focus is to offer our wholesalers, retailers and consumers
+        a product that stands alone on the shelf and offers a true drinking experience
+        to our friends, the consumer.  As the years have passed, Founders has built
+        its brewery on the exploration of recipe development and brewing techniques.
+        We are not the standard micro-brewery, rather we have traveled a path that
+        breaks from the standard craft-brewer. Carving a niche out of the craft industry,
+        Founders Brewing Company has built its reputation on producing very unique
+        beers. Our focus is to offer our wholesalers, retailers and consumers a product
+        that stands alone on the shelf and offers a true drinking experience to our
+        friends, the consumer.","website":"http:\/\/www.foundersbrewing.com\/","established":"1997","isOrganic":"N","images":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_LxyddJ-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_LxyddJ-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_LxyddJ-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:55","updateDate":"2012-04-09 19:06:30"},"status":"success"}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2012 22:33:46 GMT
+recorded_with: VCR 2.2.2

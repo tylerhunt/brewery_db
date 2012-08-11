@@ -9,14 +9,3 @@ VCR.configure do |config|
   config.filter_sensitive_data('API_KEY') { ENV['BREWERY_DB_API_KEY'] }
 end
 
-module VCRHelpers
-  def cassette_options(options={})
-    name = described_class.name.split(/::/).last.downcase
-    { cassette_name: name }.merge(options)
-  end
-  private :cassette_options
-end
-
-RSpec.configure do |config|
-  config.extend(VCRHelpers)
-end

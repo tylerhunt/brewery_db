@@ -3,33 +3,19 @@
 require 'spec_helper'
 
 describe BreweryDB::Resources::Glassware, :resource do
-  context '#all', vcr: cassette_options do
+  context '#all', :vcr do
     let(:response) { described_class.new(config).all }
 
-    subject { response }
-
-    its(:length) { should eq 15 }
-
-    context 'result' do
-      subject { response.first }
-
-      it { should have(3).keys }
-
-      its(:id) { should == 1 }
-      its(:name) { should == 'Flute' }
-      its(:create_date) { should == '2012-01-03 02:41:33' }
+    it 'fetches all of the glassware at once' do
+      response.length.should eq 12
     end
   end
 
-  context '#find', vcr: cassette_options do
+  context '#find', :vcr do
     let(:response) { described_class.new(config).find(1) }
 
-    subject { response }
-
-    it { should have(3).keys }
-
-    its(:id) { should == 1 }
-    its(:name) { should == 'Flute' }
-    its(:create_date) { should == '2012-01-03 02:41:33' }
+    it 'fetches only the glassware asked for' do
+      response.id.should eq 1
+    end
   end
 end

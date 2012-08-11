@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/categories?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 11 Aug 2012 22:33:46 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '973'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"name":"British
+        Origin Ales","createDate":"2012-03-21 20:06:45"},{"id":2,"name":"Irish Origin
+        Ales","createDate":"2012-03-21 20:06:45"},{"id":3,"name":"North American Origin
+        Ales","createDate":"2012-03-21 20:06:45"},{"id":4,"name":"German Origin Ales","createDate":"2012-03-21
+        20:06:46"},{"id":5,"name":"Belgian And French Origin Ales","createDate":"2012-03-21
+        20:06:46"},{"id":6,"name":"International Ale Styles","createDate":"2012-03-21
+        20:06:46"},{"id":7,"name":"European-germanic Lager","createDate":"2012-03-21
+        20:06:46"},{"id":8,"name":"North American Lager","createDate":"2012-03-21
+        20:06:46"},{"id":9,"name":"Other Lager","createDate":"2012-03-21 20:06:46"},{"id":10,"name":"International
+        Styles","createDate":"2012-03-21 20:06:46"},{"id":11,"name":"Hybrid\/mixed
+        Beer","createDate":"2012-03-21 20:06:46"},{"id":12,"name":"Mead, Cider, &
+        Perry","createDate":"2012-03-21 20:06:46"}],"status":"success"}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2012 22:33:46 GMT
+recorded_with: VCR 2.2.2
