@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/beer/99Uj1n?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 11 Aug 2012 22:33:46 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '2371'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"READ ONLY MODE: Request Successful","data":{"id":"99Uj1n","name":"Curmudgeon\u2019s
+        Better Half","abv":"11.9","glasswareId":5,"styleId":13,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-02-21
+        11:27:00","updateDate":"2012-03-22 13:05:50","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":13,"categoryId":1,"category":{"id":1,"name":"British
+        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Old Ale","description":"Dark
+        amber to brown in color, old ales are medium to full bodied with a malty sweetness.
+        Hop aroma should be minimal and flavor can vary from none to medium in character
+        intensity. Fruity-ester flavors and aromas can contribute to the character
+        of this ale. Bitterness should be minimal but evident and balanced with malt
+        and\/or caramel-like sweetness. Alcohol types can be varied and complex. A
+        distinctive quality of these ales is that they undergo an aging process (often
+        for years) on their yeast either in bulk storage or through conditioning in
+        the bottle, which contributes to a rich, wine-like and often sweet oxidation
+        character. Complex estery characters may also emerge. Some very low diacetyl
+        character may be evident and acceptable. Wood aged characters such as vanillin
+        and other woody characters are acceptable. Horsey, goaty, leathery and phenolic
+        character evolved from Brettanomyces organisms and acidity may be present
+        but should be at low levels and balanced with other flavors Residual flavors
+        that come from liquids previously aged in a barrel such as bourbon or sherry
+        should not be present. Chill haze is acceptable at low temperatures. (This
+        style may often be split into two categories, strong and very strong. Brettanomyces
+        organisms and acidic characters reflect historical character. Competition
+        organizers may choose to distinguish these types of old ale from modern versions.)","ibuMin":"30","ibuMax":"65","abvMin":"6","abvMax":"9","srmMin":"12","srmMax":"30","ogMin":"1.058","fgMin":"1.014","fgMax":"1.03","createDate":"2012-03-21
+        20:06:45"}},"status":"success"}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2012 22:33:46 GMT
+recorded_with: VCR 2.2.2

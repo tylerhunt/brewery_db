@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/glassware?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 11 Aug 2012 22:33:46 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '808'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"name":"Flute","createDate":"2012-01-03
+        02:41:33"},{"id":2,"name":"Goblet","createDate":"2012-01-03 02:41:33"},{"id":3,"name":"Mug","createDate":"2012-01-03
+        02:41:33"},{"id":4,"name":"Pilsner","createDate":"2012-01-03 02:41:33"},{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},{"id":6,"name":"Snifter","createDate":"2012-01-03 02:41:33"},{"id":7,"name":"Stange","createDate":"2012-01-03
+        02:41:33"},{"id":8,"name":"Tulip","createDate":"2012-01-03 02:41:33"},{"id":9,"name":"Weizen","createDate":"2012-01-03
+        02:41:33"},{"id":10,"name":"Oversized Wine Glass","createDate":"2012-01-03
+        02:41:33"},{"id":13,"name":"Willi","createDate":"2012-01-03 02:41:33"},{"id":14,"name":"Thistle","createDate":"2012-01-03
+        02:41:33"}],"status":"success"}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2012 22:33:46 GMT
+recorded_with: VCR 2.2.2

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/style/1?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 11 Aug 2012 22:33:47 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '1102'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"message":"READ ONLY MODE: Request Successful","data":{"id":1,"categoryId":1,"category":{"id":1,"name":"British
+        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Classic English-Style
+        Pale Ale","description":"Classic English pale ales are golden to copper colored
+        and display earthy, herbal English-variety hop character. Note that \"earthy,
+        herbal English-variety hop character\" is the perceived end, but may be a
+        result of the skillful use of hops of other national origins. Medium to high
+        hop bitterness, flavor, and aroma should be evident. This medium-bodied pale
+        ale has low to medium malt flavor and aroma. Low caramel character is allowable.
+        Fruity-ester flavors and aromas are moderate to strong. Chill haze may be
+        in evidence only at very cold temperatures. The absence of diacetyl is desirable,
+        though, diacetyl (butterscotch character) is acceptable and characteristic
+        when at very low levels.","ibuMin":"20","ibuMax":"40","abvMin":"4.5","abvMax":"5.5","srmMin":"5","srmMax":"5","ogMin":"1.04","fgMin":"1.008","fgMax":"1.016","createDate":"2012-03-21
+        20:06:45"},"status":"success"}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2012 22:33:48 GMT
+recorded_with: VCR 2.2.2

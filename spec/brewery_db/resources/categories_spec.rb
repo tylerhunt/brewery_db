@@ -3,35 +3,19 @@
 require 'spec_helper'
 
 describe BreweryDB::Resources::Categories, :resource do
-  context '#all', vcr: cassette_options do
+  context '#all', :vcr do
     let(:response) { described_class.new(config).all }
 
-    subject { response }
-
-    its(:length) { should eq 28 }
-
-    context 'result' do
-      subject { response.first }
-
-      it { should have(4).keys }
-
-      its(:id) { should == 1 }
-      its(:name) { should == 'Light Lager' }
-      its(:bjcp_category) { should == '1' }
-      its(:create_date) { should == '2012-04-05 04:00:04' }
+    it 'fetches all of the cagtegories at once' do
+      response.length.should eq 12
     end
   end
 
-  context '#find', vcr: cassette_options do
+  context '#find', :vcr do
     let(:response) { described_class.new(config).find(1) }
 
-    subject { response }
-
-    it { should have(4).keys }
-
-    its(:id) { should == 1 }
-    its(:name) { should == 'Light Lager' }
-    its(:bjcp_category) { should == '1' }
-    its(:create_date) { should == '2012-04-05 04:00:04' }
+    it 'fetches only the category asked for' do
+      response.id.should == 1
+    end
   end
 end
