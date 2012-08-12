@@ -1,0 +1,1132 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/search?key=API_KEY&q=IPA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Sat, 11 Aug 2012 23:35:44 GMT
+      server:
+      - Apache/2.2.22 (Amazon)
+      x-powered-by:
+      - PHP/5.3.13
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"currentPage":1,"numberOfPages":19,"totalResults":905,"data":[{"id":"AKyyYN","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:04:37","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"NxvZb9","name":"IPA","abv":"6.7","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:38","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"NJbyiS","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:43","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"TeGU1c","name":"IPA","description":"India
+        Pale Ale is a style of ale noted for its bitterness. Amber in color this ale
+        offers the drinker a highly hopped, bold, bitter beer whose full flavor dances
+        on the palate","abv":"6.2","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-04-17 18:24:27","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"iLlMCb","name":"IPA","description":"This
+        is our unique version of an ancient style. A style as old as the ocean trade
+        routes of the last centuries Great Ships. Not as old as the equator they had
+        to cross twice enroute, nor as old as the 10,000 or so miles of Di-Hydrogen
+        Oxide and Sodium upon which they sailed, but older than the Circulithium-4
+        Lentloid that binds the Lupulin Quartnate onto your taste buds. Weird. Think
+        about it. Now stop. OK, go again, now stop. Think again, and stop. But we
+        digress. Made with 43 different hops and 65 various malts, this redolent ale
+        will likely float your boat, whatever planet you''re on.","abv":"5.7","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/iLlMCb\/upload_Jlj2Pz-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/iLlMCb\/upload_Jlj2Pz-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/iLlMCb\/upload_Jlj2Pz-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:00","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"nimH5J","name":"IPA","description":"A light
+        copper body low bitterness with good hop flavor. This is my impression of
+        what the English troops may have been drinking when they occupied India. The
+        pale ale they drank had mellowed considerably. The wooden casks had spent
+        many months traveling on ships and long inland journeys to the troops, where
+        they were then tapped and enjoyed.","glasswareId":5,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:44:06","updateDate":"2012-04-23 16:02:04","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"A0hPVC","name":"IPA","description":"Brewed
+        with Centennial, Galena and Ahtanum for dry hopping, this unfiltered American-style
+        IPA packs a big hop character from start to finish. Big floral\/citrus aroma
+        with a satisfying hop bitterness.","abv":"7.3","ibu":"89","glasswareId":5,"availableId":4,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:10","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"4","name":"Seasonal","description":"Available
+        at the same time of year, every year."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"Z4qs1j","name":"IPA","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Z4qs1j\/upload_EWjJ4R-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Z4qs1j\/upload_EWjJ4R-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Z4qs1j\/upload_EWjJ4R-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:24","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"KMsD62","name":"IPA","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/KMsD62\/upload_pduMCe-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/KMsD62\/upload_pduMCe-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/KMsD62\/upload_pduMCe-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:26","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"zOIIjI","name":"IPA","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/zOIIjI\/upload_2FtToW-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/zOIIjI\/upload_2FtToW-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/zOIIjI\/upload_2FtToW-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:40","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"N2tsmg","name":"IPA","description":"Copper
+        in color with herbal and earthy hops being most prevalent. Light caramel flavors
+        balance out this unique ale. Hop lovers will enjoy this unfiltered, dry-hopped
+        IPA","abv":"7.2","ibu":"64","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-23
+        13:46:22","updateDate":"2012-03-22 13:05:48","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"JgPDfS","name":"IPA","description":"Clean,
+        crisp pale ale with a smooth, dry and citrusy finish brewed with 2 Row Barley,
+        Victory, Munich and Crystal Malts. Loaded with Centennial, Columbus, Cascade
+        & Chinook hops for flavor and dry hopped using Cascade hops creating its fresh
+        hoppy nose.","abv":"6.5","ibu":"80","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-13
+        15:30:09","updateDate":"2012-04-13 15:30:09","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"jbX78L","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:04:45","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"REvca8","name":"IPA","description":"A hophead''s
+        delight! Our proud flagship ale, big and flowery with a long and lingering
+        finish.","abv":"7.2","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:06","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"VMeZHo","name":"IPA","description":"A Northwest
+        style IPA utilizing locally grown hops with plenty of malt backbone to give
+        a smooth and pleasant finish.","abv":"6.5","ibu":"75","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/VMeZHo\/upload_yL0aX8-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/VMeZHo\/upload_yL0aX8-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/VMeZHo\/upload_yL0aX8-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:11","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"RWa0Ki","name":"IPA","description":"A honey-amber
+        colored India Pale Ale with good body, fairly strong alcohol content and an
+        aggressive \"fresh hop\" quality.  This is a very refreshing beer that can
+        be enjoyed by itself for its many interesting flavor highlights.","abv":"7","glasswareId":5,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:12","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"FrIEDm","name":"IPA","abv":"6.8","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/FrIEDm\/upload_UENEhn-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/FrIEDm\/upload_UENEhn-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/FrIEDm\/upload_UENEhn-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:05:23","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"Lo5hMM","name":"IPA","abv":"7","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Lo5hMM\/upload_1ybOSX-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Lo5hMM\/upload_1ybOSX-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/Lo5hMM\/upload_1ybOSX-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:28","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"bkOkxf","name":"IPA","description":"By definition
+        an India Pale Ale is known for hops. 70 IBUs and an assertive array of American
+        hops lay blankets of grapefruit, orange nectar, and sticky mango across your
+        senses. This assortment will be certain to remain in your flavor memory. The
+        background malt is reminiscent of graham cracker and faint caramel which adds
+        subtle sweetness and toasted notes. An unabashed dosing of \u201cdry-hops\u201d
+        gives way to abundant aroma and bright citrus flavor. Enjoy it in the company
+        of good friends with barbecued chicken and mango-habanero salsa.","abv":"6.1","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-06-13
+        18:17:35","updateDate":"2012-06-13 18:17:35","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"PbX50r","name":"IPA","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-07-31
+        21:34:12","updateDate":"2012-07-31 21:47:36","type":"beer"},{"id":"WqVEqj","name":"IPA","abv":"5.5","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:04:31","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"lpeUmI","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:04:53","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"aS16Pw","name":"IPA","description":"Authentic
+        India Pale Ale\r\nWild Rose IPA (India Pale Ale) is a beautiful copper- coloured
+        ale, rich in caramel malt character and well balanced with plenty of hops.\r\n\r\nAn
+        authentic India Pale Ale, this IPA is handcrafted for the true ale drinker.","abv":"6","ibu":"45","glasswareId":5,"srmId":15,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:11","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"srm":{"name":"15","hex":"BB5100"},"available":{"id":"1","name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"TPhmdj","name":"IPA","description":"The Big
+        Up Music & Arts Festival","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TPhmdj\/upload_77HL5K-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TPhmdj\/upload_77HL5K-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TPhmdj\/upload_77HL5K-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:26","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"TltD18","name":"IPA","description":"A base
+        of pale, Munich, and Carapils malts is just enough to contain the massive
+        hop flavor and aroma packed into this highly drinkable IPA. A blend of four
+        American hop varieties is added four times in the kettle and twice in the
+        fermentor for a complex and layered hop experience. Best served at 45-50\u02daF
+        in a tulip or English style pint glass.","abv":"6.8","ibu":"65","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TltD18\/upload_SzdjIP-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TltD18\/upload_SzdjIP-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/TltD18\/upload_SzdjIP-large.png"},"status":"verified","statusDisplay":"Verified","servingTemperature":"cool","servingTemperatureDisplay":"Cool
+        - (8-12C\/45-54F)","createDate":"2012-01-03 02:43:29","updateDate":"2012-04-10
+        12:49:52","glass":{"id":5,"name":"Pint","createDate":"2012-01-03 02:41:33"},"available":{"id":"1","name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"YrxmR1","name":"IPA","description":"A classic
+        India Pale Ale. Dry, medium-bodied with lots of hop flavor","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-04-23
+        14:19:59","updateDate":"2012-04-23 14:19:59","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"XCgfE8","name":"IPA","abv":"5.5","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:04:36","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"D61TcY","name":"IPA","abv":"6.9","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:38","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"IuEeGC","name":"IPA","description":"We took
+        the traditional IPA, originally shipped from England to India in the 1700\u2032s,
+        and made it bolder and more flavorful \u2013 American Style. We\u2019ve added
+        new varieties of highly aromatic American hops to create a distinctive bitterness
+        profile and an incredible hop character.","abv":"7","ibu":"60","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/IuEeGC\/upload_1G7Dyy-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/IuEeGC\/upload_1G7Dyy-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/IuEeGC\/upload_1G7Dyy-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:30","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"ZnTG0C","name":"IPA","abv":"6","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:32","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"MPJbsM","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:34","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"XOcBJQ","name":"IPA","abv":"5.5","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:35","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"8MqMrp","name":"IPA","description":"Deep
+        golden to light amber color, and a nice off-white head, with good retention
+        when properly served. Starts off with pleasantly strong hop flavors, balanced
+        by a firm malt backdrop, then fades to a dry finish with a lingering hoppiness.\r\n\r\nMedium
+        straw color, pale tan head. Rich malty aroma with a HUGE dose of hops. Medium-full
+        body with sweet malty flavors and a delicious abundance of aromatic a bittering
+        hops.","abv":"7.25","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:43","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"k6mclO","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:04:45","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"PQKstw","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:50","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"1k3h3N","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:50","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"ghQWoW","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:49","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"3jO7mO","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:54","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"CmRwr8","name":"IPA","abv":"7.5","glasswareId":5,"styleId":2,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/CmRwr8\/upload_1HTETm-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/CmRwr8\/upload_1HTETm-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/CmRwr8\/upload_1HTETm-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:05:38","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":2,"categoryId":1,"category":{"id":1,"name":"British
+        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"English-Style India
+        Pale Ale","description":"Most traditional interpretations of English-style
+        India pale ales are characterized by medium-high hop bitterness with a medium
+        to medium-high alcohol content. Hops from a variety of origins may be used
+        to contribute to a high hopping rate. Earthy and herbal English-variety hop
+        character is the perceived end, but may be a result of the skillful use of
+        hops of other national origins. The use of water with high mineral content
+        results in a crisp, dry beer, sometimes with subtle and balanced character
+        of sulfur compounds. This pale gold to deep copper-colored ale has a medium
+        to high, flowery hop aroma and may have a medium to strong hop flavor (in
+        addition to the hop bitterness). English-style India pale ales possess medium
+        maltiness and body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill haze
+        is allowable at cold temperatures. Hops of other origins may be used for bitterness
+        or approximating traditional English character.","ibuMin":"35","ibuMax":"63","abvMin":"5","abvMax":"7","srmMin":"6","srmMax":"14","ogMin":"1.05","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"FQ5ySq","name":"IPA","description":"A complex,
+        layered hop mixture makes this a well rounded IPA with strong grapefruit and
+        pine flavors with a hint of pepper.  This beer has great head retention and
+        strong hop aroma. 2010 New Mexico State Fair Winner: Bronze in the IPA category","abv":"5.8","ibu":"78","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:38","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"UO3PLw","name":"IPA","description":"Our take
+        on the classic India Pale Ale style\u2013the favorite craft beer of the Northwest.
+        This amber colored brew is loaded with four different types of hops during
+        the brew day and then gets dry hopped after fermentation is complete. Our
+        IPA has a huge citrus and pine character with a strong, but refined bitterness.","abv":"6.9","ibu":"65","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-02-15
+        12:54:11","updateDate":"2012-03-22 13:05:49","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"n31JwU","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-06-30
+        07:24:18","updateDate":"2012-06-30 13:26:37","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"Dfo1sQ","name":"IPA","description":"OUR FLAGSHIP
+        BEER, the one for which we''re known throughout the Puget Sound. Copper-colored
+        with a malty character up front. Intensely bitter with hits of grapefruit
+        & cedar imparted by multiple heavy-handed additions of Galena & Columbus hops.","abv":"6.2","ibu":"40","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:04:35","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"OmV4lx","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:38","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"1SPJIn","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:43","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"E0JqSe","name":"IPA","styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:04:46","style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"KOXotD","name":"IPA","description":"Not for
+        the faint of heart. True India Pale Ales had to withstand long sea voyages
+        before quenching the thirst of cranky British troops stationed in India. Our
+        IPA is true to this style, it\u2019s bracing, bitter and higher in alcohol
+        (6.5%alc.\/vol) and made with the trademark Propeller quality. It\u2019s full-bodied
+        ale for full throttle beer lovers!","abv":"6.5","ibu":"68","glasswareId":5,"availableId":1,"styleId":30,"isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:05:20","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"available":{"id":"1","name":"Year Round","description":"Available
+        year round as a staple beer."},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"4ID6Wq","name":"IPA","abv":"7.5","ibu":"75","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/4ID6Wq\/upload_m4G9Uj-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/4ID6Wq\/upload_m4G9Uj-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/4ID6Wq\/upload_m4G9Uj-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:05:25","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"v3S0tr","name":"IPA","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v3S0tr\/upload_p5v9Dx-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v3S0tr\/upload_p5v9Dx-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/v3S0tr\/upload_p5v9Dx-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:29","updateDate":"2012-03-22 13:05:26","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"},{"id":"u2wzdl","name":"IPA","glasswareId":5,"styleId":30,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/u2wzdl\/upload_lQkjaa-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/u2wzdl\/upload_lQkjaa-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/u2wzdl\/upload_lQkjaa-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:43:30","updateDate":"2012-03-22 13:05:27","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+        02:41:33"},"style":{"id":30,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        India Pale Ale","description":"American-style India pale ales are perceived
+        to have medium-high to intense hop bitterness, flavor and aroma with medium-high
+        alcohol content. The style is further characterized by floral, fruity, citrus-like,
+        piney, resinous, or sulfur-like American-variety hop character. Note that
+        one or more of these American-variety hop characters is the perceived end,
+        but the hop characters may be a result of the skillful use of hops of other
+        national origins. The use of water with high mineral content results in a
+        crisp, dry beer. This pale gold to deep copper-colored ale has a full, flowery
+        hop aroma and may have a strong hop flavor (in addition to the perception
+        of hop bitterness). India pale ales possess medium maltiness which contributes
+        to a medium body. Fruity-ester flavors and aromas are moderate to very strong.
+        Diacetyl can be absent or may be perceived at very low levels. Chill and\/or
+        hop haze is allowable at cold temperatures. (English and citrus-like American
+        hops are considered enough of a distinction justifying separate American-style
+        IPA and English-style IPA categories or subcategories. Hops of other origins
+        may be used for bitterness or approximating traditional American or English
+        character. See English-style India Pale Ale","ibuMin":"50","ibuMax":"70","abvMin":"6.3","abvMax":"7.5","srmMin":"6","srmMax":"14","ogMin":"1.06","fgMin":"1.012","fgMax":"1.018","createDate":"2012-03-21
+        20:06:45"},"type":"beer"}],"status":"success"}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2012 23:35:44 GMT
+recorded_with: VCR 2.2.2
