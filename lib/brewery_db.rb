@@ -4,6 +4,8 @@ module BreweryDB
   Error = Class.new(StandardError)
   BadRequest = Class.new(Error)
   NotFound = Class.new(Error)
+  RateLimitExceeded = Class.new(Error)
+  Unauthorized = Class.new(Error)
 
   autoload :Client, 'brewery_db/client'
   autoload :Collection, 'brewery_db/collection'
