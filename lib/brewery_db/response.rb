@@ -10,7 +10,7 @@ module BreweryDB
     end
 
     def collection
-      Collection.new(data, page_count, self)
+      Collection.new(data, self)
     end
 
     def next_page
@@ -24,6 +24,9 @@ module BreweryDB
     def page_count
       @body.number_of_pages
     end
-    private :page_count
+
+    def count
+      @body.total_results
+    end
   end
 end

@@ -2,23 +2,26 @@ module BreweryDB
   class Collection
     include Enumerable
 
-    def initialize(collection, page_count, response)
-      @collection = collection
-      @page_count = page_count
-      @response = response
-    end
+    BATCH_SIZE = 50
+    attr_reader :count, :page_count
 
-    # TODO: add implementation once the API has been updated
-    #def size
-    #end
+    def initialize(collection, response)
+      @collection = collection
+      @response = response
+      @count = response.count
+      @page_count = response.page_count
+    end
 
     def each
       return to_enum unless block_given?
 
-      while @response.page_number <= @page_count
+      while @collection.any?
         @collection.each { |element| yield(element) }
+
+        break if @collection.size < BATCH_SIZE
+
         @response = @response.next_page
-        @collection = @response.data
+        @collection = Array(@response.data)
       end
     end
   end

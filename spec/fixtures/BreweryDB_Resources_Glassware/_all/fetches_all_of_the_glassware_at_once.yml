@@ -15,7 +15,7 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 22:33:46 GMT
+      - Sat, 11 Aug 2012 23:35:43 GMT
       server:
       - Apache/2.2.22 (Amazon)
       x-powered-by:
@@ -41,5 +41,5 @@ http_interactions:
         02:41:33"},{"id":13,"name":"Willi","createDate":"2012-01-03 02:41:33"},{"id":14,"name":"Thistle","createDate":"2012-01-03
         02:41:33"}],"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 22:33:46 GMT
+  recorded_at: Sat, 11 Aug 2012 23:35:43 GMT
 recorded_with: VCR 2.2.2
