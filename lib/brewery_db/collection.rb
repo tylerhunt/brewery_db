@@ -7,11 +7,8 @@ module BreweryDB
     attr_reader :size, :page_count
     alias length size
 
-    def initialize(collection, response)
-      @collection = collection || []
-      @response = response
-      @size = response.count || 0
-      @page_count = response.page_count
+    def initialize(response)
+      self.response = response
     end
 
     def count(*args, &block)
@@ -29,12 +26,17 @@ module BreweryDB
 
       while @collection.any?
         @collection.each { |element| yield(element) }
-
         break if @collection.size < BATCH_SIZE
-
-        @response = @response.next_page
-        @collection = Array(@response.data)
+        self.response = @response.next_page
       end
     end
+
+    def response=(response)
+      @response = response
+      @collection = Array(response.data) || []
+      @size = response.count || 0
+      @page_count = response.page_count
+    end
+    private :response=
   end
 end

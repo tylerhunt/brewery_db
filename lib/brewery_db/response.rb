@@ -10,7 +10,7 @@ module BreweryDB
     end
 
     def collection
-      Collection.new(data, self)
+      Collection.new(self)
     end
 
     def next_page
