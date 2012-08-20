@@ -3,6 +3,7 @@
 *.swp
 .bundle
 .config
+.rbenv-version
 .rvmrc
 .yardoc
 Gemfile.lock
