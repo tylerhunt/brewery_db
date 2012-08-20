@@ -3,13 +3,25 @@ module BreweryDB
     include Enumerable
 
     BATCH_SIZE = 50
-    attr_reader :count, :page_count
+
+    attr_reader :size, :page_count
+    alias length size
 
     def initialize(collection, response)
-      @collection = collection
+      @collection = collection || []
       @response = response
-      @count = response.count
+      @size = response.count || 0
       @page_count = response.page_count
+    end
+
+    def count(*args, &block)
+      # The Ruby documentation is wrong, and Enumerable#count no longer calls
+      # #size, so let's make sure it's used here when no arguments are given.
+      if args.empty? && !block_given?
+        size
+      else
+        super
+      end
     end
 
     def each
