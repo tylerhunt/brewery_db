@@ -4,7 +4,7 @@ module BreweryDB
 
     BATCH_SIZE = 50
 
-    attr_reader :size, :page_count
+    attr_reader :size
     alias length size
 
     def initialize(response)
