@@ -72,6 +72,56 @@ brewery_db.styles.all
 brewery_db.styles.find(1)
 ```
 
+### WebHooks
+
+The BreweryDB API also provides [WebHooks][webhooks] which can be use to:
+
+> keep your local data stores in sync with the main BreweryDB API.  Instead of
+> having to constantly query the API, webhooks will send you a message when
+> something changes.
+
+This library provides a simple abstraction over the data posted by those
+webhooks.
+
+```ruby
+webhook = BreweryDB::WebHook.new(webhook_params_hash)
+```
+
+#### Validating a WebHook
+
+The `webhook_params_hash` should contain the `key`, `nonce`, `action`, etc.
+sent as the payload of the webhook. A `BreweryDB::WebHook` object can validate
+the posted data by SHA1 hashing your API key with the `nonce` value and
+comparing it to the `key` value (as per the [docs][webhooks]).
+
+```ruby
+webhook.valid?(API_KEY) #=> true or false
+```
+
+#### Idiomatic wrapper over WebHook parameters
+
+The `BreweryDB::WebHook` object also provides an idiomatic Ruby wrapper over
+the parameters. For example, one of the parameters posted in a webhook is
+`attributeId`, which is the BreweryDB id for a brewery, beer, etc. This
+parameter is exposed by an instance of `BreweryDB::WebHook` via
+
+```ruby
+webhook.attribute_id #=> 'x6bRxw'
+```
+
+The full list of parameters available are:
+
+```ruby
+webhook.action #=> 'insert'
+webhook.attribute #=> 'beer'
+webhook.attribute_id #=> 'x6bRxw'
+webhook.key #=> 'some-long-key-value-here'
+webhook.nonce #=> 'some-long-nonce-value-here'
+webhook.sub_action #=> 'none'
+webhook.timestamp #=> '1350573527'
+```
+
+[webhooks]: http://developer.pintlabs.com/brewerydb/webhooks/
 
 ## Contributing
 
