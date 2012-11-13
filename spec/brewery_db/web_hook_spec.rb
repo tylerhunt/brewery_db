@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'brewery_db/web_hook'
 
 describe BreweryDB::WebHook do
   let(:action) { 'edit' }

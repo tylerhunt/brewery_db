@@ -14,6 +14,7 @@ module BreweryDB
   autoload :Request, 'brewery_db/request'
   autoload :Resource, 'brewery_db/resource'
   autoload :Response, 'brewery_db/response'
+  autoload :WebHook, 'brewery_db/web_hook'
 
   module Middleware
     autoload :ErrorHandler, 'brewery_db/middleware/error_handler'
