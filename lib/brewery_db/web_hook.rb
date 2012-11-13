@@ -2,9 +2,13 @@ require 'digest/sha1'
 
 module BreweryDB
   class WebHook
-
-    attr_reader :action, :attribute, :attribute_id, :key, :nonce, :sub_action,
-      :timestamp
+    attr_reader :action
+    attr_reader :attribute
+    attr_reader :attribute_id
+    attr_reader :key
+    attr_reader :nonce
+    attr_reader :sub_action
+    attr_reader :timestamp
 
     def initialize(args)
       @action = args[:action]
@@ -24,7 +28,5 @@ module BreweryDB
       Digest::SHA1.hexdigest("#{api_key}#{nonce}")
     end
     private :hash
-
   end
 end
-
