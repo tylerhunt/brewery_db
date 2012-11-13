@@ -1,7 +1,7 @@
 module BreweryDB
   module Resources
     class Brewery < Resource
-      attr :id
+      attr_reader :id
 
       def initialize(config, options={})
         @id = options[:id]

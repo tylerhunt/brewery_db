@@ -6,11 +6,11 @@ module BreweryDB
     USER_AGENT = "BreweryDB Ruby Gem #{BreweryDB::VERSION}"
     TIMEOUT = 60
 
-    attr :adapter, true
-    attr :api_key, true
-    attr :base_uri, true
-    attr :timeout, true
-    attr :user_agent, true
+    attr_accessor :adapter
+    attr_accessor :api_key
+    attr_accessor :base_uri
+    attr_accessor :timeout
+    attr_accessor :user_agent
 
     def initialize
       self.adapter = Faraday.default_adapter
