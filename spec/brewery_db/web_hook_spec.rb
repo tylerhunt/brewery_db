@@ -2,7 +2,6 @@ require 'spec_helper'
 require 'brewery_db/web_hook'
 
 describe BreweryDB::WebHook do
-  subject(:web_hook) { described_class.new(brewery_db_payload) }
   let(:action) { 'edit' }
   let(:attribute) { 'beer' }
   let(:attribute_id) { 'x6bRxw' }
@@ -10,9 +9,20 @@ describe BreweryDB::WebHook do
   let(:nonce) { '576a8003ab8936d99fb104401141d613' }
   let(:sub_action) { 'none' }
   let(:timestamp) { '1350573527' }
-  let(:brewery_db_payload) { { key: key, nonce: nonce, attribute: attribute,
-                               attributeId: attribute_id, action: action,
-                               subAction: sub_action, timestamp: timestamp } }
+
+  let(:brewery_db_payload) {
+    {
+      key: key,
+      nonce: nonce,
+      attribute: attribute,
+      attributeId: attribute_id,
+      action: action,
+      subAction: sub_action,
+      timestamp: timestamp
+    }
+  }
+
+  subject(:web_hook) { described_class.new(brewery_db_payload) }
 
   describe '.new' do
     it 'extracts the action' do
@@ -23,7 +33,7 @@ describe BreweryDB::WebHook do
       expect(web_hook.attribute).to eq(attribute)
     end
 
-    it 'extracts the attributeId' do
+    it 'extracts the attribute ID' do
       expect(web_hook.attribute_id).to eq(attribute_id)
     end
 
@@ -35,7 +45,7 @@ describe BreweryDB::WebHook do
       expect(web_hook.nonce).to eq(nonce)
     end
 
-    it 'extracts the subAction' do
+    it 'extracts the sub-action' do
       expect(web_hook.sub_action).to eq(sub_action)
     end
 
