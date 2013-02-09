@@ -1,8 +1,9 @@
 require 'spec_helper'
 
 describe BreweryDB::Middleware::ErrorHandler do
-  context '#on_complete' do
-    let(:error_body) { stub(error_message: 'error') }
+  describe '#on_complete' do
+    let(:error_body) { stub(error_message: error_message, status: 'failure') }
+    let(:error_message) { 'error' }
     let(:over_ratelimit) { { 'x-ratelimit-remaining' => '0' } }
 
     it 'does not raise an error when the status is 200' do
@@ -33,10 +34,14 @@ describe BreweryDB::Middleware::ErrorHandler do
       }.to raise_error(BreweryDB::NotFound, 'error')
     end
 
-    it 'raises an error with the status when the status is unknown' do
-      expect {
-        subject.on_complete(status: 500)
-      }.to raise_error(BreweryDB::Error, '500')
+    context 'the status is unknown' do
+      let(:error_message) { 'SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction' }
+
+      it 'raises an error with the status and error message' do
+        expect {
+          subject.on_complete(status: 500, body: error_body)
+        }.to raise_error(BreweryDB::Error, "Status => 500. Error message => #{error_message}")
+      end
     end
   end
 end
