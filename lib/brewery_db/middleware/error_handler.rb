@@ -4,9 +4,9 @@ module BreweryDB
       def on_complete(env)
         case env[:status]
           when 200
-          when 400 then raise BadRequest.new(env[:body].error_message)
-          when 401 then raise rate_limit_exceeded_or_unauthorized(env[:response_headers]).new(env[:body].error_message)
-          when 404 then raise NotFound.new(env[:body].error_message)
+          when 400 then fail with(BadRequest, env)
+          when 401 then fail with(rate_limit_exceeded_or_unauthorized(env[:response_headers]), env)
+          when 404 then fail with(NotFound, env)
           else fail with(Error, env)
         end
       end
@@ -18,9 +18,9 @@ module BreweryDB
       end
       private :rate_limit_exceeded_or_unauthorized
 
-      def with(error, env)
+      def with(error_class, env)
         message = "Status => #{env[:status]}. Error message => #{env[:body].error_message}"
-        error.new(message)
+        error_class.new(message)
       end
       private :with
     end
