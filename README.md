@@ -70,6 +70,9 @@ brewery_db.search.events(q: 'IPA')
 
 brewery_db.styles.all
 brewery_db.styles.find(1)
+
+brewery_db.locations.all(locality: 'San Francisco')
+
 ```
 
 ### WebHooks
