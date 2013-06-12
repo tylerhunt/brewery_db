@@ -26,6 +26,7 @@ module BreweryDB
     autoload :Brewery, 'brewery_db/resources/brewery'
     autoload :Categories, 'brewery_db/resources/categories'
     autoload :Glassware, 'brewery_db/resources/glassware'
+    autoload :Locations, 'brewery_db/resources/locations'
     autoload :Search, 'brewery_db/resources/search'
     autoload :Styles, 'brewery_db/resources/styles'
   end
