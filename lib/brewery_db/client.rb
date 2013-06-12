@@ -37,6 +37,10 @@ module BreweryDB
       @glassware ||= Resources::Glassware.new(config)
     end
 
+    def locations
+      @locations ||= Resources::Locations.new(config)
+    end
+
     def search
       @search ||= Resources::Search.new(config)
     end
