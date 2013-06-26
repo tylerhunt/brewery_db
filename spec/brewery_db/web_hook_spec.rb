@@ -6,7 +6,8 @@ describe BreweryDB::WebHook do
   let(:attribute_id) { 'x6bRxw' }
   let(:key) { 'cfae72cf7db09b7508905573c174baf1f026c051' }
   let(:nonce) { '576a8003ab8936d99fb104401141d613' }
-  let(:sub_action) { 'none' }
+  let(:sub_action) { 'brewery-insert' }
+  let(:sub_attribute_id) { 'q6vJUK' }
   let(:timestamp) { '1350573527' }
 
   let(:brewery_db_payload) {
@@ -17,6 +18,7 @@ describe BreweryDB::WebHook do
       attributeId: attribute_id,
       action: action,
       subAction: sub_action,
+      subAttributeId: sub_attribute_id,
       timestamp: timestamp
     }
   }
@@ -46,6 +48,10 @@ describe BreweryDB::WebHook do
 
     it 'extracts the sub-action' do
       expect(web_hook.sub_action).to eq(sub_action)
+    end
+
+    it 'extracts the sub-action ID' do
+      expect(web_hook.sub_attribute_id).to eq(sub_attribute_id)
     end
 
     it 'extracts the timestamp' do

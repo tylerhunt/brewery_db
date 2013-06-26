@@ -8,6 +8,7 @@ module BreweryDB
     attr_reader :key
     attr_reader :nonce
     attr_reader :sub_action
+    attr_reader :sub_attribute_id
     attr_reader :timestamp
 
     def initialize(args)
@@ -17,6 +18,7 @@ module BreweryDB
       @key = args[:key]
       @nonce = args[:nonce]
       @sub_action = args[:subAction]
+      @sub_attribute_id = args[:subAttributeId]
       @timestamp = args[:timestamp]
     end
 

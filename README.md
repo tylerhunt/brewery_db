@@ -120,11 +120,12 @@ webhook.attribute #=> 'beer'
 webhook.attribute_id #=> 'x6bRxw'
 webhook.key #=> 'some-long-key-value-here'
 webhook.nonce #=> 'some-long-nonce-value-here'
-webhook.sub_action #=> 'none'
+webhook.sub_action #=> 'brewery-insert'
+webhook.sub_attribute_id #=> 'q6vJUK'
 webhook.timestamp #=> '1350573527'
 ```
 
-[webhooks]: http://developer.pintlabs.com/brewerydb/webhooks/
+[webhooks]: http://www.brewerydb.com/developers/docs-webhooks
 
 ## Contributing
 
