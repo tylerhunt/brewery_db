@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.0 (2013-06-26)
+
   * Add support for `locations` and `locations/:id` endpoints ([dbc-apprentice][dbc-apprentice])
   * Add support for `subAttributeId` webhook parameter ([Steven Harman][stevenharman])
 
