@@ -20,10 +20,11 @@ describe BreweryDB::Resource, :resource do
       }.new(config)
     end
 
-    context 'an OK request' do
-      subject { resource.ok.first }
 
-      its(:name) { should == 'Rogue Ales' }
+    context 'an OK request' do
+      it 'returns the data' do
+        expect(resource.ok.first.name).to eq('Rogue Ales')
+      end
     end
 
     context 'a list of resources' do

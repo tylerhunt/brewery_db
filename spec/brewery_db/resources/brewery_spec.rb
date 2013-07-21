@@ -4,14 +4,14 @@ describe BreweryDB::Resources::Brewery do
   context '#beers' do
     let(:config) { double }
     let(:id) { 'KlSsWY' }
-    let(:response) { double(data: nil) }
+    let(:response) { double(data: :some_beers) }
 
-    subject { described_class.new(config, id: id) }
+    subject(:brewery) { described_class.new(config, id: id) }
 
     context 'without params' do
       it 'returns the beers for a brewery' do
-        expect(subject).to receive(:get).with('brewery/KlSsWY/beers', {}) { response }
-        subject.beers
+        brewery.stub(:get).with('brewery/KlSsWY/beers', {}) { response }
+        expect(brewery.beers).to eq(:some_beers)
       end
     end
 
@@ -19,8 +19,8 @@ describe BreweryDB::Resources::Brewery do
       let(:params) { double }
 
       it 'returns the beers for a brewery with params' do
-        expect(subject).to receive(:get).with('brewery/KlSsWY/beers', params) { response }
-        subject.beers(params)
+        brewery.stub(:get).with('brewery/KlSsWY/beers', params) { response }
+        expect(brewery.beers(params)).to eq(:some_beers)
       end
     end
   end

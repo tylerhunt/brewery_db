@@ -15,7 +15,7 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sun, 21 Jul 2013 23:15:15 GMT
+      - Sun, 21 Jul 2013 23:53:33 GMT
       server:
       - Apache/2.2.24 (Amazon)
       x-powered-by:
@@ -23,7 +23,7 @@ http_interactions:
       x-ratelimit-limit:
       - '400'
       x-ratelimit-remaining:
-      - '384'
+      - '367'
       vary:
       - Accept-Encoding
       content-length:
@@ -52,5 +52,5 @@ http_interactions:
         (outside), and the bottling line and brew kettles (inside).","website":"http:\/\/www.rogue.com\/","established":"1987","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_G7JsDk-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_G7JsDk-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_G7JsDk-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:42:07","updateDate":"2012-10-19 14:08:55"}],"status":"success"}'
     http_version: 
-  recorded_at: Sun, 21 Jul 2013 23:15:16 GMT
+  recorded_at: Sun, 21 Jul 2013 23:53:33 GMT
 recorded_with: VCR 2.4.0

@@ -18,12 +18,12 @@ describe BreweryDB::Resources::Search, :resource do
     events: 'event'
   }.each do |method, type|
     context "##{method}" do
-      subject { described_class.new(config) }
+      subject(:search) { described_class.new(config) }
 
       specify do
         results = double(:results)
-        subject.stub(:all).with(type: type, q: 'IPA') { results } 
-        expect(subject.send(method, q: 'IPA')).to eq(results)
+        search.stub(:all).with(type: type, q: 'IPA') { results } 
+        expect(search.send(method, q: 'IPA')).to eq(results)
       end
     end
   end
