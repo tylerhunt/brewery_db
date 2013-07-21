@@ -41,6 +41,11 @@ describe BreweryDB::Resource, :resource do
         exception = resource.not_found rescue $!
         expect(exception.message).to match(/could not be found/)
       end
+
+      it 'includes the response status in the error message' do
+        exception = resource.not_found rescue $!
+        expect(exception.message).to match(/404/)
+      end
     end
   end
 end
