@@ -8,31 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
+      - BreweryDB Ruby Gem 0.2.0
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 23:35:43 GMT
+      - Sun, 21 Jul 2013 23:15:18 GMT
       server:
-      - Apache/2.2.22 (Amazon)
+      - Apache/2.2.24 (Amazon)
       x-powered-by:
-      - PHP/5.3.13
+      - PHP/5.3.26
       x-ratelimit-limit:
-      - Unlimited
+      - '400'
       x-ratelimit-remaining:
-      - Unlimited
+      - '378'
+      vary:
+      - Accept-Encoding
       content-length:
-      - '1932'
+      - '731'
       connection:
       - close
       content-type:
       - application/json
     body:
-      encoding: US-ASCII
-      string: ! '{"message":"READ ONLY MODE: Request Successful","data":{"id":"Idm5Y5","name":"Founders
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":"Idm5Y5","name":"Founders
         Brewing Company","description":"Founders Brewing Company, founded by Mike
         Stevens and Dave Engbers produced its first beer in November of 1997. Built
         out of a dream and a passion for home brewing, what started out as a hobby
@@ -50,8 +52,8 @@ http_interactions:
         Founders Brewing Company has built its reputation on producing very unique
         beers. Our focus is to offer our wholesalers, retailers and consumers a product
         that stands alone on the shelf and offers a true drinking experience to our
-        friends, the consumer.","website":"http:\/\/www.foundersbrewing.com\/","established":"1997","isOrganic":"N","images":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_LxyddJ-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_LxyddJ-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_LxyddJ-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:55","updateDate":"2012-04-09 19:06:30"},"status":"success"}'
+        friends, the consumer.","website":"http:\/\/www.foundersbrewing.com\/","established":"1997","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_5gYn8V-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_5gYn8V-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Idm5Y5\/upload_5gYn8V-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:55","updateDate":"2012-09-11 19:30:21"},"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 23:35:43 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 21 Jul 2013 23:15:18 GMT
+recorded_with: VCR 2.4.0

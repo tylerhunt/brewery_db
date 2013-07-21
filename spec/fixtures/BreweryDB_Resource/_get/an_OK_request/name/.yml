@@ -8,31 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
+      - BreweryDB Ruby Gem 0.2.0
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 23:35:41 GMT
+      - Sun, 21 Jul 2013 23:15:15 GMT
       server:
-      - Apache/2.2.22 (Amazon)
+      - Apache/2.2.24 (Amazon)
       x-powered-by:
-      - PHP/5.3.13
+      - PHP/5.3.26
       x-ratelimit-limit:
-      - Unlimited
+      - '400'
       x-ratelimit-remaining:
-      - Unlimited
+      - '384'
+      vary:
+      - Accept-Encoding
       content-length:
-      - '1726'
+      - '889'
       connection:
       - close
       content-type:
       - application/json
     body:
-      encoding: US-ASCII
-      string: ! '{"currentPage":1,"numberOfPages":1,"totalResults":1,"data":[{"id":"X0l98q","name":"Rogue
+      encoding: UTF-8
+      string: '{"currentPage":1,"numberOfPages":1,"totalResults":1,"data":[{"id":"X0l98q","name":"Rogue
         Ales","description":"Rogue Ales was founded in 1988 by Jack Joyce, Rob Strasser
         and Bob Woodell, three corporate types who wanted to go into the food\/beverage
         industry. Rogue''s first brewpub was located in Ashland, Oregon and was a
@@ -47,8 +49,8 @@ http_interactions:
         check in with the bartender and the tour will commence. Please call ahead
         if you have a large group and or to verify the tour time...Brewer''s on the
         Bay phone is 541-867-3664. The view from Brewers on the Bay includes the marina
-        (outside), and the bottling line and brew kettles (inside).","website":"http:\/\/www.rogue.com\/","established":"1988","isOrganic":"N","images":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_LXdf6X-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:07","updateDate":"2012-03-21 19:06:08"}],"status":"success"}'
+        (outside), and the bottling line and brew kettles (inside).","website":"http:\/\/www.rogue.com\/","established":"1987","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_G7JsDk-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_G7JsDk-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/X0l98q\/upload_G7JsDk-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:07","updateDate":"2012-10-19 14:08:55"}],"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 23:35:41 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 21 Jul 2013 23:15:16 GMT
+recorded_with: VCR 2.4.0

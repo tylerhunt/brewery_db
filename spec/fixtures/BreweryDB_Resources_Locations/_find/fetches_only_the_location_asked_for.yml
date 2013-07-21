@@ -8,82 +8,45 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.1.0
+      - BreweryDB Ruby Gem 0.2.0
   response:
     status:
       code: 200
       message: 
     headers:
-      !binary "ZGF0ZQ==":
-      - !binary |-
-        V2VkLCAxMiBKdW4gMjAxMyAwMzoyNzoyMSBHTVQ=
-      !binary "c2VydmVy":
-      - !binary |-
-        QXBhY2hlLzIuMi4yNCAoQW1hem9uKQ==
-      !binary "eC1wb3dlcmVkLWJ5":
-      - !binary |-
-        UEhQLzUuMy4yMw==
-      !binary "eC1yYXRlbGltaXQtbGltaXQ=":
-      - !binary |-
-        NDAw
-      !binary "eC1yYXRlbGltaXQtcmVtYWluaW5n":
-      - !binary |-
-        Mzk5
-      !binary "dmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "Y29udGVudC1sZW5ndGg=":
-      - !binary |-
-        ODc3
-      !binary "Y29ubmVjdGlvbg==":
-      - !binary |-
-        Y2xvc2U=
-      !binary "Y29udGVudC10eXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbg==
+      date:
+      - Sun, 21 Jul 2013 23:15:19 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '372'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '864'
+      connection:
+      - close
+      content-type:
+      - application/json
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJtZXNzYWdlIjoiUkVBRCBPTkxZIE1PREU6IFJlcXVlc3QgU3VjY2Vzc2Z1
-        bCIsImRhdGEiOnsiaWQiOiJ3WG1URFUiLCJuYW1lIjoiTWFpbiBCcmV3ZXJ5
-        Iiwic3RyZWV0QWRkcmVzcyI6IjU2MyBTZWNvbmQgU3RyZWV0IiwibG9jYWxp
-        dHkiOiJTYW4gRnJhbmNpc2NvIiwicmVnaW9uIjoiQ2FsaWZvcm5pYSIsInBv
-        c3RhbENvZGUiOiI5NDEwNyIsInBob25lIjoiNDE1LTM2OS0wOTAwIiwiaG91
-        cnNPZk9wZXJhdGlvbiI6Ik1vbmRheSAtIFRodXJzZGF5OiAxMTozMGFtIHRv
-        IDEyOjAwYW1cclxuRnJpZGF5ICYgU2F0dXJkYXk6IDExOjMwYW0gdG8gMTow
-        MGFtXHJcblN1bmRheTogMTA6MDBhbSB0byAxMjowMGFtIiwibGF0aXR1ZGUi
-        OjM3Ljc4MjQxNzUsImxvbmdpdHVkZSI6LTEyMi4zOTI1OTIxLCJpc1ByaW1h
-        cnkiOiJZIiwiaW5QbGFubmluZyI6Ik4iLCJpc0Nsb3NlZCI6Ik4iLCJvcGVu
-        VG9QdWJsaWMiOiJZIiwibG9jYXRpb25UeXBlIjoiYnJld3B1YiIsImxvY2F0
-        aW9uVHlwZURpc3BsYXkiOiJCcmV3cHViIiwiY291bnRyeUlzb0NvZGUiOiJV
-        UyIsInllYXJPcGVuZWQiOiIyMDAwIiwic3RhdHVzIjoidmVyaWZpZWQiLCJz
-        dGF0dXNEaXNwbGF5IjoiVmVyaWZpZWQiLCJjcmVhdGVEYXRlIjoiMjAxMi0w
-        MS0wMyAwMjo0MTo0MyIsInVwZGF0ZURhdGUiOiIyMDEyLTA5LTI5IDEzOjAw
-        OjAxIiwiYnJld2VyeUlkIjoiRWRSY0lzIiwiYnJld2VyeSI6eyJpZCI6IkVk
-        UmNJcyIsIm5hbWUiOiIyMXN0IEFtZW5kbWVudCBCcmV3ZXJ5IiwiZGVzY3Jp
-        cHRpb24iOiJUaGUgMjFzdCBBbWVuZG1lbnQgQnJld2VyeSBvZmZlcnMgYSB2
-        YXJpZXR5IG9mIGF3YXJkIHdpbm5pbmcgaG91c2UgbWFkZSBicmV3cyBhbmQg
-        QW1lcmljYW4gZ3JpbGxlZCBjdWlzaW5lIGluIGEgY29tZm9ydGFibGUgbG9m
-        dCBsaWtlIHNldHRpbmcuIEpvaW4gdXMgYmVmb3JlIGFuZCBhZnRlciBHaWFu
-        dHMgYmFzZWJhbGwgZ2FtZXMgaW4gb3VyIG91dGRvb3IgYmVlciBnYXJkZW4u
-        IEEgZ3JlYXQgbG9jYXRpb24gZm9yIGZ1bmN0aW9ucyBhbmQgcGFydGllcyBp
-        biBvdXIgc2VtaS1wcml2YXRlIEJyZXdlcnMgTG9mdC4gU2VlIHlvdSBzb29u
-        IGF0IHRoZSAyMUEhIiwid2Vic2l0ZSI6Imh0dHA6XC9cL3d3dy4yMXN0LWFt
-        ZW5kbWVudC5jb21cLyIsImVzdGFibGlzaGVkIjoiMjAwMCIsImlzT3JnYW5p
-        YyI6Ik4iLCJpbWFnZXMiOnsiaWNvbiI6Imh0dHBzOlwvXC9zMy5hbWF6b25h
-        d3MuY29tXC9icmV3ZXJ5ZGJhcGlcL2JyZXdlcnlcL0VkUmNJc1wvdXBsb2Fk
-        X1ltZ1N2My1pY29uLnBuZyIsIm1lZGl1bSI6Imh0dHBzOlwvXC9zMy5hbWF6
-        b25hd3MuY29tXC9icmV3ZXJ5ZGJhcGlcL2JyZXdlcnlcL0VkUmNJc1wvdXBs
-        b2FkX1ltZ1N2My1tZWRpdW0ucG5nIiwibGFyZ2UiOiJodHRwczpcL1wvczMu
-        YW1hem9uYXdzLmNvbVwvYnJld2VyeWRiYXBpXC9icmV3ZXJ5XC9FZFJjSXNc
-        L3VwbG9hZF9ZbWdTdjMtbGFyZ2UucG5nIn0sInN0YXR1cyI6InZlcmlmaWVk
-        Iiwic3RhdHVzRGlzcGxheSI6IlZlcmlmaWVkIiwiY3JlYXRlRGF0ZSI6IjIw
-        MTItMDEtMDMgMDI6NDE6NDMiLCJ1cGRhdGVEYXRlIjoiMjAxMi0xMC0yMiAx
-        NzoxMjo1OSJ9LCJjb3VudHJ5Ijp7Imlzb0NvZGUiOiJVUyIsIm5hbWUiOiJV
-        TklURUQgU1RBVEVTIiwiZGlzcGxheU5hbWUiOiJVbml0ZWQgU3RhdGVzIiwi
-        aXNvVGhyZWUiOiJVU0EiLCJudW1iZXJDb2RlIjo4NDAsInVybFRpdGxlIjoi
-        dW5pdGVkLXN0YXRlcyIsImNyZWF0ZURhdGUiOiIyMDEyLTAxLTAzIDAyOjQx
-        OjMzIn19LCJzdGF0dXMiOiJzdWNjZXNzIn0=
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":"wXmTDU","name":"Main
+        Brewery","streetAddress":"563 Second Street","locality":"San Francisco","region":"California","postalCode":"94107","phone":"415-369-0900","hoursOfOperation":"Monday
+        - Thursday: 11:30am to 12:00am\r\nFriday & Saturday: 11:30am to 1:00am\r\nSunday:
+        10:00am to 12:00am","latitude":37.7824175,"longitude":-122.3925921,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"brewpub","locationTypeDisplay":"Brewpub","countryIsoCode":"US","yearOpened":"2000","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:43","updateDate":"2012-09-29 13:00:01","breweryId":"EdRcIs","brewery":{"id":"EdRcIs","name":"21st
+        Amendment Brewery","description":"The 21st Amendment Brewery offers a variety
+        of award winning house made brews and American grilled cuisine in a comfortable
+        loft like setting. Join us before and after Giants baseball games in our outdoor
+        beer garden. A great location for functions and parties in our semi-private
+        Brewers Loft. See you soon at the 21A!","website":"http:\/\/www.21st-amendment.com\/","established":"2000","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/EdRcIs\/upload_YmgSv3-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/EdRcIs\/upload_YmgSv3-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/EdRcIs\/upload_YmgSv3-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:43","updateDate":"2012-10-22 17:12:59"},"country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},"status":"success"}'
     http_version: 
-  recorded_at: Wed, 12 Jun 2013 03:27:24 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Sun, 21 Jul 2013 23:15:19 GMT
+recorded_with: VCR 2.4.0

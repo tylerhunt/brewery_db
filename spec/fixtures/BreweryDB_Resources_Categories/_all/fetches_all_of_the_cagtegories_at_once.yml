@@ -8,31 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
+      - BreweryDB Ruby Gem 0.2.0
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 23:35:43 GMT
+      - Sun, 21 Jul 2013 23:15:18 GMT
       server:
-      - Apache/2.2.22 (Amazon)
+      - Apache/2.2.24 (Amazon)
       x-powered-by:
-      - PHP/5.3.13
+      - PHP/5.3.26
       x-ratelimit-limit:
-      - Unlimited
+      - '400'
       x-ratelimit-remaining:
-      - Unlimited
+      - '377'
+      vary:
+      - Accept-Encoding
       content-length:
-      - '973'
+      - '309'
       connection:
       - close
       content-type:
       - application/json
     body:
-      encoding: US-ASCII
-      string: ! '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"name":"British
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"name":"British
         Origin Ales","createDate":"2012-03-21 20:06:45"},{"id":2,"name":"Irish Origin
         Ales","createDate":"2012-03-21 20:06:45"},{"id":3,"name":"North American Origin
         Ales","createDate":"2012-03-21 20:06:45"},{"id":4,"name":"German Origin Ales","createDate":"2012-03-21
@@ -45,5 +47,5 @@ http_interactions:
         Beer","createDate":"2012-03-21 20:06:46"},{"id":12,"name":"Mead, Cider, &
         Perry","createDate":"2012-03-21 20:06:46"}],"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 23:35:43 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 21 Jul 2013 23:15:18 GMT
+recorded_with: VCR 2.4.0

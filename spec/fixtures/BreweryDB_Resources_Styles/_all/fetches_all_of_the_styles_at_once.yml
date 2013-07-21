@@ -8,31 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
+      - BreweryDB Ruby Gem 0.2.0
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 23:35:44 GMT
+      - Sun, 21 Jul 2013 23:15:20 GMT
       server:
-      - Apache/2.2.22 (Amazon)
+      - Apache/2.2.24 (Amazon)
       x-powered-by:
-      - PHP/5.3.13
+      - PHP/5.3.26
       x-ratelimit-limit:
-      - Unlimited
+      - '400'
       x-ratelimit-remaining:
-      - Unlimited
+      - '370'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '30149'
       connection:
       - close
-      transfer-encoding:
-      - chunked
       content-type:
       - application/json
     body:
-      encoding: US-ASCII
-      string: ! '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"categoryId":1,"category":{"id":1,"name":"British
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"categoryId":1,"category":{"id":1,"name":"British
         Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Classic English-Style
         Pale Ale","description":"Classic English pale ales are golden to copper colored
         and display earthy, herbal English-variety hop character. Note that \"earthy,
@@ -918,19 +920,20 @@ http_interactions:
         of smoothness. Spices (such as orange and lemon peel, as well as coriander)
         may be added in barely perceptible amounts, but this is not common. Diacetyl
         should not be perceived. Competition directors may choose to break out subcategories
-        of Traditional and Modern.","ibuMin":"5","ibuMax":"15","abvMin":"0.5","abvMax":"3.5","srmMin":"5","srmMax":"50","ogMin":"1.008","fgMin":"1004","fgMax":"1.034","createDate":"2012-03-21
-        20:06:46"},{"id":70,"categoryId":5,"category":{"id":5,"name":"Belgian And
-        French Origin Ales","createDate":"2012-03-21 20:06:46"},"name":"Other Belgian-Style
-        Ales","description":"Recognizing the uniqueness and traditions of several
-        other styles of Belgian Ales, the beers entered in this category will be assessed
-        on the merits that they do not fit existing style guidelines and information
-        that the brewer provides explaining the history and tradition of the style.
-        Balance of character is a key component when assessing these beers. Barrel
-        or wood-aged entries in competitions may be directed to other categories by
-        competition director. In competitions the brewer must provide the historical
-        or regional tradition of the style, or his interpretation of the style, in
-        order to be assessed properly by the judges.","createDate":"2012-03-21 20:06:46"},{"id":71,"categoryId":5,"category":{"id":5,"name":"Belgian
-        And French Origin Ales","createDate":"2012-03-21 20:06:46"},"name":"French-Style
+        of Traditional and Modern.","ibuMin":"5","ibuMax":"15","abvMin":"0.5","abvMax":"3.5","srmMin":"5","srmMax":"50","ogMin":"1.008","fgMin":"1.004","fgMax":"1.034","createDate":"2012-03-21
+        20:06:46","updateDate":"2013-02-18 02:18:18"},{"id":70,"categoryId":5,"category":{"id":5,"name":"Belgian
+        And French Origin Ales","createDate":"2012-03-21 20:06:46"},"name":"Other
+        Belgian-Style Ales","description":"Recognizing the uniqueness and traditions
+        of several other styles of Belgian Ales, the beers entered in this category
+        will be assessed on the merits that they do not fit existing style guidelines
+        and information that the brewer provides explaining the history and tradition
+        of the style. Balance of character is a key component when assessing these
+        beers. Barrel or wood-aged entries in competitions may be directed to other
+        categories by competition director. In competitions the brewer must provide
+        the historical or regional tradition of the style, or his interpretation of
+        the style, in order to be assessed properly by the judges.","createDate":"2012-03-21
+        20:06:46"},{"id":71,"categoryId":5,"category":{"id":5,"name":"Belgian And
+        French Origin Ales","createDate":"2012-03-21 20:06:46"},"name":"French-Style
         Bi\u00e8re de Garde","description":"Beers in this category are golden to deep
         copper or light brown in color. They are light to medium in body. This style
         of beer is characterized by a toasted malt aroma, slight malt sweetness in
@@ -1773,15 +1776,14 @@ http_interactions:
         alcohol. Complexity, harmony, and balance of sensory elements are most desirable,
         with no inconsistencies in color, aroma, flavor or aftertaste. The proper
         balance of sweetness, acidity, alcohol and honey character is the essential
-        final measure of any mead.","simpleUrl":"dry-mead","createDate":"2012-03-21
-        20:06:46"},{"id":141,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
-        & Perry","createDate":"2012-03-21 20:06:46"},"name":"Semi-Sweet Mead","description":"Similar
+        final measure of any mead.","createDate":"2012-03-21 20:06:46"},{"id":141,"categoryId":12,"category":{"id":12,"name":"Mead,
+        Cider, & Perry","createDate":"2012-03-21 20:06:46"},"name":"Semi-Sweet Mead","description":"Similar
         in balance, body, finish and flavor intensity to a semisweet (or medium-dry)
         white wine, with a pleasant mixture of honey character, light sweetness, soft
         fruity esters, and clean alcohol. Complexity, harmony, and balance of sensory
         elements are most desirable, with no inconsistencies in color, aroma, flavor
         or aftertaste. The proper balance of sweetness, acidity, alcohol and honey
-        character is the essential final measure of any mead.","simpleUrl":"semi-sweet-mead","createDate":"2012-03-21
+        character is the essential final measure of any mead.","createDate":"2012-03-21
         20:06:46"},{"id":142,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Sweet Mead","description":"Similar
         in balance, body, finish and flavor intensity to a well-made dessert wine
@@ -1789,78 +1791,73 @@ http_interactions:
         sweetness, soft fruity esters, and clean alcohol. Complexity, harmony, and
         balance of sensory elements are most desirable, with no inconsistencies in
         color, aroma, flavor or aftertaste. The proper balance of sweetness, acidity,
-        alcohol and honey character is the essential final measure of any mead.","simpleUrl":"sweet-mead","createDate":"2012-03-21
+        alcohol and honey character is the essential final measure of any mead.","createDate":"2012-03-21
         20:06:46"},{"id":143,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Cyser (Apple Melomel)","description":"In
         well-made examples of the style, the fruit is both distinctive and well-incorporated
         into the honey-sweet-acid-tannin-alcohol balance of the mead. Some of the
         best strong examples have the taste and aroma of an aged Calvados (apple brandy
         from northern France), while subtle, dry versions can taste similar to many
-        fine white wines.","simpleUrl":"cyser-apple-melomel","createDate":"2012-03-21
-        20:06:46"},{"id":144,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
-        & Perry","createDate":"2012-03-21 20:06:46"},"name":"Pyment (Grape Melomel)","description":"In
-        well-made examples of the style, the grape is both distinctively vinous and
-        well-incorporated into the honey-sweet-acid-tannin-alcohol balance of the
-        mead. White and red versions can be quite different, and the overall impression
-        should be characteristic of the type of grapes used and suggestive of a similar
-        variety wine.","simpleUrl":"pyment-grape-melomel","createDate":"2012-03-21
-        20:06:46"},{"id":145,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
-        & Perry","createDate":"2012-03-21 20:06:46"},"name":"Other Fruit Melomel","description":"In
+        fine white wines.","createDate":"2012-03-21 20:06:46"},{"id":144,"categoryId":12,"category":{"id":12,"name":"Mead,
+        Cider, & Perry","createDate":"2012-03-21 20:06:46"},"name":"Pyment (Grape
+        Melomel)","description":"In well-made examples of the style, the grape is
+        both distinctively vinous and well-incorporated into the honey-sweet-acid-tannin-alcohol
+        balance of the mead. White and red versions can be quite different, and the
+        overall impression should be characteristic of the type of grapes used and
+        suggestive of a similar variety wine.","createDate":"2012-03-21 20:06:46"},{"id":145,"categoryId":12,"category":{"id":12,"name":"Mead,
+        Cider, & Perry","createDate":"2012-03-21 20:06:46"},"name":"Other Fruit Melomel","description":"In
         well-made examples of the style, the fruit is both distinctive and well-incorporated
         into the honey-sweet-acid-tannin-alcohol balance of the mead. Different types
         of fruit can result in widely different characteristics; allow for a variation
-        in the final product.","simpleUrl":"other-fruit-melomel","createDate":"2012-03-21
-        20:06:46"},{"id":146,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
-        & Perry","createDate":"2012-03-21 20:06:46"},"name":"Metheglin","description":"In
+        in the final product.","createDate":"2012-03-21 20:06:46"},{"id":146,"categoryId":12,"category":{"id":12,"name":"Mead,
+        Cider, & Perry","createDate":"2012-03-21 20:06:46"},"name":"Metheglin","description":"In
         well-made examples of the style, the herbs\/spices are both distinctive and
         well-incorporated into the honey-sweet-acid-tannin-alcohol balance of the
         mead. Different types of herbs\/spices can result in widely different characteristics;
-        allow for a variation in the final product.","simpleUrl":"metheglin","createDate":"2012-03-21
-        20:06:46"},{"id":147,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
-        & Perry","createDate":"2012-03-21 20:06:46"},"name":"Braggot","description":"A
+        allow for a variation in the final product.","createDate":"2012-03-21 20:06:46"},{"id":147,"categoryId":12,"category":{"id":12,"name":"Mead,
+        Cider, & Perry","createDate":"2012-03-21 20:06:46"},"name":"Braggot","description":"A
         harmonious blend of mead and beer, with the distinctive characteristics of
         both. A wide range of results are possible, depending on the base style of
         beer, variety of honey and overall sweetness and strength. Beer flavors tend
-        to somewhat mask typical honey flavors found in other meads.","simpleUrl":"braggot","createDate":"2012-03-21
+        to somewhat mask typical honey flavors found in other meads.","createDate":"2012-03-21
         20:06:46"},{"id":148,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Open Category Mead","description":"This
         mead should exhibit the character of all of the ingredients in varying degrees,
         and should show a good blending or balance between the various flavor elements.
         Whatever ingredients are included, the result should be identifiable as a
-        honey-based fermented beverage.","simpleUrl":"open-category-mead","createDate":"2012-03-21
-        20:06:46"},{"id":149,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
-        & Perry","createDate":"2012-03-21 20:06:46"},"name":"Common Cider","description":"Variable,
+        honey-based fermented beverage.","createDate":"2012-03-21 20:06:46"},{"id":149,"categoryId":12,"category":{"id":12,"name":"Mead,
+        Cider, & Perry","createDate":"2012-03-21 20:06:46"},"name":"Common Cider","description":"Variable,
         but should be a medium, refreshing drink. Sweet ciders must not be cloying.
         Dry ciders must not be too austere. An ideal cider serves well as a \u201csession\u201d
-        drink, and suitably accompanies a wide variety of food.","simpleUrl":"common-cider","abvMin":"5","abvMax":"8","ogMin":"1.045","ogMax":"1.065","fgMin":"1","fgMax":"1.02","createDate":"2012-03-21
+        drink, and suitably accompanies a wide variety of food.","abvMin":"5","abvMax":"8","ogMin":"1.045","ogMax":"1.065","fgMin":"1","fgMax":"1.02","createDate":"2012-03-21
         20:06:46"},{"id":150,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"English Cider","description":"Generally
-        dry, full-bodied, austere.","simpleUrl":"english-cider","abvMin":"6","abvMax":"9","ogMin":"1.05","ogMax":"1.075","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
+        dry, full-bodied, austere.","abvMin":"6","abvMax":"9","ogMin":"1.05","ogMax":"1.075","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
         20:06:46"},{"id":151,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"French Cider","description":"Medium
-        to sweet, full-bodied, rich.","simpleUrl":"french-cider","abvMin":"3","abvMax":"6","ogMin":"1.05","ogMax":"1.065","fgMin":"1.01","fgMax":"1.02","createDate":"2012-03-21
+        to sweet, full-bodied, rich.","abvMin":"3","abvMax":"6","ogMin":"1.05","ogMax":"1.065","fgMin":"1.01","fgMax":"1.02","createDate":"2012-03-21
         20:06:46"},{"id":152,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Common Perry","description":"Mild.
         Medium to medium-sweet. Still to lightly sparkling. Only very slight acetification
-        is acceptable. Mousiness, ropy\/oily characters are serious faults.","simpleUrl":"common-perry","abvMin":"5","abvMax":"7","ogMin":"1.05","ogMax":"1.06","fgMin":"1","fgMax":"1.02","createDate":"2012-03-21
+        is acceptable. Mousiness, ropy\/oily characters are serious faults.","abvMin":"5","abvMax":"7","ogMin":"1.05","ogMax":"1.06","fgMin":"1","fgMax":"1.02","createDate":"2012-03-21
         20:06:46"},{"id":153,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Traditional Perry","description":"Tannic.
         Medium to medium-sweet. Still to lightly sparkling. Only very slight acetification
-        is acceptable. Mousiness, ropy\/oily characters are serious faults.","simpleUrl":"traditional-perry","abvMin":"5","abvMax":"9","ogMin":"1.05","ogMax":"1.07","fgMin":"1","fgMax":"1.02","createDate":"2012-03-21
+        is acceptable. Mousiness, ropy\/oily characters are serious faults.","abvMin":"5","abvMax":"9","ogMin":"1.05","ogMax":"1.07","fgMin":"1","fgMax":"1.02","createDate":"2012-03-21
         20:06:46"},{"id":154,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"New England Cider","description":"Substantial
-        body and character.","simpleUrl":"new-england-cider","abvMin":"7","abvMax":"13","ogMin":"1.06","ogMax":"1.1","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
+        body and character.","abvMin":"7","abvMax":"13","ogMin":"1.06","ogMax":"1.1","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
         20:06:46"},{"id":155,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Fruit Cider","description":"Like
         a dry wine with complex flavors. The apple character must marry with the added
-        fruit so that neither dominates the other.","simpleUrl":"fruit-cider","abvMin":"5","abvMax":"9","ogMin":"1.045","ogMax":"1.07","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
+        fruit so that neither dominates the other.","abvMin":"5","abvMax":"9","ogMin":"1.045","ogMax":"1.07","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
         20:06:46"},{"id":156,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Apple Wine","description":"Like
-        a dry white wine, balanced, and with low astringency and bitterness.","simpleUrl":"apple-wine","abvMin":"9","abvMax":"12","ogMin":"1.07","ogMax":"1.1","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
+        a dry white wine, balanced, and with low astringency and bitterness.","abvMin":"9","abvMax":"12","ogMin":"1.07","ogMax":"1.1","fgMin":"0.995","fgMax":"1.01","createDate":"2012-03-21
         20:06:46"},{"id":157,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Other Specialty Cider
-        or Perry","simpleUrl":"other-specialty-cider-or-perry","abvMin":"5","abvMax":"12","ogMin":"1.045","ogMax":"1.1","fgMin":"0.995","fgMax":"1.02","createDate":"2012-03-21
+        or Perry","abvMin":"5","abvMax":"12","ogMin":"1.045","ogMax":"1.1","fgMin":"0.995","fgMax":"1.02","createDate":"2012-03-21
         20:06:46"}],"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 23:35:45 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 21 Jul 2013 23:15:21 GMT
+recorded_with: VCR 2.4.0

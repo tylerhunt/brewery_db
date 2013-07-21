@@ -8,33 +8,35 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
+      - BreweryDB Ruby Gem 0.2.0
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 23:35:42 GMT
+      - Sun, 21 Jul 2013 23:15:18 GMT
       server:
-      - Apache/2.2.22 (Amazon)
+      - Apache/2.2.24 (Amazon)
       x-powered-by:
-      - PHP/5.3.13
+      - PHP/5.3.26
       x-ratelimit-limit:
-      - Unlimited
+      - '400'
       x-ratelimit-remaining:
-      - Unlimited
+      - '380'
+      vary:
+      - Accept-Encoding
       content-length:
-      - '2371'
+      - '1156'
       connection:
       - close
       content-type:
       - application/json
     body:
-      encoding: US-ASCII
-      string: ! '{"message":"READ ONLY MODE: Request Successful","data":{"id":"99Uj1n","name":"Curmudgeon\u2019s
-        Better Half","abv":"11.9","glasswareId":5,"styleId":13,"isOrganic":"N","labels":{"icon":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-icon.png","medium":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-medium.png","large":"http:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-02-21
-        11:27:00","updateDate":"2012-03-22 13:05:50","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":"99Uj1n","name":"Curmudgeon\u2019s
+        Better Half","abv":"11.9","glasswareId":5,"styleId":13,"isOrganic":"N","labels":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/99Uj1n\/upload_vcInAc-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-02-21
+        11:27:00","updateDate":"2012-09-08 17:12:04","glass":{"id":5,"name":"Pint","createDate":"2012-01-03
         02:41:33"},"style":{"id":13,"categoryId":1,"category":{"id":1,"name":"British
         Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Old Ale","description":"Dark
         amber to brown in color, old ales are medium to full bodied with a malty sweetness.
@@ -57,5 +59,5 @@ http_interactions:
         organizers may choose to distinguish these types of old ale from modern versions.)","ibuMin":"30","ibuMax":"65","abvMin":"6","abvMax":"9","srmMin":"12","srmMax":"30","ogMin":"1.058","fgMin":"1.014","fgMax":"1.03","createDate":"2012-03-21
         20:06:45"}},"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 23:35:43 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 21 Jul 2013 23:15:18 GMT
+recorded_with: VCR 2.4.0

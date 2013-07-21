@@ -8,31 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.0.1
+      - BreweryDB Ruby Gem 0.2.0
   response:
     status:
       code: 200
       message: 
     headers:
       date:
-      - Sat, 11 Aug 2012 23:35:45 GMT
+      - Sun, 21 Jul 2013 23:15:22 GMT
       server:
-      - Apache/2.2.22 (Amazon)
+      - Apache/2.2.24 (Amazon)
       x-powered-by:
-      - PHP/5.3.13
+      - PHP/5.3.26
       x-ratelimit-limit:
-      - Unlimited
+      - '400'
       x-ratelimit-remaining:
-      - Unlimited
+      - '369'
+      vary:
+      - Accept-Encoding
       content-length:
-      - '1102'
+      - '603'
       connection:
       - close
       content-type:
       - application/json
     body:
-      encoding: US-ASCII
-      string: ! '{"message":"READ ONLY MODE: Request Successful","data":{"id":1,"categoryId":1,"category":{"id":1,"name":"British
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":1,"categoryId":1,"category":{"id":1,"name":"British
         Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Classic English-Style
         Pale Ale","description":"Classic English pale ales are golden to copper colored
         and display earthy, herbal English-variety hop character. Note that \"earthy,
@@ -46,5 +48,5 @@ http_interactions:
         when at very low levels.","ibuMin":"20","ibuMax":"40","abvMin":"4.5","abvMax":"5.5","srmMin":"5","srmMax":"5","ogMin":"1.04","fgMin":"1.008","fgMax":"1.016","createDate":"2012-03-21
         20:06:45"},"status":"success"}'
     http_version: 
-  recorded_at: Sat, 11 Aug 2012 23:35:45 GMT
-recorded_with: VCR 2.2.2
+  recorded_at: Sun, 21 Jul 2013 23:15:22 GMT
+recorded_with: VCR 2.4.0

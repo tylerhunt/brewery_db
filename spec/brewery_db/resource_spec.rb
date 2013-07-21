@@ -28,7 +28,7 @@ describe BreweryDB::Resource, :resource do
 
     context 'a list of resources' do
       it 'can be enumerated' do
-        resource.list.inject(0) { |tally, r| tally + 1 }.should eq 55
+        resource.list.inject(0) { |tally, r| tally + 1 }.should eq 66
       end
     end
 
@@ -37,9 +37,9 @@ describe BreweryDB::Resource, :resource do
         expect { resource.not_found }.to raise_error(BreweryDB::NotFound)
       end
 
-      it 'sets the exception message to the error message in the response' do
+      it 'includes the response message in the error message' do
         exception = resource.not_found rescue $!
-        exception.message.should match /not\s+found/
+        expect(exception.message).to match(/could not be found/)
       end
     end
   end
