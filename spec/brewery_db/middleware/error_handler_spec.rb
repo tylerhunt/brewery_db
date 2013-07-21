@@ -4,7 +4,7 @@ describe BreweryDB::Middleware::ErrorHandler do
   subject(:handler) { described_class.new }
 
   describe '#on_complete' do
-    let(:error_body) { stub(error_message: error_message, status: 'failure') }
+    let(:error_body) { double(error_message: error_message, status: 'failure') }
     let(:error_message) { 'error' }
     let(:over_ratelimit) { { 'x-ratelimit-remaining' => '0' } }
 

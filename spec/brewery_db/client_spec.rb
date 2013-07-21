@@ -7,7 +7,7 @@ describe BreweryDB::Client do
     end
 
     it 'memoizes the return value' do
-      BreweryDB::Config.should_receive(:new).once.and_return(stub)
+      BreweryDB::Config.should_receive(:new).once.and_return(double)
       2.times { subject.config }
     end
   end

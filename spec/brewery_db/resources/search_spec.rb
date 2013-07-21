@@ -21,7 +21,7 @@ describe BreweryDB::Resources::Search, :resource do
       subject { described_class.new(config) }
 
       specify do
-        results = mock(:results)
+        results = double(:results)
         subject.should_receive(:all).with(type: type, q: 'IPA').and_return(results)
         subject.send(method, q: 'IPA').should == results
       end

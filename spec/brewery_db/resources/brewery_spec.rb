@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe BreweryDB::Resources::Brewery do
   context '#beers' do
-    let(:config) { stub }
+    let(:config) { double }
     let(:id) { 'KlSsWY' }
-    let(:response) { stub(data: nil) }
+    let(:response) { double(data: nil) }
 
     subject { described_class.new(config, id: id) }
 
@@ -16,7 +16,7 @@ describe BreweryDB::Resources::Brewery do
     end
 
     context 'with params' do
-      let(:params) { stub }
+      let(:params) { double }
 
       it 'returns the beers for a brewery with params' do
         subject.should_receive(:get).with('brewery/KlSsWY/beers', params) { response }
