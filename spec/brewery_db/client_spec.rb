@@ -3,11 +3,11 @@ require 'spec_helper'
 describe BreweryDB::Client do
   context '#config' do
     it 'returns a configuration instance' do
-      subject.config.should be_a(BreweryDB::Config)
+      expect(subject.config).to be_a(BreweryDB::Config)
     end
 
     it 'memoizes the return value' do
-      BreweryDB::Config.should_receive(:new).once.and_return(double)
+      expect(BreweryDB::Config).to receive(:new).once.and_return(double)
       2.times { subject.config }
     end
   end
@@ -52,5 +52,5 @@ describe BreweryDB::Client do
   its(:search) { should be_a(BreweryDB::Resources::Search) }
   its(:styles) { should be_a(BreweryDB::Resources::Styles) }
 
-  it { subject.brewery('KlSsWY').should be_a(BreweryDB::Resources::Brewery) }
+  it { expect(subject.brewery('KlSsWY')).to be_a(BreweryDB::Resources::Brewery) }
 end

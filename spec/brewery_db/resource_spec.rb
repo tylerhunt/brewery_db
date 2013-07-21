@@ -28,7 +28,7 @@ describe BreweryDB::Resource, :resource do
 
     context 'a list of resources' do
       it 'can be enumerated' do
-        resource.list.inject(0) { |tally, r| tally + 1 }.should eq 66
+        expect(resource.list.inject(0) { |tally, r| tally + 1 }).to eq(66)
       end
     end
 

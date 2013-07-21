@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Glassware, :resource do
     let(:response) { described_class.new(config).all }
 
     it 'fetches all of the glassware at once' do
-      response.length.should eq 12
+      expect(response.length).to eq(12)
     end
   end
 
@@ -15,7 +15,7 @@ describe BreweryDB::Resources::Glassware, :resource do
     let(:response) { described_class.new(config).find(1) }
 
     it 'fetches only the glassware asked for' do
-      response.id.should eq 1
+      expect(response.id).to eq(1)
     end
   end
 end

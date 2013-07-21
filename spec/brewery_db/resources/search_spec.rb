@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Search, :resource do
     let(:response) { described_class.new(config).all(q: 'IPA') }
 
     it 'fetches all of the search results at once' do
-      response.count.should eq 6260
+      expect(response.count).to eq(6260)
     end
   end
 
@@ -22,8 +22,8 @@ describe BreweryDB::Resources::Search, :resource do
 
       specify do
         results = double(:results)
-        subject.should_receive(:all).with(type: type, q: 'IPA').and_return(results)
-        subject.send(method, q: 'IPA').should == results
+        subject.stub(:all).with(type: type, q: 'IPA') { results } 
+        expect(subject.send(method, q: 'IPA')).to eq(results)
       end
     end
   end

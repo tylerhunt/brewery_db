@@ -10,7 +10,7 @@ describe BreweryDB::Resources::Brewery do
 
     context 'without params' do
       it 'returns the beers for a brewery' do
-        subject.should_receive(:get).with('brewery/KlSsWY/beers', {}) { response }
+        expect(subject).to receive(:get).with('brewery/KlSsWY/beers', {}) { response }
         subject.beers
       end
     end
@@ -19,7 +19,7 @@ describe BreweryDB::Resources::Brewery do
       let(:params) { double }
 
       it 'returns the beers for a brewery with params' do
-        subject.should_receive(:get).with('brewery/KlSsWY/beers', params) { response }
+        expect(subject).to receive(:get).with('brewery/KlSsWY/beers', params) { response }
         subject.beers(params)
       end
     end

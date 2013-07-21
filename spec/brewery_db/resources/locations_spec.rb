@@ -5,7 +5,7 @@ describe BreweryDB::Resources::Locations, :resource do
     let(:response) { described_class.new(config).all(locality: 'San Francisco') }
 
     it 'fetches all of the breweries at once' do
-      response.count.should eq 19
+      expect(response.count).to eq(19)
     end
   end
 
@@ -13,7 +13,7 @@ describe BreweryDB::Resources::Locations, :resource do
     let(:response) { described_class.new(config).find('wXmTDU') }
 
     it 'fetches only the location asked for' do
-      response.id.should == 'wXmTDU'
+      expect(response.id).to eq('wXmTDU')
     end
   end
 end

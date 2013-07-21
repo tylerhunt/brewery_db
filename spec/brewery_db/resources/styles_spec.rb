@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Styles, :resource do
     let(:response) { described_class.new(config).all }
 
     it 'fetches all of the styles at once' do
-      response.length.should eq 157
+      expect(response.length).to eq(157)
     end
   end
 
@@ -15,7 +15,7 @@ describe BreweryDB::Resources::Styles, :resource do
     let(:response) { described_class.new(config).find(1) }
 
     it 'fetches only the style asked for' do
-      response.id.should == 1
+      expect(response.id).to eq(1)
     end
   end
 end
