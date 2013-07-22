@@ -60,7 +60,7 @@ describe BreweryDB::WebHook do
   end
 
   describe '#valid?' do
-    let(:api_key) { ENV['BREWERY_DB_API_KEY'] }
+    let(:api_key) { '1c394d8947e4a5873920d2333c9e9364' }
 
     it 'is valid for a legit key and nonce' do
       expect(web_hook).to be_valid(api_key)
