@@ -15,7 +15,7 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sun, 21 Jul 2013 23:23:01 GMT
+      - Mon, 22 Jul 2013 00:05:46 GMT
       server:
       - Apache/2.2.24 (Amazon)
       x-powered-by:
@@ -32,5 +32,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"errorMessage":"The endpoint you requested could not be found","status":"failure"}'
     http_version: 
-  recorded_at: Sun, 21 Jul 2013 23:23:01 GMT
+  recorded_at: Mon, 22 Jul 2013 00:05:46 GMT
 recorded_with: VCR 2.4.0

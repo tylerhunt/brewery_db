@@ -15,15 +15,15 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sun, 21 Jul 2013 23:15:18 GMT
+      - Mon, 22 Jul 2013 00:05:47 GMT
       server:
       - Apache/2.2.24 (Amazon)
       x-powered-by:
       - PHP/5.3.26
       x-ratelimit-limit:
-      - '400'
+      - Unlimited
       x-ratelimit-remaining:
-      - '380'
+      - Unlimited
       vary:
       - Accept-Encoding
       content-length:
@@ -59,5 +59,5 @@ http_interactions:
         organizers may choose to distinguish these types of old ale from modern versions.)","ibuMin":"30","ibuMax":"65","abvMin":"6","abvMax":"9","srmMin":"12","srmMax":"30","ogMin":"1.058","fgMin":"1.014","fgMax":"1.03","createDate":"2012-03-21
         20:06:45"}},"status":"success"}'
     http_version: 
-  recorded_at: Sun, 21 Jul 2013 23:15:18 GMT
+  recorded_at: Mon, 22 Jul 2013 00:05:48 GMT
 recorded_with: VCR 2.4.0

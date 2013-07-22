@@ -15,15 +15,15 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sun, 21 Jul 2013 23:15:16 GMT
+      - Mon, 22 Jul 2013 00:05:46 GMT
       server:
       - Apache/2.2.24 (Amazon)
       x-powered-by:
       - PHP/5.3.26
       x-ratelimit-limit:
-      - '400'
+      - Unlimited
       x-ratelimit-remaining:
-      - '381'
+      - Unlimited
       vary:
       - Accept-Encoding
       content-length:
@@ -885,5 +885,5 @@ http_interactions:
         entered in the fruit beer category.","ibuMax":"100","abvMin":"2.5","abvMax":"25","srmMin":"1","srmMax":"100","ogMin":"1.03","fgMin":"1.006","fgMax":"1.03","createDate":"2012-03-21
         20:06:46"}}],"status":"success"}'
     http_version: 
-  recorded_at: Sun, 21 Jul 2013 23:15:17 GMT
+  recorded_at: Mon, 22 Jul 2013 00:05:47 GMT
 recorded_with: VCR 2.4.0

@@ -15,15 +15,15 @@ http_interactions:
       message: 
     headers:
       date:
-      - Sun, 21 Jul 2013 23:15:22 GMT
+      - Mon, 22 Jul 2013 00:05:52 GMT
       server:
       - Apache/2.2.24 (Amazon)
       x-powered-by:
       - PHP/5.3.26
       x-ratelimit-limit:
-      - '400'
+      - Unlimited
       x-ratelimit-remaining:
-      - '369'
+      - Unlimited
       vary:
       - Accept-Encoding
       content-length:
@@ -48,5 +48,5 @@ http_interactions:
         when at very low levels.","ibuMin":"20","ibuMax":"40","abvMin":"4.5","abvMax":"5.5","srmMin":"5","srmMax":"5","ogMin":"1.04","fgMin":"1.008","fgMax":"1.016","createDate":"2012-03-21
         20:06:45"},"status":"success"}'
     http_version: 
-  recorded_at: Sun, 21 Jul 2013 23:15:22 GMT
+  recorded_at: Mon, 22 Jul 2013 00:05:52 GMT
 recorded_with: VCR 2.4.0
