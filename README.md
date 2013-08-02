@@ -84,6 +84,7 @@ brewery_db.styles.find(1)
 
 brewery_db.locations.all(locality: 'San Francisco')
 
+brewery_db.fermentables.all(country: 'Brazil')
 ```
 
 ### WebHooks
