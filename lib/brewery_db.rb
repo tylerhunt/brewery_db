@@ -25,9 +25,12 @@ module BreweryDB
     autoload :Breweries, 'brewery_db/resources/breweries'
     autoload :Brewery, 'brewery_db/resources/brewery'
     autoload :Categories, 'brewery_db/resources/categories'
+    autoload :Fermentables, 'brewery_db/resources/fermentables'
     autoload :Glassware, 'brewery_db/resources/glassware'
+    autoload :Hops, 'brewery_db/resources/hops'
     autoload :Locations, 'brewery_db/resources/locations'
     autoload :Search, 'brewery_db/resources/search'
     autoload :Styles, 'brewery_db/resources/styles'
+    autoload :Yeasts, 'brewery_db/resources/yeasts'
   end
 end

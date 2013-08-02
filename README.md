@@ -70,8 +70,14 @@ brewery_db.brewery('d1zSa7').beers
 brewery_db.categories.all
 brewery_db.categories.find(1)
 
+brewery_db.fermentables.all(country: 'Brazil')
+brewery_db.fermentables.find(1924)
+
 brewery_db.glassware.all
 brewery_db.glassware.find(1)
+
+brewery_db.hops.all
+brewery_db.hops.find(1)
 
 brewery_db.search.all(q: 'IPA')
 brewery_db.search.beers(q: 'IPA')
@@ -83,6 +89,9 @@ brewery_db.styles.all
 brewery_db.styles.find(1)
 
 brewery_db.locations.all(locality: 'San Francisco')
+
+brewery_db.yeasts.all
+brewery_db.yeasts.find(1836)
 
 ```
 
