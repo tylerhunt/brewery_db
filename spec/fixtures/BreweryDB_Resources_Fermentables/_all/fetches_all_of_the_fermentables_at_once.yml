@@ -1,0 +1,189 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/fermentables?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.0
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 02 Aug 2013 01:31:26 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '387'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '2726'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"currentPage":1,"numberOfPages":5,"totalResults":220,"data":[{"id":165,"name":"Abbey
+        Malt","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:41"},{"id":166,"name":"Acidulated Malt","description":"Lowers mash,
+        wort, and beer pH. Contains 1-2% lactic acid. Enhances enzymatic activity
+        in mash and improves extract efficiency. Lightens color in pale brews. Enhances
+        stability and extends shelf life of finished beer. Promotes well-rounded,
+        complex beer flavor.","countryOfOrigin":"DE","srmId":3,"srmPrecise":3,"moistureContent":7,"dryYield":58.4,"potential":1.027,"protein":12,"maxInBatch":10,"requiresMashing":"Y","characteristics":[{"id":9,"name":"Head","description":"Helps
+        the head retention of the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:41","updateDate":"2013-06-24
+        16:10:14","srm":{"id":3,"name":"3","hex":"FFCA5A"},"country":{"isoCode":"DE","name":"GERMANY","displayName":"Germany","isoThree":"DEU","numberCode":276,"createDate":"2012-01-03
+        02:41:33"}},{"id":181,"name":"Amber Malt","description":"Roasted specialty
+        malt used in some English browns, milds and old ales to add color and a biscuit
+        taste. Intense flavour","countryOfOrigin":"GB","srmId":22,"srmPrecise":22,"moistureContent":2.8,"coarseFineDifference":1.5,"diastaticPower":20,"dryYield":75,"potential":1.035,"protein":10,"maxInBatch":20,"requiresMashing":"Y","characteristics":[{"id":2,"name":"Biscuit","description":"Imparts
+        a biscuity quality upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:41","updateDate":"2013-06-24
+        16:10:14","srm":{"id":22,"name":"22","hex":"8E2900"},"country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":209,"name":"Aromatic Malt","description":"Aromatic malt
+        is a kilned barley malt used to give beer a strong, aggressive malt aroma
+        and rich color.","countryOfOrigin":"BE","srmId":26,"srmPrecise":26,"dryYield":77.9,"potential":1.036,"maxInBatch":100,"requiresMashing":"Y","characteristics":[{"id":1,"name":"Aromatic","description":"Imparts
+        an aromatic quality upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":10,"name":"Malty","description":"Imparts
+        a malty flavor upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:41","updateDate":"2013-06-24
+        16:10:14","srm":{"id":26,"name":"26","hex":"771900"},"country":{"isoCode":"BE","name":"BELGIUM","displayName":"Belgium","isoThree":"BEL","numberCode":56,"createDate":"2012-01-03
+        02:41:33"}},{"id":1958,"name":"Asheburne Mild Malt","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:59"},{"id":1987,"name":"Bamberg
+        Smoked Malt","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:08:00"},{"id":184,"name":"Barley - Black","description":"Unmalted barley
+        roasted at high temperature to create a dry, coffee-like flavor. Imparts the
+        sharp, acrid flavor characteristic of dry stouts.  Gives dryness to a stout
+        or porter -- much more so than regular Roasted Barley.","countryOfOrigin":"US","srmId":41,"srmPrecise":500,"moistureContent":5,"coarseFineDifference":1.5,"dryYield":55,"potential":1.025,"protein":13.2,"maxInBatch":10,"requiresMashing":"N","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:41","updateDate":"2013-06-24
+        16:10:14","srm":{"id":41,"name":"Over 40","hex":"000000"},"country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":534,"name":"Barley - Flaked","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:50"},{"id":214,"name":"Barley
+        - Hulls","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:42"},{"id":302,"name":"Barley - Lightly Roasted","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:43"},{"id":1947,"name":"Barley
+        - Malted","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:58"},{"id":217,"name":"Barley - Raw","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:42"},{"id":753,"name":"Barley
+        - Roasted","description":"Unmalted and roasted at high temperature to create
+        a burnt, grainy, coffee-like flavor. Imparts a red to deep brown color to
+        beer, and very strong roasted flavor. Use 2-4% in Brown ales to add a nutty
+        flavor, or 3-10% in Porters and Stouts for coffee flavor.","countryOfOrigin":"US","srmId":41,"srmPrecise":300,"moistureContent":5,"coarseFineDifference":1.5,"dryYield":55,"potential":1.025,"protein":13.2,"maxInBatch":10,"requiresMashing":"N","characteristics":[{"id":4,"name":"Burnt","description":"Imparts
+        a burnt tasting quality upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":7,"name":"Coffee","description":"Imparts
+        a coffee flavor upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":8,"name":"Grainy","description":"Imparts
+        a grainty taste upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":11,"name":"Nutty","description":"Imparts
+        a nutty flavor upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":12,"name":"Roasted","description":"Imparts
+        a roasted flavor upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:54","updateDate":"2013-06-24
+        16:10:14","srm":{"id":41,"name":"Over 40","hex":"000000"},"country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":1930,"name":"Barley - Roasted\/De-husked","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:57"},{"id":218,"name":"Barley
+        - Torrefied","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:42"},{"id":1925,"name":"Beechwood Smoked","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:57"},{"id":246,"name":"Biscuit
+        Malt","description":"Another Belgian malt, this gives a biscuit like flavor
+        and aroma. Use for English ales, brown ales and porters. Can be used as a
+        substitute for toasted malt.","countryOfOrigin":"BE","srmId":23,"srmPrecise":23,"moistureContent":4,"coarseFineDifference":1.5,"diastaticPower":6,"dryYield":79,"potential":1.036,"protein":10.5,"maxInBatch":10,"requiresMashing":"Y","characteristics":[{"id":1,"name":"Aromatic","description":"Imparts
+        an aromatic quality upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":2,"name":"Biscuit","description":"Imparts
+        a biscuity quality upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:42","updateDate":"2013-06-24
+        16:10:14","srm":{"id":23,"name":"23","hex":"882300"},"country":{"isoCode":"BE","name":"BELGIUM","displayName":"Belgium","isoThree":"BEL","numberCode":56,"createDate":"2012-01-03
+        02:41:33"}},{"id":247,"name":"Black Malt","characteristics":[{"id":7,"name":"Coffee","description":"Imparts
+        a coffee flavor upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:42"},{"id":501,"name":"Black
+        Malt - Debittered","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:49"},{"id":270,"name":"Black Malt - Organic","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:42"},{"id":1955,"name":"Black
+        Patent","description":"Black patent malt, sometimes called simply black malt,
+        is the darkest of the common roasted malts. It gives beer dark color and flavor
+        with a very different character than roasted barley.","srmId":41,"srmPrecise":500,"dryYield":54.1,"potential":1.025,"maxInBatch":10,"requiresMashing":"N","characteristics":[{"id":4,"name":"Burnt","description":"Imparts
+        a burnt tasting quality upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":12,"name":"Roasted","description":"Imparts
+        a roasted flavor upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:59","updateDate":"2013-06-24
+        16:10:14","srm":{"id":41,"name":"Over 40","hex":"000000"}},{"id":186,"name":"Black
+        Roast","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:41"},{"id":254,"name":"Black Treacle","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:42"},{"id":271,"name":"Blackprinz
+        Malt","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:42"},{"id":1974,"name":"Blue Agave Nectar","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:59"},{"id":1973,"name":"Blue
+        Corn","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:59"},{"id":272,"name":"Bonlander","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:43"},{"id":338,"name":"Brown
+        Malt","description":"Imparts a dry, biscuit flavor. Used in nut brown ales,
+        porters and some Belgian ales.","countryOfOrigin":"GB","srmId":65,"srmPrecise":65,"moistureContent":4,"coarseFineDifference":1.5,"dryYield":70,"potential":1.032,"maxInBatch":10,"requiresMashing":"Y","characteristics":[{"id":2,"name":"Biscuit","description":"Imparts
+        a biscuity quality upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:44","updateDate":"2013-06-24
+        16:10:14","country":{"isoCode":"GB","name":"UNITED KINGDOM","displayName":"United
+        Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03 02:41:33"}},{"id":339,"name":"Brown
+        Sugar","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:44"},{"id":1994,"name":"Brumalt","description":"Dark German malt developed
+        to add malt flavor of Alt, Marzen and Oktoberfest beers. Helps create authentic
+        maltiness without having to do a decoction mash. Rarely available for homebrewers.","countryOfOrigin":"DE","srmId":23,"srmPrecise":23,"moistureContent":4,"coarseFineDifference":1.5,"dryYield":71.7,"potential":1.033,"protein":7,"maxInBatch":10,"requiresMashing":"Y","characteristics":[{"id":10,"name":"Malty","description":"Imparts
+        a malty flavor upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:10:14","srm":{"id":23,"name":"23","hex":"882300"},"country":{"isoCode":"DE","name":"GERMANY","displayName":"Germany","isoThree":"DEU","numberCode":276,"createDate":"2012-01-03
+        02:41:33"}},{"id":757,"name":"Buckwheat - Roasted","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:54"},{"id":1956,"name":"Canada
+        2-Row Silo","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:59"},{"id":1983,"name":"Cara Malt","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:08:00"},{"id":366,"name":"CaraAmber","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:44"},{"id":367,"name":"CaraAroma","description":"Very
+        dark crystal malt - similar to a crystal 120 or Caramunich 120 malt. Adds
+        strong caramel flavor, red color, and malty aroma.","countryOfOrigin":"DE","srmId":41,"srmPrecise":130,"moistureContent":4,"coarseFineDifference":1.5,"dryYield":75,"potential":1.035,"protein":11.7,"maxInBatch":15,"requiresMashing":"N","characteristics":[{"id":3,"name":"Body","description":"Increases
+        the body of the beer.","createDate":"2013-06-24 16:07:26"},{"id":5,"name":"Caramel","description":"Imparts
+        a caramel quality upon the beer.","createDate":"2013-06-24 16:07:26"},{"id":9,"name":"Head","description":"Helps
+        the head retention of the beer.","createDate":"2013-06-24 16:07:26"},{"id":10,"name":"Malty","description":"Imparts
+        a malty flavor upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:44","updateDate":"2013-06-24
+        16:10:14","srm":{"id":41,"name":"Over 40","hex":"000000"},"country":{"isoCode":"DE","name":"GERMANY","displayName":"Germany","isoThree":"DEU","numberCode":276,"createDate":"2012-01-03
+        02:41:33"}},{"id":368,"name":"CaraBelge","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:44"},{"id":369,"name":"CaraBohemian","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:44"},{"id":273,"name":"CaraBrown","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:43"},{"id":370,"name":"Carafa
+        I","description":"Used to intensify aroma and color in dark Munich beers and
+        stouts.","countryOfOrigin":"DE","srmId":41,"srmPrecise":337,"moistureContent":4,"coarseFineDifference":1.5,"dryYield":70,"potential":1.032,"protein":11.7,"maxInBatch":5,"requiresMashing":"N","characteristics":[{"id":1,"name":"Aromatic","description":"Imparts
+        an aromatic quality upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:44","updateDate":"2013-06-24
+        16:10:14","srm":{"id":41,"name":"Over 40","hex":"000000"},"country":{"isoCode":"DE","name":"GERMANY","displayName":"Germany","isoThree":"DEU","numberCode":276,"createDate":"2012-01-03
+        02:41:33"}},{"id":371,"name":"Carafa II","description":"Used to intensify
+        aroma and color in dark Munich beers and stouts.","countryOfOrigin":"DE","srmId":41,"srmPrecise":412,"moistureContent":4,"coarseFineDifference":1.5,"dryYield":70,"potential":1.032,"protein":11.7,"maxInBatch":5,"requiresMashing":"N","characteristics":[{"id":1,"name":"Aromatic","description":"Imparts
+        an aromatic quality upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:45","updateDate":"2013-06-24
+        16:10:14","srm":{"id":41,"name":"Over 40","hex":"000000"},"country":{"isoCode":"DE","name":"GERMANY","displayName":"Germany","isoThree":"DEU","numberCode":276,"createDate":"2012-01-03
+        02:41:33"}},{"id":372,"name":"Carafa III","description":"Used to intensify
+        aroma and color in dark Munich beers and stouts.","countryOfOrigin":"DE","srmId":41,"srmPrecise":525,"moistureContent":4,"coarseFineDifference":1.5,"dryYield":70,"potential":1.032,"protein":11.7,"maxInBatch":5,"requiresMashing":"N","characteristics":[{"id":1,"name":"Aromatic","description":"Imparts
+        an aromatic quality upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:45","updateDate":"2013-06-24
+        16:10:14","srm":{"id":41,"name":"Over 40","hex":"000000"},"country":{"isoCode":"DE","name":"GERMANY","displayName":"Germany","isoThree":"DEU","numberCode":276,"createDate":"2012-01-03
+        02:41:33"}},{"id":1988,"name":"Carafa Special","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:08:00"},{"id":376,"name":"CaraFoam","description":"Significantly
+        increases foam\/head retention and body of the beer.","srmId":1,"srmPrecise":1,"characteristics":[{"id":3,"name":"Body","description":"Increases
+        the body of the beer.","createDate":"2013-06-24 16:07:26"},{"id":9,"name":"Head","description":"Helps
+        the head retention of the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:45","updateDate":"2013-06-24
+        16:10:14","srm":{"id":1,"name":"1","hex":"FFE699"}},{"id":828,"name":"CaraHell","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:56"},{"id":378,"name":"Caramel\/Crystal
+        Malt","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:45"},{"id":564,"name":"Caramel\/Crystal Malt - Dark","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:51"},{"id":777,"name":"Caramel\/Crystal
+        Malt - Extra Dark","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:54"},{"id":364,"name":"Caramel\/Crystal Malt - Gold","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:44"},{"id":780,"name":"Caramel\/Crystal
+        Malt - Heritage","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
+        16:07:54"},{"id":566,"name":"Caramel\/Crystal Malt - Light","category":"malt","categoryDisplay":"Malts,
+        Grains, & Fermentables","createDate":"2013-06-24 16:07:51"}],"status":"success"}'
+    http_version: 
+  recorded_at: Fri, 02 Aug 2013 01:31:27 GMT
+recorded_with: VCR 2.5.0

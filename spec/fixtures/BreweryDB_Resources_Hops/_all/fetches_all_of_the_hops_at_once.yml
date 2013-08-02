@@ -1,0 +1,248 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/hops?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.0
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 02 Aug 2013 01:49:44 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '385'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '5328'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"currentPage":1,"numberOfPages":4,"totalResults":165,"data":[{"id":1976,"name":"#06300","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:41"},{"id":1,"name":"Admiral","description":"Bred at Wye as a replacement
+        for Target and released in 1998, Admiral is a high-alpha variety considered
+        to have a more pleasing, less harsh bitterness.","countryOfOrigin":"GB","alphaAcidMin":13,"betaAcidMin":4.8,"betaAcidMax":6.1,"humuleneMin":7,"humuleneMax":26,"caryophylleneMin":6,"caryophylleneMax":8,"cohumuloneMin":37,"cohumuloneMax":45,"myrceneMin":39,"myrceneMax":48,"farneseneMin":1.8,"farneseneMax":2.2,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":2,"name":"Aged \/ Debittered Hops (Lambic)","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26"},{"id":3,"name":"Ahtanum","description":"An open-pollinated aroma
+        variety developed in Washington, Ahtanum is used for its distinctive, somewhat
+        Cascade-like aroma and for moderate bittering.","countryOfOrigin":"US","alphaAcidMin":5.7,"betaAcidMin":5,"betaAcidMax":6.5,"humuleneMin":16,"humuleneMax":20,"caryophylleneMin":9,"caryophylleneMax":12,"cohumuloneMin":30,"cohumuloneMax":35,"myrceneMin":50,"myrceneMax":55,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":1946,"name":"Alchemy","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:40"},{"id":4,"name":"Amarillo","description":"Amarillo is a privately
+        grown and registered hop variety; it was introduced recently but has been
+        extremely popular with brewers seeking a Cascade-type hop with a distinctive
+        American character. It is considered by many to be ideal for dry hopping,
+        but also gives a clean bitterness due to low cohumulone content. The flavor
+        has citrus and floral notes, and something like a Cascade character, but with
+        more bitterness. Amarillo is a registered trademark of Virgil Gamache Farms,
+        Inc., where the hop was originally developed.","countryOfOrigin":"US","alphaAcidMin":8,"betaAcidMin":6,"betaAcidMax":7,"humuleneMin":9,"humuleneMax":11,"caryophylleneMin":2,"caryophylleneMax":4,"cohumuloneMin":21,"cohumuloneMax":24,"myrceneMin":68,"myrceneMax":70,"farneseneMin":2,"farneseneMax":4,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":5,"name":"Amarillo Gold","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26"},{"id":6,"name":"Apollo","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26"},{"id":7,"name":"Aquila","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26"},{"id":1957,"name":"Aramis","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:40"},{"id":8,"name":"Argentine Cascade","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26"},{"id":1960,"name":"Athanum","description":"\r\n","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:40"},{"id":9,"name":"Aurora","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27"},{"id":10,"name":"Auscha (Saaz)","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27"},{"id":12,"name":"Banner","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27"},{"id":13,"name":"Boadicea","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27"},{"id":14,"name":"Bobek","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27"},{"id":15,"name":"Bor","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27"},{"id":1982,"name":"Bramling","description":"An older variety of
+        Golding, Bramling is rarely if ever available to home brewers under its own
+        name. The original was selected from the field of a farmer named Musgrave
+        Hilton who had a farm in the English town of Bramling. Bramling was once one
+        of the most popular aroma hops in England, but gradually faded as higher-yielding
+        varieties became available. Until recently, it was still grown in small amounts
+        in England and in British Columbia, Canada, where it may be one of the cultivars
+        sold as British Columbia Golding. Bramling also lent its name to one of its
+        progeny, the rare but still available Bramling Cross cultivar.","countryOfOrigin":"GB","alphaAcidMin":5,"alphaAcidMax":5,"betaAcidMin":2.3,"betaAcidMax":3.2,"humuleneMin":31,"humuleneMax":31,"caryophylleneMin":16,"caryophylleneMax":16,"cohumuloneMin":33,"cohumuloneMax":35,"myrceneMin":36,"myrceneMax":36,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:10:37","country":{"isoCode":"GB","name":"UNITED KINGDOM","displayName":"United
+        Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03 02:41:33"}},{"id":16,"name":"Bramling
+        Cross","description":"Started in 1927 from a cross between a wild Manitoban
+        male hop and a female Bramling hop, a variety of Golding. Used as a general-purpose
+        bittering hop, lately this easy-growing hop has been used to provide a unique
+        fruity, blackcurrant and lemon notes in traditional ales, especially in Christmas
+        ales and cask-conditioned ales. Dry hopping can produce a very interesting
+        effect. Bramling Cross is an under-appreciated hop.","countryOfOrigin":"GB","alphaAcidMin":5,"betaAcidMin":2.2,"betaAcidMax":3.2,"humuleneMin":28,"humuleneMax":33,"caryophylleneMin":14,"caryophylleneMax":18,"cohumuloneMin":26,"cohumuloneMax":34,"myrceneMin":35,"myrceneMax":40,"farneseneMin":0.2,"farneseneMax":0.2,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":17,"name":"Bravo","description":"Bred in 2000 and released
+        commercially for the first time in 2006, Bravo is a proprietary hop variety
+        sold by S.S. Steiner. Bravo is a diploid high-alpha hop derived from a female
+        Zeus and a male derived in part from Nugget. It is reported by Steiner to
+        have excellent resistance to powdery mildew. Bravo has been used in Rogue''s
+        20007 release of their Glen Ale, and was also the featured hop used in every
+        beer in the 2007 Single Hop Festival hosted by Drake''s Brewing Company.","countryOfOrigin":"US","alphaAcidMin":14,"betaAcidMin":3,"betaAcidMax":4,"humuleneMin":18,"humuleneMax":20,"caryophylleneMin":10,"caryophylleneMax":12,"cohumuloneMin":29,"cohumuloneMax":34,"myrceneMin":25,"myrceneMax":50,"farneseneMin":0.5,"farneseneMax":0.5,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":18,"name":"Brewer''s Gold","description":"A seedling selected
+        at Wye in 1919 from a wild Manitoban hop and released in 1934, Brewer''s Gold
+        was one an early bittering hop, grown in England and in the United States
+        (see Brewer''s Gold (American)), until the release of new high-alpha varieties
+        in the 1970s and 1980s. It is also an ancestor of most modern high-alpha hops.
+        Some Brewer''s Gold is still grown in England, but there is no longer significant
+        production in the United States. Brewer''s Gold was never used as an aroma
+        hop in England because of its intense flavors, but has been used experimentally
+        as a dry hop by some American craft brewers.","countryOfOrigin":"GB","alphaAcidMin":5.5,"betaAcidMin":2.5,"betaAcidMax":3.5,"humuleneMin":29,"humuleneMax":31,"caryophylleneMin":7,"caryophylleneMax":7.5,"cohumuloneMin":40,"cohumuloneMax":48,"myrceneMin":37,"myrceneMax":40,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":1983,"name":"Brewer''s Gold (American)","description":"A
+        seedling selected at Wye in 1919 from a wild Manitoban hop and released in
+        1934, Brewer''s Gold was one an early bittering hop, grown in England (see
+        Brewer''s Gold) and in the United States, until the release of new high-alpha
+        varieties in the 1970s and 1980s. It is also an ancestor of most modern high-alpha
+        hops. Some Brewer''s Gold is still grown in England, but there is no longer
+        significant production in the United States. Brewer''s Gold was never used
+        as an aroma hop in England because of its intense flavors, but has been used
+        experimentally as a dry hop by some American craft brewers.","countryOfOrigin":"US","alphaAcidMin":8,"alphaAcidMax":8,"betaAcidMin":3.5,"betaAcidMax":4.5,"humuleneMin":29,"humuleneMax":31,"caryophylleneMin":7,"caryophylleneMax":7.5,"cohumuloneMin":40,"cohumuloneMax":48,"myrceneMin":37,"myrceneMax":40,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:10:37","country":{"isoCode":"US","name":"UNITED STATES","displayName":"United
+        States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03 02:41:33"}},{"id":19,"name":"Bullion","description":"One
+        of the earliest bittering hops, Bullion was created in 1919 by an open pollinated
+        cross between an unidentified English male and an wild Manitoba hop. Unlike
+        modern bittering hops, Bullion has a strong, distinctive character which is
+        perceptible, especially in additions later than 60 minutes. The aroma and
+        flavor characteristics are strong, pungent and sometimes harsh or resiny,
+        with elements of spiciness and a fruit character that has been described as
+        black currant or raspberry. Bullion has become less popular with the wide
+        availability of new bittering hops with better storage characteristics and
+        a more neutral bittering character, but its unique flavor makes it worth considering
+        for home and craft brewers.","countryOfOrigin":"GB","alphaAcidMin":6,"betaAcidMin":3.2,"betaAcidMax":6,"humuleneMin":12,"humuleneMax":30,"caryophylleneMin":9,"caryophylleneMax":11,"cohumuloneMin":35,"cohumuloneMax":40,"myrceneMin":45,"myrceneMax":65,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:27","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":20,"name":"California Ivanhoe","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28"},{"id":21,"name":"Calypso","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28"},{"id":22,"name":"Cascade","description":"Cascade was created in
+        the United States as an open-pollinated cross between Fuggle and Serebrianker.
+        Its instantly recognizable grapefruit, floral aroma is characteristic of many
+        American ales. Cascade is also one of the easiest hop varieties to grow; it
+        can grow well under less than ideal conditions or in short growing seasons,
+        and unlike most varieties, if started from a good rhizome a Cascade can produce
+        a good crop even in its first growing season.","countryOfOrigin":"US","alphaAcidMin":5.5,"betaAcidMin":4.5,"betaAcidMax":7,"humuleneMin":13,"humuleneMax":13,"caryophylleneMin":4.5,"caryophylleneMax":4.5,"cohumuloneMin":33,"cohumuloneMax":40,"myrceneMin":45,"myrceneMax":60,"farneseneMin":6,"farneseneMax":6,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":23,"name":"Celeia","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28"},{"id":24,"name":"Centennial","description":"Sometimes called a
+        super Cascade, Centennial was bred in 1974 but not released until 1990. It
+        has a floral, citrus aroma and a clean spicy flavor; its heritage includes
+        Brewer''s Gold, Fuggle, and East Kent Golding. Popular among craft brewers,
+        Centennial lends its distinctive character to, among others, Sierra Nevada
+        Celebration Ale and Sierra Nevada Bigfoot Barleywine.","countryOfOrigin":"US","alphaAcidMin":6,"betaAcidMin":3.5,"betaAcidMax":4.5,"humuleneMin":10,"humuleneMax":18,"caryophylleneMin":4,"caryophylleneMax":8,"cohumuloneMin":28,"cohumuloneMax":30,"myrceneMin":45,"myrceneMax":60,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":25,"name":"Challenger","description":"A granddaughter of
+        Northern Brewer developed at Wye, Challenger is a classic true dual purpose
+        hop and one of the most popular English hops of the 1980s and 1990s. It has
+        a clean bittering from relatively high alpha acids and good aroma characteristics.
+        It has a fine fruity aroma with spicy overtones. Like many other varieties
+        developed at Wye, this hop is sometimes known as Wye Challenger, especially
+        in older references. This simply indicates that it was developed at Wye, not
+        necessarily anything about where it was grown.","countryOfOrigin":"GB","alphaAcidMin":6.5,"betaAcidMin":4,"betaAcidMax":4.5,"humuleneMin":25,"humuleneMax":32,"caryophylleneMin":8,"caryophylleneMax":10,"cohumuloneMin":20,"cohumuloneMax":30,"myrceneMin":30,"myrceneMax":42,"farneseneMin":1,"farneseneMax":3,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":26,"name":"Chinook","description":"Released in 1985, Chinook
+        is a strong bittering hop derived from Petham Golding, one of the English
+        Golding hops. It is used in stouts and porters for its heavy spicy aroma.","countryOfOrigin":"US","alphaAcidMin":12,"betaAcidMin":3,"betaAcidMax":4,"humuleneMin":18,"humuleneMax":25,"caryophylleneMin":9,"caryophylleneMax":11,"cohumuloneMin":29,"cohumuloneMax":35,"myrceneMin":35,"myrceneMax":40,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":27,"name":"Citra","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28"},{"id":28,"name":"Cluster","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28"},{"id":1970,"name":"Cobb","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:40"},{"id":29,"name":"Columbia","description":"Columbia was generally
+        considered similar, but inferior, to its sister selection, Willamette, and
+        is now no longer commercially grown in the United States.","countryOfOrigin":"US","alphaAcidMin":7,"betaAcidMin":3,"betaAcidMax":5.5,"humuleneMin":14,"humuleneMax":20,"caryophylleneMin":6,"caryophylleneMax":10,"cohumuloneMin":36,"cohumuloneMax":43,"myrceneMin":31,"myrceneMax":68,"farneseneMin":10,"farneseneMax":30,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:28","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":30,"name":"Columbus","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29"},{"id":31,"name":"Columbus (Tomahawk)","description":"This high
+        alpha acid bittering hop was developed from the Centennial hop by the HopUnion
+        breeding program. It is a low-cohumulone hop which gives a clean but long-lasting
+        bitterness to beer. It can also be used as a dry hop in larger American beers,
+        such as Pliny the Elder by Russian River Brewing. Tomahawk is a registered
+        trademark of Yakima Chief Ranches, LLC, under which they sell a hop believed
+        to be identical to Columbus.","countryOfOrigin":"US","alphaAcidMin":14,"betaAcidMin":4.5,"betaAcidMax":5.8,"humuleneMin":15,"humuleneMax":25,"caryophylleneMin":7,"caryophylleneMax":12,"cohumuloneMin":29,"cohumuloneMax":35,"myrceneMin":25,"myrceneMax":45,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":32,"name":"Comet","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29"},{"id":33,"name":"Crystal","description":"A triploid released in
+        1993 as part of a program attempting to develop an American substitute for
+        Hallertauer Mittelfr?h, Crystal was derived primarily from Hallertauer with
+        contributions from Cascade, Brewer''s Gold and Early Green. Also known as
+        CJF-Hallertau. Sister hops from the same program include Liberty, Mount Hood,
+        and Ultra. Crystal has a very mild character, clean and slightly spicy, and
+        is generally used in lagers and pilsners.","countryOfOrigin":"US","alphaAcidMin":3.5,"betaAcidMin":4.5,"betaAcidMax":6.7,"humuleneMin":18,"humuleneMax":24,"caryophylleneMin":4,"caryophylleneMax":8,"cohumuloneMin":20,"cohumuloneMax":26,"myrceneMin":40,"myrceneMax":65,"farneseneMin":0.1,"farneseneMax":0.1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":1942,"name":"CTZ","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:40"},{"id":35,"name":"Delta","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29"},{"id":36,"name":"East Kent Golding","description":"The premier
+        English aroma hop, an English landrace with a lineage going back to 1790.
+        Ideal for bittering and finishing any kind of English ales, and also works
+        well in lagers due to its delicate, slightly spicy aroma.","countryOfOrigin":"GB","alphaAcidMin":4,"betaAcidMin":1.9,"betaAcidMax":2.8,"humuleneMin":38,"humuleneMax":45,"caryophylleneMin":12,"caryophylleneMax":16,"cohumuloneMin":28,"cohumuloneMax":32,"myrceneMin":25,"myrceneMax":25,"farneseneMin":0.4,"farneseneMax":0.4,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":37,"name":"El Dorado","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29"},{"id":38,"name":"Eroica","description":"Eroica is a high-alpha
+        hop derived from Brewer''s Gold, selected in Idaho in 1968. This was a very
+        popular general purpose bittering hop with a clean bittering profile, but
+        has gradually been replaced by Galena and is now generally no longer commercially
+        available.","countryOfOrigin":"US","alphaAcidMin":11,"betaAcidMin":4,"betaAcidMax":5.5,"humuleneMax":1,"caryophylleneMin":7,"caryophylleneMax":12,"cohumuloneMin":36,"cohumuloneMax":42,"myrceneMin":55,"myrceneMax":65,"farneseneMax":1,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":39,"name":"Experimental 946","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:29"},{"id":40,"name":"Falconer''s Flight","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:30"},{"id":41,"name":"First Gold","description":"Derived from Whitbread
+        Goldings Variety and a dwarf male, First Gold was one of the first Hedgerow
+        hop varieties available to the home and commercial brewers. It combines good
+        bittering properties with a woody, minty flavor and aroma that has been compared
+        to WGV and to Fuggle. Considerable areas of First Gold are being planned and
+        there is significant interest already from Britain''s traditional ale brewers
+        for bittering and for late and dry hopping.","countryOfOrigin":"GB","alphaAcidMin":4,"betaAcidMin":2.3,"betaAcidMax":4.1,"humuleneMin":20,"humuleneMax":24,"caryophylleneMin":6,"caryophylleneMax":7,"cohumuloneMin":31,"cohumuloneMax":34,"myrceneMin":24,"myrceneMax":28,"farneseneMin":2,"farneseneMax":4,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:30","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},{"id":42,"name":"French Strisserspalt","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:30"},{"id":1984,"name":"Fuggle (American)","description":"Fuggle cultivar
+        hops grown in the United States are not considered as desirable as the true
+        English Fuggles, but they probably retain more of their character than most
+        other transplanted landrace varieties. American growers developed Willamette
+        as a similar but hardier and better-producing hops for American use. Fuggles
+        and related varieties have been used around the world under various names,
+        from Styrian Goldings in Slovenia to Tettnanger in the United States.","countryOfOrigin":"US","alphaAcidMin":4,"alphaAcidMax":4,"betaAcidMin":1.5,"betaAcidMax":2,"humuleneMin":20,"humuleneMax":26,"caryophylleneMin":6,"caryophylleneMax":10,"cohumuloneMin":25,"cohumuloneMax":32,"myrceneMin":40,"myrceneMax":60,"farneseneMin":4,"farneseneMax":5,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:10:37","country":{"isoCode":"US","name":"UNITED STATES","displayName":"United
+        States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03 02:41:33"}},{"id":1985,"name":"Fuggle
+        (English)","description":"Fuggle is an English hop cultivar. Sometimes considered
+        an English landrace, Fuggles were seedling selected in England in 1875. The
+        true Fuggle (English) is sometimes considered a noble hop, and while it is
+        sometimes considered inferior to Golding hop varieties such as the famous
+        East Kent Goldings, Fuggle''s flavor and mild, spicy, woody aroma are deeply
+        characteristic of English beer. Fuggle has suffered from wilts of late, and
+        has largely been replaced by newer varieties. Fuggle provides a full British
+        style palate and can be used alone, but is often blended with East Kent Goldings.
+        Fuggles and related varieties have been used around the world under various
+        names, from Styrian Goldings in Slovenia to Tettnanger in the United States.","countryOfOrigin":"GB","alphaAcidMin":3,"alphaAcidMax":3,"betaAcidMin":2,"betaAcidMax":3.1,"humuleneMin":30,"humuleneMax":39,"caryophylleneMin":9,"caryophylleneMax":14,"cohumuloneMin":25,"cohumuloneMax":30,"myrceneMin":24,"myrceneMax":28,"farneseneMin":5,"farneseneMax":7,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:10:37","country":{"isoCode":"GB","name":"UNITED KINGDOM","displayName":"United
+        Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03 02:41:33"}}],"status":"success"}'
+    http_version: 
+  recorded_at: Fri, 02 Aug 2013 01:49:45 GMT
+recorded_with: VCR 2.5.0
