@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.2.1 (2013-08-02)
+
+  * Add support for `hops`, `hops/:id`, `fermentables`, `fermentables/:id`,
+    `yeasts`, and `yeasts:id` endpoints ([Jésus Lopes][jtadeulopes])
+
 ## 0.2.0 (2013-06-26)
 
   * Add support for `locations` and `locations/:id` endpoints ([dbc-apprentice][dbc-apprentice])
@@ -20,5 +25,6 @@
   * Initial release ([Tyler Hunt][tylerhunt])
 
 [dbc-apprentice]: https://github.com/dbc-apprentice
+[jtadeulopes]: https://github.com/jtadeulopes
 [stevenharman]: http://github.com/stevenharman
 [tylerhunt]: http://github.com/tylerhunt
