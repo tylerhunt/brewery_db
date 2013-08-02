@@ -1,0 +1,222 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/yeasts?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.0
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 02 Aug 2013 02:35:02 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '382'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '4353'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"currentPage":1,"numberOfPages":9,"totalResults":403,"data":[{"id":1531,"name":"10th
+        Anniversary Blend","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:57"},{"id":1756,"name":"Abbey Ale","description":"Used to produce Trappist
+        style beers. Similar to WLP500, but is less fruity and more alcohol tolerant
+        (up to 15% ABV). Excellent yeast for high gravity beers, Belgian ales, dubbels
+        and trippels.","yeastType":"ale","attenuationMin":75,"attenuationMax":80,"fermentTempMin":66,"fermentTempMax":72,"alcoholToleranceMin":10,"alcoholToleranceMax":15,"productId":"WLP530","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:16","updateDate":"2013-06-24 16:10:52"},{"id":1532,"name":"Abbey Ale","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:57"},{"id":1757,"name":"Abbey IV Ale","description":"An authentic Trappist
+        style yeast. Use for Belgian style ales, dubbels, trippels, and specialty
+        beers. Fruit character is medium, in between WLP500 (high) and WLP530 (low).","yeastType":"ale","attenuationMin":74,"attenuationMax":82,"fermentTempMin":66,"fermentTempMax":72,"alcoholToleranceMin":10,"alcoholToleranceMax":15,"productId":"WLP540","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:16","updateDate":"2013-06-24 16:10:52"},{"id":1835,"name":"American
+        Ale","description":"Very clean, crisp flavor characteristics with low fruitiness
+        and mild ester production. A very versatile yeast for styles that desire dominant
+        malt and hop character. This strain makes a wonderful ?House? strain. Mild
+        citrus notes develop with cooler 60-66?F (15-19?C) fermentations. Normally
+        requires filtration for bright beers.","yeastType":"ale","attenuationMin":73,"attenuationMax":77,"fermentTempMin":60,"fermentTempMax":72,"alcoholToleranceMin":11,"alcoholToleranceMax":11,"productId":"1056","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:23","updateDate":"2013-06-24 16:10:52"},{"id":1533,"name":"American
+        Ale","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:57"},{"id":1534,"name":"American Ale Blend","description":"Our most
+        popular yeast strain is WLP001, California Ale Yeast. This blend celebrates
+        the strengths of California- clean, neutral fermentation, versatile usage,
+        and adds two other strains that belong to the same ''clean\/neutral'' flavor
+        category. The additional strains create complexity to the finished beer. This
+        blend tastes more lager like than WLP001. Hop flavors and bitterness are accentuated,
+        but not to the extreme of California. Slight sulfur will be produced during
+        fermentation.","yeastType":"ale","attenuationMin":72,"attenuationMax":80,"fermentTempMin":68,"fermentTempMax":72,"alcoholToleranceMin":8,"alcoholToleranceMax":12,"productId":"WLP060","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:57","updateDate":"2013-06-24 16:10:52"},{"id":1836,"name":"American
+        Ale II","description":"With many of the best qualities that brewers look for
+        when brewing American styles of beer, this strain?s performance is consistent
+        and it makes great beer. This versatile strain is a very good choice for a
+        ?House? strain. Expect a soft, clean profile with hints of nut, and a slightly
+        tart finish. Ferment at warmer temperatures to accentuate hop character with
+        an increased fruitiness. Or, ferment cool for a clean, light citrus character.
+        It attenuates well and is reliably flocculent, producing bright beer without
+        filtration.","yeastType":"ale","attenuationMin":72,"attenuationMax":76,"fermentTempMin":60,"fermentTempMax":72,"alcoholToleranceMin":10,"alcoholToleranceMax":10,"productId":"1272","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:23","updateDate":"2013-06-24 16:10:52"},{"id":1535,"name":"American
+        Ale II","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1536,"name":"American Hefeweizen Ale","description":"This
+        yeast is used to produce the Oregon style American Hefeweizen. Unlike WLP300,
+        this yeast produces a very slight amount of the banana and clove notes. It
+        produces some sulfur, but is otherwise a clean fermenting yeast, which does
+        not flocculate well, producing a cloudy beer.","yeastType":"wheat","attenuationMin":70,"attenuationMax":75,"fermentTempMin":65,"fermentTempMax":69,"alcoholToleranceMin":5,"alcoholToleranceMax":10,"productId":"WLP320","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58","updateDate":"2013-06-24 16:10:52"},{"id":1537,"name":"American
+        Lager","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1837,"name":"American Lager","description":"A complex and
+        aromatic strain that can be used for a variety of lager beers. This strain
+        is an excellent choice for Classic American Pilsner beers.","yeastType":"lager","attenuationMin":73,"attenuationMax":77,"fermentTempMin":48,"fermentTempMax":58,"alcoholToleranceMin":9,"alcoholToleranceMax":9,"productId":"2035","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:23","updateDate":"2013-06-24 16:10:53"},{"id":1761,"name":"American
+        Lager","description":"This yeast is used to produce American style lagers.
+        Dry and clean with a very slight apple fruitiness. Sulfur and diacetyl production
+        is minimal.","yeastType":"lager","attenuationMin":75,"attenuationMax":80,"fermentTempMin":50,"fermentTempMax":55,"alcoholToleranceMin":5,"alcoholToleranceMax":10,"productId":"WLP840","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:16","updateDate":"2013-06-24 16:10:52"},{"id":1538,"name":"American
+        Megabrewery","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1539,"name":"American Microbrewery Ale No.1","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1540,"name":"American Microbrewery Ale No.2","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1541,"name":"American Microbrewery Lager","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1838,"name":"American Wheat","description":"A strong fermenting,
+        true top cropping yeast that produces a dry, slightly tart, crisp beer. Ideal
+        for beers when a low ester profile is desirable.","yeastType":"ale","attenuationMin":74,"attenuationMax":78,"fermentTempMin":58,"fermentTempMax":74,"alcoholToleranceMin":10,"alcoholToleranceMax":10,"productId":"1010","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:23","updateDate":"2013-06-24 16:10:52"},{"id":1542,"name":"American
+        Wheat Ale","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1543,"name":"American White Ale","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1762,"name":"Antwerp Ale","description":"Clean, almost lager
+        like Belgian type ale yeast. Good for Belgian type pales ales and amber ales,
+        or with blends to combine with other Belgian type yeast strains. Biscuity,
+        ale like aroma present. Hop flavors and bitterness are accentuated. Slight
+        sulfur will be produced during fermentation, which can give the yeast a lager
+        like flavor profile.","yeastType":"ale","attenuationMin":73,"attenuationMax":80,"fermentTempMin":67,"fermentTempMax":70,"alcoholToleranceMin":5,"alcoholToleranceMax":10,"productId":"WLP515","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:16","updateDate":"2013-06-24 16:10:52"},{"id":1946,"name":"Assmanshausen
+        Wine","description":"German red wine yeast, which results in spicy, fruit
+        aromas. Perfect for Pinot Noir and Zinfandel. Slow to moderate fermenter which
+        is cold tolerant.","yeastType":"wine","attenuationMin":80,"fermentTempMin":50,"fermentTempMax":90,"alcoholToleranceMin":16,"alcoholToleranceMax":16,"productId":"WLP749","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:10:52"},{"id":1544,"name":"Attenuation 80 percent","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1763,"name":"Australian Ale","description":"Produces a clean,
+        malty beer. Pleasant ester character, can be described as \"bready.\" Can
+        ferment successfully, and clean, at higher temperatures. This yeast combines
+        good flocculation with good attenuation.","yeastType":"ale","attenuationMin":70,"attenuationMax":75,"fermentTempMin":65,"fermentTempMax":70,"alcoholToleranceMin":5,"alcoholToleranceMax":10,"productId":"WLP009","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:16","updateDate":"2013-06-24 16:10:52"},{"id":1942,"name":"Avize Wine","description":"Champagne
+        isolate used for complexity in whites. Contributes elegance, especially in
+        barrel fermented Chardonnays.","yeastType":"wine","attenuationMin":80,"fermentTempMin":60,"fermentTempMax":90,"alcoholToleranceMin":15,"alcoholToleranceMax":15,"productId":"WLP718","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:10:52"},{"id":1545,"name":"Bastogne Belgian Ale","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1546,"name":"Bavarian Lager","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1839,"name":"Bavarian Lager","description":"Used by many
+        German breweries to produce rich, full-bodied, malty beers, this strain is
+        a good choice for bocks and dopplebocks. A thorough diacetyl rest is recommended
+        after fermentation is complete.","yeastType":"lager","attenuationMin":73,"attenuationMax":77,"fermentTempMin":46,"fermentTempMax":58,"alcoholToleranceMin":9,"alcoholToleranceMax":9,"productId":"2206","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:23","updateDate":"2013-06-24 16:10:53"},{"id":1764,"name":"Bavarian
+        Weizen","description":"Former Yeast Lab W51 yeast strain, acquired from Dan
+        McConnell. The description originally used by Yeast Lab still fits: \"This
+        strain produces a classic German-style wheat beer, with moderately high, spicy,
+        phenolic overtones reminiscent of cloves.\"","yeastType":"wheat","attenuationMin":73,"attenuationMax":77,"fermentTempMin":66,"fermentTempMax":70,"alcoholToleranceMin":5,"alcoholToleranceMax":10,"productId":"WLP351","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:16","updateDate":"2013-06-24 16:10:52"},{"id":1547,"name":"Bavarian
+        Wheat","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:58"},{"id":1841,"name":"Bavarian Wheat","description":"A complex alternative
+        to the standard German wheat strain profile. This strain produces apple, pear,
+        and plum esters in addition to the dominant banana character. The esters are
+        complemented nicely by clove and subtle vanilla phenolics. The balance can
+        be manipulated towards ester production through increasing fermentation temperature,
+        increasing the wort density, and decreasing the pitch rate. Over pitching
+        can result in a near complete loss of banana character. Decreasing the ester
+        level will allow a higher clove character to be perceived. Sulfur is commonly
+        produced, but will dissipate with conditioning. This strain is very powdery
+        and will remain in suspension for an extended amount of time following attenuation.
+        This is true top cropping yeast and requires fermenter headspace of 33%.","yeastType":"ale","attenuationMin":70,"attenuationMax":76,"fermentTempMin":64,"fermentTempMax":75,"alcoholToleranceMin":10,"alcoholToleranceMax":10,"productId":"3638","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:24","updateDate":"2013-06-24 16:10:53"},{"id":1840,"name":"Bavarian
+        Wheat Blend","description":"This proprietary blend of a top-fermenting neutral
+        ale strain and a Bavarian wheat strain is a great choice when a subtle German
+        style wheat beer is desired. The complex esters and phenolics from the wheat
+        strain are nicely softened and balanced by the neutral ale strain.","yeastType":"wheat","attenuationMin":73,"attenuationMax":77,"fermentTempMin":64,"fermentTempMax":74,"alcoholToleranceMin":10,"alcoholToleranceMax":10,"productId":"3056","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:23","updateDate":"2013-06-24 16:10:53"},{"id":1548,"name":"Bavarian
+        Wheat Yeast","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1549,"name":"Bedford British","description":"Ferments dry
+        and flocculates very well. Produces a distinctive ester profile. Good choice
+        for most English style ales including bitter, pale ale, porter, and brown
+        ale.","yeastType":"ale","attenuationMin":72,"attenuationMax":80,"fermentTempMin":65,"fermentTempMax":70,"alcoholToleranceMin":5,"alcoholToleranceMax":10,"productId":"WLP006","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59","updateDate":"2013-06-24 16:10:52"},{"id":1842,"name":"Belgian Abbey","description":"A
+        widely used and alcohol tolerant Abbey yeast that is suitable for a variety
+        of Belgian style ales. This strain produces a nice ester profile as well as
+        slightly spicy alcohol notes. It can be slow to start; however, it attenuates
+        well.","yeastType":"ale","attenuationMin":74,"attenuationMax":78,"fermentTempMin":68,"fermentTempMax":78,"alcoholToleranceMin":12,"alcoholToleranceMax":12,"productId":"1214","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:24","updateDate":"2013-06-24 16:10:53"},{"id":1550,"name":"Belgian Abbey
+        II","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1843,"name":"Belgian Abbey II","description":"An excellent
+        yeast strain for use in Belgian dark strong ales. This strain has a relatively
+        ?clean profile? which allows a rich malt and distinctive ethanol character
+        to shine. Delicate dried fruit esters can be produced when used at higher
+        fermentation temperatures or in a high gravity wort.","yeastType":"ale","attenuationMin":73,"attenuationMax":77,"fermentTempMin":65,"fermentTempMax":75,"alcoholToleranceMin":12,"alcoholToleranceMax":12,"productId":"1762","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:24","updateDate":"2013-06-24 16:10:53"},{"id":1551,"name":"Belgian Ale","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1766,"name":"Belgian Ale","description":"Saisons, Belgian
+        Ales, Belgian Reds, Belgian Browns, and White beers are just a few of the
+        classic Belgian beer styles that can be created with this yeast strain. Phenolic
+        and spicy flavors dominate the profile, with less fruitiness then WLP500.","yeastType":"ale","attenuationMin":78,"attenuationMax":85,"fermentTempMin":68,"fermentTempMax":78,"alcoholToleranceMin":8,"alcoholToleranceMax":12,"productId":"WLP550","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:17","updateDate":"2013-06-24 16:10:52"},{"id":1552,"name":"Belgian Ale
+        No.1","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1553,"name":"Belgian Ale No.2","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1554,"name":"Belgian Ale No.3","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1555,"name":"Belgian Ardennes","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1845,"name":"Belgian Ardennes","description":"One of the
+        great and versatile strains for the production of classic Belgian style ales.
+        This strain produces a beautiful balance of delicate fruit esters and subtle
+        spicy notes; with neither one dominating. Unlike many other Belgian style
+        strains, this strain is highly flocculent and results in bright beers.","yeastType":"ale","attenuationMin":72,"attenuationMax":76,"fermentTempMin":65,"fermentTempMax":76,"alcoholToleranceMin":12,"alcoholToleranceMax":12,"productId":"3522","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:24","updateDate":"2013-06-24 16:10:53"},{"id":1767,"name":"Belgian Bastogne
+        Ale","description":"A high gravity, Trappist style ale yeast. Produces dry
+        beer with slight acidic finish. More ?clean? fermentation character than WLP500
+        or WLP530. Not as spicy as WLP530 or WLP550. Excellent yeast for high gravity
+        beers, Belgian ales, dubbels and trippels.","yeastType":"ale","attenuationMin":74,"attenuationMax":80,"fermentTempMin":66,"fermentTempMax":72,"alcoholToleranceMin":10,"alcoholToleranceMax":15,"productId":"WLP510","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:17","updateDate":"2013-06-24 16:10:52"},{"id":1556,"name":"Belgian Golden
+        Ale","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1768,"name":"Belgian Golden Ale","description":"From East
+        Flanders, versatile yeast that can produce light Belgian ales to high gravity
+        Belgian beers (12% ABV). A combination of fruitiness and phenolic characteristics
+        dominate the flavor profile. Some sulfur is produced during fermentation,
+        which will dissipate following the end of fermentation.","yeastType":"ale","attenuationMin":73,"attenuationMax":78,"fermentTempMin":68,"fermentTempMax":75,"alcoholToleranceMin":10,"alcoholToleranceMax":15,"productId":"WLP570","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:17","updateDate":"2013-06-24 16:10:52"},{"id":1950,"name":"Belgian Lager","description":"Clean,
+        crisp European lager yeast with low sulfur  production. The strain originates
+        from a very old brewery in West Belgium. Great for European style pilsners,
+        dark lagers, Vienna lager, and American style lagers.","yeastType":"lager","attenuationMin":72,"attenuationMax":78,"fermentTempMin":50,"fermentTempMax":55,"alcoholToleranceMin":5,"alcoholToleranceMax":10,"productId":"WLP815","supplier":"White
+        Labs","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:10:52"},{"id":1557,"name":"Belgian Lambic Blend","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:08:59"},{"id":1847,"name":"Belgian Saison","description":"This strain is
+        the classic farmhouse ale yeast. A traditional yeast that is spicy with complex
+        aromatics, including bubble gum. It is very tart and dry on the palate with
+        a mild fruitiness. Expect a crisp, mildly acidic finish that will benefit
+        from elevated fermentation temperatures. This strain is notorious for a rapid
+        and vigorous start to fermentation, only to stick around 1.035 S.G. Fermentation
+        will finish, given time and warm temperatures. Warm fermentation temperatures
+        at least 90?F (32?C) or the use of a secondary strain can accelerate attenuation.","yeastType":"ale","attenuationMin":76,"attenuationMax":80,"fermentTempMin":70,"fermentTempMax":95,"alcoholToleranceMin":12,"alcoholToleranceMax":12,"productId":"3724","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:24","updateDate":"2013-06-24 16:10:53"}],"status":"success"}'
+    http_version: 
+  recorded_at: Fri, 02 Aug 2013 02:35:03 GMT
+recorded_with: VCR 2.5.0

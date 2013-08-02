@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/yeast/1836?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.0
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 02 Aug 2013 02:35:02 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '381'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '584'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":1836,"name":"American
+        Ale II","description":"With many of the best qualities that brewers look for
+        when brewing American styles of beer, this strain?s performance is consistent
+        and it makes great beer. This versatile strain is a very good choice for a
+        ?House? strain. Expect a soft, clean profile with hints of nut, and a slightly
+        tart finish. Ferment at warmer temperatures to accentuate hop character with
+        an increased fruitiness. Or, ferment cool for a clean, light citrus character.
+        It attenuates well and is reliably flocculent, producing bright beer without
+        filtration.","yeastType":"ale","attenuationMin":72,"attenuationMax":76,"fermentTempMin":60,"fermentTempMax":72,"alcoholToleranceMin":10,"alcoholToleranceMax":10,"productId":"1272","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
+        16:09:23","updateDate":"2013-06-24 16:10:52"},"status":"success"}'
+    http_version: 
+  recorded_at: Fri, 02 Aug 2013 02:35:03 GMT
+recorded_with: VCR 2.5.0

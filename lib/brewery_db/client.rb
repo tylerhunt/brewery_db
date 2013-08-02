@@ -33,8 +33,16 @@ module BreweryDB
       @categories ||= Resources::Categories.new(config)
     end
 
+    def fermentables
+      @fermentables ||= Resources::Fermentables.new(config)
+    end
+
     def glassware
       @glassware ||= Resources::Glassware.new(config)
+    end
+
+    def hops
+      @hops ||= Resources::Hops.new(config)
     end
 
     def locations
@@ -47,6 +55,10 @@ module BreweryDB
 
     def styles
       @styles ||= Resources::Styles.new(config)
+    end
+
+    def yeasts
+      @yeasts ||= Resources::Yeasts.new(config)
     end
   end
 end
