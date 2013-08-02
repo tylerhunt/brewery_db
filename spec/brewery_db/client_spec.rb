@@ -55,6 +55,7 @@ describe BreweryDB::Client do
   its(:locations) { should be_a(BreweryDB::Resources::Locations) }
   its(:search) { should be_a(BreweryDB::Resources::Search) }
   its(:styles) { should be_a(BreweryDB::Resources::Styles) }
+  its(:yeasts) { should be_a(BreweryDB::Resources::Yeasts) }
 
   it { expect(client.brewery('KlSsWY')).to be_a(BreweryDB::Resources::Brewery) }
 end

@@ -56,5 +56,9 @@ module BreweryDB
     def styles
       @styles ||= Resources::Styles.new(config)
     end
+
+    def yeasts
+      @yeasts ||= Resources::Yeasts.new(config)
+    end
   end
 end

@@ -31,5 +31,6 @@ module BreweryDB
     autoload :Locations, 'brewery_db/resources/locations'
     autoload :Search, 'brewery_db/resources/search'
     autoload :Styles, 'brewery_db/resources/styles'
+    autoload :Yeasts, 'brewery_db/resources/yeasts'
   end
 end
