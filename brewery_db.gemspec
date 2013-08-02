@@ -6,6 +6,7 @@ Gem::Specification.new do |gem|
   gem.summary = 'A Ruby library for using the BreweryDB API.'
   gem.homepage = 'http://github.com/tylerhunt/brewery_db'
   gem.authors = ['Tyler Hunt', 'Steven Harman']
+  gem.license = 'MIT'
 
   gem.required_ruby_version = '>= 1.9'
 
