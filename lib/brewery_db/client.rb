@@ -41,6 +41,10 @@ module BreweryDB
       @glassware ||= Resources::Glassware.new(config)
     end
 
+    def hops
+      @hops ||= Resources::Hops.new(config)
+    end
+
     def locations
       @locations ||= Resources::Locations.new(config)
     end

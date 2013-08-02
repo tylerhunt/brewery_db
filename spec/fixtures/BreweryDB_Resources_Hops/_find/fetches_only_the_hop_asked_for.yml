@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/hop/1?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.0
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 02 Aug 2013 01:49:44 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '384'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '467'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":1,"name":"Admiral","description":"Bred
+        at Wye as a replacement for Target and released in 1998, Admiral is a high-alpha
+        variety considered to have a more pleasing, less harsh bitterness.","countryOfOrigin":"GB","alphaAcidMin":13,"betaAcidMin":4.8,"betaAcidMax":6.1,"humuleneMin":7,"humuleneMax":26,"caryophylleneMin":6,"caryophylleneMax":8,"cohumuloneMin":37,"cohumuloneMax":45,"myrceneMin":39,"myrceneMax":48,"farneseneMin":1.8,"farneseneMax":2.2,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+        16:07:26","updateDate":"2013-06-24 16:10:37","country":{"isoCode":"GB","name":"UNITED
+        KINGDOM","displayName":"United Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03
+        02:41:33"}},"status":"success"}'
+    http_version: 
+  recorded_at: Fri, 02 Aug 2013 01:49:45 GMT
+recorded_with: VCR 2.5.0
