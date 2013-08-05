@@ -2,7 +2,7 @@ module BreweryDB
   module Resources
     class Styles < Resource
       def all(params={})
-        get('styles', params).data
+        get('styles', params).collection
       end
 
       def find(id, params={})

@@ -2,7 +2,7 @@ module BreweryDB
   module Resources
     class Glassware < Resource
       def all(params={})
-        get('glassware', params).data
+        get('glassware', params).collection
       end
 
       def find(id, params={})

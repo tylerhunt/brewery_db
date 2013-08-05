@@ -11,6 +11,7 @@ module BreweryDB
   autoload :Collection, 'brewery_db/collection'
   autoload :Config, 'brewery_db/config'
   autoload :Mash, 'brewery_db/mash'
+  autoload :PaginatedCollection, 'brewery_db/paginated_collection'
   autoload :Request, 'brewery_db/request'
   autoload :Resource, 'brewery_db/resource'
   autoload :Response, 'brewery_db/response'
