@@ -4,7 +4,7 @@ describe BreweryDB::Resources::Brewery do
   context '#beers' do
     let(:config) { double }
     let(:id) { 'KlSsWY' }
-    let(:response) { double(data: :some_beers) }
+    let(:response) { double(collection: :some_beers) }
 
     subject(:brewery) { described_class.new(config, id: id) }
 

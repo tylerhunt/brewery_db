@@ -13,6 +13,10 @@ module BreweryDB
       Collection.new(self)
     end
 
+    def paginated_collection
+      PaginatedCollection.new(self)
+    end
+
     def next_page
       @request.next_page.response
     end

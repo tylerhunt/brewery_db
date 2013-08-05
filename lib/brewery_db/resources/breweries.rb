@@ -2,7 +2,7 @@ module BreweryDB
   module Resources
     class Breweries < Resource
       def all(params={})
-        get('breweries', params).collection
+        get('breweries', params).paginated_collection
       end
 
       def find(id, params={})
