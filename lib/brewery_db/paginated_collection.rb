@@ -1,15 +1,8 @@
 module BreweryDB
-  class PaginatedCollection
+  class PaginatedCollection < Collection
     include Enumerable
 
     BATCH_SIZE = 50
-
-    attr_reader :size
-    alias length size
-
-    def initialize(response)
-      self.response = response
-    end
 
     def count(*args, &block)
       # The Ruby documentation is wrong, and Enumerable#count no longer calls
@@ -31,12 +24,11 @@ module BreweryDB
       end
     end
 
+  private
+
     def response=(response)
-      @response = response
-      @collection = Array(response.data) || []
+      super
       @size = response.count || 0
-      @page_count = response.page_count
     end
-    private :response=
   end
 end
