@@ -14,7 +14,7 @@ module BreweryDB
       @collection.each { |element| yield(element) }
     end
 
-    private
+  private
 
     def response=(response)
       @response = response

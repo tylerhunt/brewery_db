@@ -26,7 +26,7 @@ module BreweryDB
       hash(api_key) == key
     end
 
-    private
+  private
 
     def hash(api_key)
       Digest::SHA1.hexdigest("#{api_key}#{nonce}")

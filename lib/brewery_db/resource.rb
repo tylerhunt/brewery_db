@@ -7,7 +7,7 @@ module BreweryDB
       @config = config
     end
 
-    private
+  private
 
     def get(path, params={})
       Request.new(connection, path, params).response

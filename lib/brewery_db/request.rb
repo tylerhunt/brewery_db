@@ -14,7 +14,7 @@ module BreweryDB
       self.class.new(@connection, @path, @params.merge(p: page_number + 1))
     end
 
-    private
+  private
 
     def response_body
       @connection.get(@path, @params).body

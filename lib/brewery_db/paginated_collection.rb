@@ -24,7 +24,7 @@ module BreweryDB
       end
     end
 
-    private
+  private
 
     def response=(response)
       super

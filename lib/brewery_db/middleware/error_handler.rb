@@ -11,7 +11,7 @@ module BreweryDB
         end
       end
 
-      private
+    private
 
       def rate_limit_exceeded_or_unauthorized(headers)
         rate_limit = headers.fetch('x-ratelimit-remaining') { :rate_limit_unknown }
