@@ -3,6 +3,8 @@
 ## Unreleased
 
   * Add support for `fluidsizes` and `fluidsize/:id` endpoints. ([Steven Harman][stevenharman])
+  * Fix: Paginate `Hops`, `Fermentables`, and `Yeasts` ([Steven
+    Harman][stevenharman])
 
 ## 0.2.1 (2013-08-02)
 
