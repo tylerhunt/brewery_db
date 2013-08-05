@@ -54,6 +54,7 @@ describe BreweryDB::Client do
   its(:glassware) { should be_a(BreweryDB::Resources::Glassware) }
   its(:hops) { should be_a(BreweryDB::Resources::Hops) }
   its(:locations) { should be_a(BreweryDB::Resources::Locations) }
+  its(:menu) { should be_a(BreweryDB::Resources::Menu) }
   its(:search) { should be_a(BreweryDB::Resources::Search) }
   its(:styles) { should be_a(BreweryDB::Resources::Styles) }
   its(:yeasts) { should be_a(BreweryDB::Resources::Yeasts) }

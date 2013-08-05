@@ -96,6 +96,8 @@ brewery_db.locations.all(locality: 'San Francisco')
 brewery_db.yeasts.all
 brewery_db.yeasts.find(1836)
 
+brewery_db.menu.beer_availability
+
 ```
 
 ### WebHooks

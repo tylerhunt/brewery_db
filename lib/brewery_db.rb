@@ -30,6 +30,7 @@ module BreweryDB
     autoload :Glassware, 'brewery_db/resources/glassware'
     autoload :Hops, 'brewery_db/resources/hops'
     autoload :Locations, 'brewery_db/resources/locations'
+    autoload :Menu, 'brewery_db/resources/menu'
     autoload :Search, 'brewery_db/resources/search'
     autoload :Styles, 'brewery_db/resources/styles'
     autoload :Yeasts, 'brewery_db/resources/yeasts'

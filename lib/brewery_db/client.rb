@@ -53,6 +53,10 @@ module BreweryDB
       @locations ||= Resources::Locations.new(config)
     end
 
+    def menu
+      @menu ||= Resources::Menu.new(config)
+    end
+
     def search
       @search ||= Resources::Search.new(config)
     end
