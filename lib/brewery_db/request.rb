@@ -14,14 +14,14 @@ module BreweryDB
       self.class.new(@connection, @path, @params.merge(p: page_number + 1))
     end
 
+    private
+
     def response_body
       @connection.get(@path, @params).body
     end
-    private :response_body
 
     def page_number
       @params[:p] || 1
     end
-    private :page_number
   end
 end

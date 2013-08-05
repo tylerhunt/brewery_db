@@ -5,7 +5,7 @@ module BreweryDB
         get_menu('beer-availability', params).collection
       end
 
-    private
+      private
 
       def get_menu(name, params)
         get("menu/#{name}", params)

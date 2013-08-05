@@ -11,18 +11,18 @@ module BreweryDB
         end
       end
 
+      private
+
       def rate_limit_exceeded_or_unauthorized(headers)
         rate_limit = headers.fetch('x-ratelimit-remaining') { :rate_limit_unknown }
 
         rate_limit == '0' ? RateLimitExceeded : Unauthorized
       end
-      private :rate_limit_exceeded_or_unauthorized
 
       def with(error_class, env)
         message = "Status => #{env[:status]}. Error message => #{env[:body].error_message}"
         error_class.new(message)
       end
-      private :with
     end
   end
 end

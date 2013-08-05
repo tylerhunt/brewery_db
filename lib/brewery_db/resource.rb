@@ -7,10 +7,11 @@ module BreweryDB
       @config = config
     end
 
+    private
+
     def get(path, params={})
       Request.new(connection, path, params).response
     end
-    private :get
 
     def connection
       Faraday.new(request: { timeout: @config.timeout }) do |builder|
@@ -25,6 +26,5 @@ module BreweryDB
         builder.adapter(@config.adapter)
       end
     end
-    private :connection
   end
 end
