@@ -8,7 +8,7 @@ module BreweryDB
   Unauthorized = Class.new(Error)
 
   autoload :Client, 'brewery_db/client'
-  autoload :Collection, 'brewery_db/collection'
+  autoload :PaginatedCollection, 'brewery_db/paginated_collection'
   autoload :Config, 'brewery_db/config'
   autoload :Mash, 'brewery_db/mash'
   autoload :Request, 'brewery_db/request'

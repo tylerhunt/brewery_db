@@ -9,8 +9,8 @@ module BreweryDB
       @body.data
     end
 
-    def collection
-      Collection.new(self)
+    def paginated_collection
+      PaginatedCollection.new(self)
     end
 
     def next_page

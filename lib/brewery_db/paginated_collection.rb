@@ -1,5 +1,5 @@
 module BreweryDB
-  class Collection
+  class PaginatedCollection
     include Enumerable
 
     BATCH_SIZE = 50

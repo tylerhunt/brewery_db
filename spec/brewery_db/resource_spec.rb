@@ -11,7 +11,7 @@ describe BreweryDB::Resource, :resource do
         end
 
         def list
-          get('breweries', established: 2006).collection
+          get('breweries', established: 2006).paginated_collection
         end
 
         def not_found
