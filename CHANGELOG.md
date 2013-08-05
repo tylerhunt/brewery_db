@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.2 (2013-08-05)
+
   * Add support for `fluidsizes`, `fluidsize/:id`, and `menu/beer-availability`
     endpoints. ([Steven Harman][stevenharman])
   * Fix: Paginate `Hops`, `Fermentables`, and `Yeasts` ([Steven
