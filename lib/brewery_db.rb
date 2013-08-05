@@ -26,6 +26,7 @@ module BreweryDB
     autoload :Brewery, 'brewery_db/resources/brewery'
     autoload :Categories, 'brewery_db/resources/categories'
     autoload :Fermentables, 'brewery_db/resources/fermentables'
+    autoload :FluidSize, 'brewery_db/resources/fluid_size'
     autoload :Glassware, 'brewery_db/resources/glassware'
     autoload :Hops, 'brewery_db/resources/hops'
     autoload :Locations, 'brewery_db/resources/locations'

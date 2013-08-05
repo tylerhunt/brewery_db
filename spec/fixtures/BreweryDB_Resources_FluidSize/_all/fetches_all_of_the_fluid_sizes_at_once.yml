@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/fluidsizes?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Mon, 05 Aug 2013 15:42:29 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '399'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '382'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"22","createDate":"2012-01-03 02:41:33"},{"id":2,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"12","createDate":"2012-01-03 02:41:33"},{"id":3,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"16","createDate":"2012-01-03 02:41:33"},{"id":4,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"7","createDate":"2012-01-03 02:41:33"},{"id":5,"volume":"liter","volumeDisplay":"Liter","quantity":".75","createDate":"2012-01-03
+        02:41:33"},{"id":6,"volume":"pack","volumeDisplay":"Pack","quantity":"6","createDate":"2012-01-03
+        02:41:33"},{"id":7,"volume":"pack","volumeDisplay":"Pack","quantity":"4","createDate":"2012-01-03
+        02:41:33"},{"id":8,"volume":"pack","volumeDisplay":"Pack","quantity":"12","createDate":"2012-01-03
+        02:41:33"},{"id":9,"volume":"case","createDate":"2012-01-03 02:41:33"},{"id":10,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"18","createDate":"2012-01-04 13:41:24"},{"id":11,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"25.4","createDate":"2012-01-04 13:47:15"},{"id":12,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"11.2","createDate":"2012-07-15 13:06:32"},{"id":13,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"16.9","createDate":"2012-07-29 21:20:00"},{"id":14,"volume":"pack","volumeDisplay":"Pack","quantity":"Case
+        12\/22","createDate":"2012-09-09 14:49:35","updateDate":"2012-09-09 14:49:55"},{"id":15,"volume":"barrel","volumeDisplay":"Barrel","quantity":"1\/2","createDate":"2012-09-09
+        14:51:14"},{"id":16,"volume":"barrel","volumeDisplay":"Barrel","quantity":"1\/6","createDate":"2012-09-09
+        14:51:29"},{"id":17,"volume":"barrel","volumeDisplay":"Barrel","quantity":"1\/4","createDate":"2012-09-09
+        14:51:44"}],"status":"success"}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2013 15:42:29 GMT
+recorded_with: VCR 2.4.0

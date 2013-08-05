@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/fluidsize/1?key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Mon, 05 Aug 2013 15:42:29 GMT
+      server:
+      - Apache/2.2.24 (Amazon)
+      x-powered-by:
+      - PHP/5.3.26
+      x-ratelimit-limit:
+      - '400'
+      x-ratelimit-remaining:
+      - '398'
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '165'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":1,"volume":"oz","volumeDisplay":"Ounce
+        (oz)","quantity":"22","createDate":"2012-01-03 02:41:33"},"status":"success"}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2013 15:42:29 GMT
+recorded_with: VCR 2.4.0

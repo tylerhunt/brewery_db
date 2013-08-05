@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+  * Add support for `fluidsizes` and `fluidsize/:id` endpoints. ([Steven Harman][stevenharman])
+
 ## 0.2.1 (2013-08-02)
 
   * Add support for `hops`, `hop/:id`, `fermentables`, `fermentable/:id`,

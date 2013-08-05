@@ -50,6 +50,7 @@ describe BreweryDB::Client do
   its(:breweries) { should be_a(BreweryDB::Resources::Breweries) }
   its(:categories) { should be_a(BreweryDB::Resources::Categories) }
   its(:fermentables) { should be_a(BreweryDB::Resources::Fermentables) }
+  its(:fluid_size) { should be_a(BreweryDB::Resources::FluidSize) }
   its(:glassware) { should be_a(BreweryDB::Resources::Glassware) }
   its(:hops) { should be_a(BreweryDB::Resources::Hops) }
   its(:locations) { should be_a(BreweryDB::Resources::Locations) }

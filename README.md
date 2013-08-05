@@ -73,6 +73,9 @@ brewery_db.categories.find(1)
 brewery_db.fermentables.all(country: 'Brazil')
 brewery_db.fermentables.find(1924)
 
+brewery_db.fluid_size.all
+brewery_db.fluid_size.find(1)
+
 brewery_db.glassware.all
 brewery_db.glassware.find(1)
 

@@ -37,6 +37,10 @@ module BreweryDB
       @fermentables ||= Resources::Fermentables.new(config)
     end
 
+    def fluid_size
+      @fluid_size ||= Resources::FluidSize.new(config)
+    end
+
     def glassware
       @glassware ||= Resources::Glassware.new(config)
     end
