@@ -4,12 +4,12 @@
 
 ## 0.2.1 (2013-08-02)
 
-  * Add support for `hops`, `hops/:id`, `fermentables`, `fermentables/:id`,
+  * Add support for `hops`, `hop/:id`, `fermentables`, `fermentable/:id`,
     `yeasts`, and `yeasts:id` endpoints ([Jésus Lopes][jtadeulopes])
 
 ## 0.2.0 (2013-06-26)
 
-  * Add support for `locations` and `locations/:id` endpoints ([dbc-apprentice][dbc-apprentice])
+  * Add support for `locations` and `location/:id` endpoints ([dbc-apprentice][dbc-apprentice])
   * Add support for `subAttributeId` webhook parameter ([Steven Harman][stevenharman])
 
 ## 0.1.0 (2013-05-14)
