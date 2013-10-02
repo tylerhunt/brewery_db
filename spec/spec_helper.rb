@@ -1,5 +1,8 @@
 require 'brewery_db'
 
+# faraday_middleware is not compatible with Ruby 2.0's built-in JSON library
+require 'json'
+
 # This API key is only for use when developing this client library. Please do
 # not use it in your own applications. You may request your own API key here:
 # http://www.brewerydb.com/developers
