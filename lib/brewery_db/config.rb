@@ -11,6 +11,7 @@ module BreweryDB
     attr_accessor :base_uri
     attr_accessor :timeout
     attr_accessor :user_agent
+    attr_accessor :logger
 
     def initialize
       self.adapter = Faraday.default_adapter

@@ -19,6 +19,7 @@ module BreweryDB
         builder.headers[:user_agent] = @config.user_agent
         builder.params[:key] = @config.api_key
 
+        builder.response(:logger, @config.logger) if @config.logger
         builder.use(Middleware::ErrorHandler)
         builder.response(:mashify, mash_class: Mash)
         builder.response(:json, content_type: /\bjson$/)
