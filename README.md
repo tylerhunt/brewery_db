@@ -53,6 +53,17 @@ brewery_db = BreweryDB::Client.new do |config|
 end
 ```
 
+### Logging
+
+Optionally, you can configure `BreweryDB` to use a logger for to help with
+request debugging.
+
+```ruby
+brewery_db = BreweryDB::Client.new do |config|
+  config.logger = Rails.logger
+  config.api_key = #...
+end
+```
 
 ## Usage
 

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+  * Add support for request logging. ([Matt Griffin][betamatt])
+
 ## 0.2.2 (2013-08-05)
 
   * Add support for `fluidsizes`, `fluidsize/:id`, and `menu/beer-availability`
@@ -32,6 +34,7 @@
   * Initial release ([Tyler Hunt][tylerhunt])
 
 [dbc-apprentice]: https://github.com/dbc-apprentice
+[betamatt]: http://github.com/betamatt
 [jtadeulopes]: https://github.com/jtadeulopes
 [stevenharman]: http://github.com/stevenharman
 [tylerhunt]: http://github.com/tylerhunt
