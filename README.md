@@ -25,7 +25,7 @@ Tested and known to work with the following Rubies:
 
 Add this line to your application's Gemfile:
 
-``` ruby
+```ruby
 gem 'brewery_db'
 ```
 
@@ -47,7 +47,7 @@ one, you may [request one here][api-key].
 
 You can use the following method to configure your API key:
 
-``` ruby
+```ruby
 brewery_db = BreweryDB::Client.new do |config|
   config.api_key = API_KEY
 end
@@ -69,7 +69,7 @@ end
 
 Once an API key has been set, resources can be called on the client instance.
 
-``` ruby
+```ruby
 brewery_db.beers.all(abv: '5.5')
 brewery_db.beers.find('vYlBZQ')
 
