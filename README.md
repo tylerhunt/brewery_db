@@ -98,6 +98,7 @@ brewery_db.search.beers(q: 'IPA')
 brewery_db.search.breweries(q: 'IPA')
 brewery_db.search.guilds(q: 'IPA')
 brewery_db.search.events(q: 'IPA')
+brewery_db.search.upc(code: '030613000043')
 
 brewery_db.styles.all
 brewery_db.styles.find(1)

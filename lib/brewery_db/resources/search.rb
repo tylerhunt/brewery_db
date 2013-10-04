@@ -20,6 +20,10 @@ module BreweryDB
       def events(params={})
         all(params.merge(type: 'event'))
       end
+
+      def upc(params={})
+        get('search/upc', params).paginated_collection
+      end
     end
   end
 end
