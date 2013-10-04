@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/search/upc?key=API_KEY&code=030613000043
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.2
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Fri, 04 Oct 2013 00:33:46 GMT
+      server:
+      - Apache/2.2.25 (Amazon)
+      x-powered-by:
+      - PHP/5.3.27
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '1342'
+      connection:
+      - close
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"currentPage":1,"numberOfPages":1,"totalResults":1,"data":[{"id":"LVjHK1","name":"Brooklyn
+        Brown Ale","description":"This is the award-winning original American brown
+        ale, first brewed as a holiday specialty, and now one of our most popular
+        beers year-round. Northern English brown ales tend to be strong and dry, while
+        southern English brown ales are milder and sweeter. Brooklyn Brown Ale combines
+        the best of those classic styles and then adds an American accent in the form
+        of a firm hop character and roasty palate. A blend of six malts, some of them
+        roasted, give this beer its deep russet-brown color and complex malt flavor,
+        fruity, smooth and rich, with a caramel, chocolate and coffee background.
+        Generous late hopping brings forward a nice hop aroma to complete the picture.
+        Brooklyn Brown Ale is full-flavored but retains a smoothness and easy drinkability
+        that has made it one of the most popular dark beers in the Northeast.","abv":"5.6","ibu":"30","glasswareId":5,"availableId":1,"styleId":37,"isOrganic":"N","labels":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/LVjHK1\/upload_yxlhuf-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/LVjHK1\/upload_yxlhuf-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/LVjHK1\/upload_yxlhuf-large.png"},"status":"verified","statusDisplay":"Verified","foodPairings":"Brooklyn
+        Brown Ale is particularly good with steaks, burgers, stews and barbecue, where
+        it can put its caramel flavors to work with the caramelized flavors in the
+        meat. It\u2019s also excellent with venison, ham and roasted pork, which engage
+        the depth of malt character. Well-aged cheddar and sheep\u2019s milk cheese
+        will pair up nicely.","originalGravity":"1.063","createDate":"2012-01-03 02:42:54","updateDate":"2013-08-13
+        15:55:57","glass":{"id":5,"name":"Pint","createDate":"2012-01-03 02:41:33"},"available":{"id":1,"name":"Year
+        Round","description":"Available year round as a staple beer."},"style":{"id":37,"categoryId":3,"category":{"id":3,"name":"North
+        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style
+        Brown Ale","description":"American brown ales range from deep copper to brown
+        in color. Roasted malt caramel-like and chocolate-like characters should be
+        of medium intensity in both flavor and aroma. American brown ales have evident
+        low to medium hop flavor and aroma, medium to high hop bitterness, and a medium
+        body. Estery and fruity-ester characters should be subdued. Diacetyl should
+        not be perceived. Chill haze is allowable at cold temperatures.","ibuMin":"25","ibuMax":"45","abvMin":"4","abvMax":"6.4","srmMin":"15","srmMax":"26","ogMin":"1.04","fgMin":"1.01","fgMax":"1.018","createDate":"2012-03-21
+        20:06:46"},"fluidSize":{"id":9,"volume":"case","createDate":"2012-01-03 02:41:33"}}],"status":"success"}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2013 00:33:57 GMT
+recorded_with: VCR 2.6.0
