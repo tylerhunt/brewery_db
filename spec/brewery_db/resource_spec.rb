@@ -11,7 +11,7 @@ describe BreweryDB::Resource, :resource do
         end
 
         def list
-          get('breweries', established: 2006).paginated_collection
+          get('breweries', established: 2006).collection
         end
 
         def not_found
@@ -29,7 +29,11 @@ describe BreweryDB::Resource, :resource do
 
     context 'a list of resources' do
       it 'can be enumerated' do
-        expect(resource.list.inject(0) { |tally, r| tally + 1 }).to eq(66)
+        expect(resource.list.inject(0) { |tally, r| tally + 1 }).to eq(50)
+      end
+
+      it 'can be paginated' do
+        expect(resource.list.paginated.inject(0) { |tally, r| tally + 1 }).to eq(72)
       end
     end
 
