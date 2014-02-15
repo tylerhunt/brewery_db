@@ -35,6 +35,10 @@ describe BreweryDB::Resource, :resource do
       it 'can be paginated' do
         expect(resource.list.paginated.inject(0) { |tally, r| tally + 1 }).to eq(72)
       end
+
+      it 'knows the original response' do
+        expect(resource.list.response).to be_instance_of(BreweryDB::Response)
+      end
     end
 
     context 'a not found request' do

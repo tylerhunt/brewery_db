@@ -2,7 +2,7 @@ module BreweryDB
   class Collection
     include Enumerable
 
-    attr_reader :size
+    attr_reader :size, :response
     alias length size
 
     def initialize(response)
