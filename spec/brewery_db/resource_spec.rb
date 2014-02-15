@@ -14,6 +14,10 @@ describe BreweryDB::Resource, :resource do
           get('breweries', established: 2006).collection
         end
 
+        def paginated_list
+          get('breweries', established: 2006).paginated_collection
+        end
+
         def not_found
           get('brewery/NOT_FOUND').data
         end
@@ -38,6 +42,23 @@ describe BreweryDB::Resource, :resource do
 
       it 'knows the original response' do
         expect(resource.list.response).to be_instance_of(BreweryDB::Response)
+      end
+    end
+
+    context 'a paginated list of resources' do
+      it 'can be enumerated' do
+        expect(resource.paginated_list.
+          inject(0) { |tally, r| tally + 1 }).to eq(72)
+      end
+
+      it 'can be converted to collection' do
+        expect(resource.paginated_list.collection.
+          inject(0) { |tally, r| tally + 1 }).to eq(50)
+      end
+
+      it 'knows the original response' do
+        expect(resource.paginated_list.response).
+          to be_instance_of(BreweryDB::Response)
       end
     end
 

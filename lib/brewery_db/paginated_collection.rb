@@ -24,6 +24,10 @@ module BreweryDB
       end
     end
 
+    def collection
+      Collection.new(@response)
+    end
+
   private
 
     def response=(response)
