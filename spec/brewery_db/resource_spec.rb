@@ -40,6 +40,11 @@ describe BreweryDB::Resource, :resource do
         expect(resource.list.paginated.inject(0) { |tally, r| tally + 1 }).to eq(72)
       end
 
+      it 'returns itself for collection' do
+        list = resource.list
+        expect(list.collection).to eq(list)
+      end
+
       it 'knows the original response' do
         expect(resource.list.response).to be_instance_of(BreweryDB::Response)
       end
@@ -54,6 +59,11 @@ describe BreweryDB::Resource, :resource do
       it 'can be converted to collection' do
         expect(resource.paginated_list.collection.
           inject(0) { |tally, r| tally + 1 }).to eq(50)
+      end
+
+      it 'returns itself for paginated_collection' do
+        list = resource.paginated_list
+        expect(list.paginated_collection).to eq(list)
       end
 
       it 'knows the original response' do

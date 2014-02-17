@@ -14,6 +14,10 @@ module BreweryDB
       @collection.each { |element| yield(element) }
     end
 
+    def collection
+      self
+    end
+
     def paginated
       PaginatedCollection.new(@response)
     end
