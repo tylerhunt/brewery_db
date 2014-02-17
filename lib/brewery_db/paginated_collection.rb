@@ -24,6 +24,14 @@ module BreweryDB
       end
     end
 
+    def collection
+      Collection.new(@response)
+    end
+
+    def paginated_collection
+      self
+    end
+
   private
 
     def response=(response)
