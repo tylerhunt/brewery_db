@@ -164,6 +164,12 @@ webhook.timestamp #=> '1350573527'
 
 [webhooks]: http://www.brewerydb.com/developers/docs-webhooks
 
+
+### Examples
+
+Additional examples may be found in the `examples` directory.
+
+
 ## Contributing
 
 1. Fork it.
