@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.2.3 (2014-02-21)
 
   * Add support for `search/upc` endpoint. ([Matt Griffin][betamatt])
   * Add support for request logging. ([Matt Griffin][betamatt])
