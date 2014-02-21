@@ -21,9 +21,10 @@ Tested and known to work with the following Rubies:
 [jruby]: http://jruby.org/
 [rubinius]: http://rubini.us/
 
+
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application’s `Gemfile`:
 
 ```ruby
 gem 'brewery_db'
@@ -40,7 +41,7 @@ Or install it yourself as:
 
 ## Configuration
 
-You must have a valid API key to use the BreweryDB API. If you don't yet have
+You must have a valid API key to use the BreweryDB API. If you don’t yet have
 one, you may [request one here][api-key].
 
 [api-key]: http://www.brewerydb.com/developers
@@ -60,8 +61,8 @@ request debugging.
 
 ```ruby
 brewery_db = BreweryDB::Client.new do |config|
+  # ...
   config.logger = Rails.logger
-  config.api_key = #...
 end
 ```
 
@@ -109,14 +110,13 @@ brewery_db.yeasts.all
 brewery_db.yeasts.find(1836)
 
 brewery_db.menu.beer_availability
-
 ```
 
 ### WebHooks
 
-The BreweryDB API also provides [WebHooks][webhooks] which can be use to:
+The BreweryDB API also provides [webhooks][], which can be used to:
 
-> keep your local data stores in sync with the main BreweryDB API.  Instead of
+> keep your local data stores in sync with the main BreweryDB API. Instead of
 > having to constantly query the API, webhooks will send you a message when
 > something changes.
 
@@ -131,25 +131,21 @@ webhook = BreweryDB::WebHook.new(webhook_params_hash)
 
 The `webhook_params_hash` should contain the `key`, `nonce`, `action`, etc.
 sent as the payload of the webhook. A `BreweryDB::WebHook` object can validate
-the posted data by SHA1 hashing your API key with the `nonce` value and
+the posted data by SHA-1 hashing your API key with the `nonce` value and
 comparing it to the `key` value (as per the [docs][webhooks]).
 
 ```ruby
-webhook.valid?(API_KEY) #=> true or false
+webhook.valid?(API_KEY) # => true or false
 ```
 
-#### Idiomatic wrapper over WebHook parameters
+#### Idiomatic Access to WebHook Parameters
 
-The `BreweryDB::WebHook` object also provides an idiomatic Ruby wrapper over
+The `BreweryDB::WebHook` object also provides an idiomatic Ruby interface to
 the parameters. For example, one of the parameters posted in a webhook is
-`attributeId`, which is the BreweryDB id for a brewery, beer, etc. This
-parameter is exposed by an instance of `BreweryDB::WebHook` via
+`attributeId`, which is the BreweryDB ID for a brewery, beer, etc. This
+parameter is exposed by an instance of `BreweryDB::WebHook` as `#attribute_id`.
 
-```ruby
-webhook.attribute_id #=> 'x6bRxw'
-```
-
-The full list of parameters available are:
+Here’s the full list of parameters:
 
 ```ruby
 webhook.action #=> 'insert'
@@ -185,6 +181,8 @@ Thanks to the following people who have contributed patches or helpful
 suggestions:
 
   * [Steven Harman](https://github.com/stevenharman)
+  * [Jésus Lopes](https://github.com/jtadeulopes)
+  * [Matt Griffin](https://github.com/betamatt)
 
 
 ## Copyright
