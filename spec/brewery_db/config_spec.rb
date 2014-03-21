@@ -4,11 +4,15 @@ describe BreweryDB::Config do
   subject(:config) { described_class.new }
 
   context 'defaults' do
-    its(:adapter) { should eq Faraday.default_adapter }
-    its(:api_key) { should be_nil }
-    its(:base_uri) { should eq described_class::BASE_URI }
-    its(:timeout) { should eq described_class::TIMEOUT }
-    its(:user_agent) { should eq described_class::USER_AGENT }
+    it { expect(config.adapter).to eq(Faraday.default_adapter) }
+
+    it { expect(config.api_key).to be_nil }
+
+    it { expect(config.base_uri).to eq(described_class::BASE_URI) }
+
+    it { expect(config.timeout).to eq(described_class::TIMEOUT) }
+
+    it { expect(config.user_agent).to eq(described_class::USER_AGENT) }
   end
 
   context '#adapter=' do

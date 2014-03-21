@@ -22,7 +22,7 @@ describe BreweryDB::Resources::Search, :resource do
 
       specify do
         results = double(:results)
-        search.stub(:all).with(type: type, q: 'IPA') { results }
+        allow(search).to receive(:all).with(type: type, q: 'IPA') { results }
         expect(search.send(method, q: 'IPA')).to eq(results)
       end
     end

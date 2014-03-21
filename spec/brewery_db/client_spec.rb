@@ -46,18 +46,29 @@ describe BreweryDB::Client do
     end
   end
 
-  its(:beers) { should be_a(BreweryDB::Resources::Beers) }
-  its(:breweries) { should be_a(BreweryDB::Resources::Breweries) }
-  its(:categories) { should be_a(BreweryDB::Resources::Categories) }
-  its(:fermentables) { should be_a(BreweryDB::Resources::Fermentables) }
-  its(:fluid_size) { should be_a(BreweryDB::Resources::FluidSize) }
-  its(:glassware) { should be_a(BreweryDB::Resources::Glassware) }
-  its(:hops) { should be_a(BreweryDB::Resources::Hops) }
-  its(:locations) { should be_a(BreweryDB::Resources::Locations) }
-  its(:menu) { should be_a(BreweryDB::Resources::Menu) }
-  its(:search) { should be_a(BreweryDB::Resources::Search) }
-  its(:styles) { should be_a(BreweryDB::Resources::Styles) }
-  its(:yeasts) { should be_a(BreweryDB::Resources::Yeasts) }
+  it { expect(client.beers).to be_a(BreweryDB::Resources::Beers) }
+
+  it { expect(client.breweries).to be_a(BreweryDB::Resources::Breweries) }
+
+  it { expect(client.categories).to be_a(BreweryDB::Resources::Categories) }
+
+  it { expect(client.fermentables).to be_a(BreweryDB::Resources::Fermentables) }
+
+  it { expect(client.fluid_size).to be_a(BreweryDB::Resources::FluidSize) }
+
+  it { expect(client.glassware).to be_a(BreweryDB::Resources::Glassware) }
+
+  it { expect(client.hops).to be_a(BreweryDB::Resources::Hops) }
+
+  it { expect(client.locations).to be_a(BreweryDB::Resources::Locations) }
+
+  it { expect(client.menu).to be_a(BreweryDB::Resources::Menu) }
+
+  it { expect(client.search).to be_a(BreweryDB::Resources::Search) }
+
+  it { expect(client.styles).to be_a(BreweryDB::Resources::Styles) }
+
+  it { expect(client.yeasts).to be_a(BreweryDB::Resources::Yeasts) }
 
   it { expect(client.brewery('KlSsWY')).to be_a(BreweryDB::Resources::Brewery) }
 end
