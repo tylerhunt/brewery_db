@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Hops, :resource do
     let(:response) { described_class.new(config).all }
 
     it 'fetches all of the hops at once' do
-      expect(response.count).to eq(165)
+      expect(response.count).to eq(166)
     end
   end
 

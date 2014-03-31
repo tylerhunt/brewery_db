@@ -8,33 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Mon, 22 Jul 2013 00:05:50 GMT
+      - Mon, 31 Mar 2014 20:13:24 GMT
       server:
-      - Apache/2.2.24 (Amazon)
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
       x-powered-by:
-      - PHP/5.3.26
+      - PHP/5.3.28
       x-ratelimit-limit:
       - Unlimited
       x-ratelimit-remaining:
       - Unlimited
-      vary:
-      - Accept-Encoding
       content-length:
-      - '6623'
+      - '8723'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
-      string: '{"currentPage":1,"numberOfPages":1,"totalResults":19,"data":[{"id":"wXmTDU","name":"Main
+      string: '{"currentPage":1,"numberOfPages":1,"totalResults":21,"data":[{"id":"wXmTDU","name":"Main
         Brewery","streetAddress":"563 Second Street","locality":"San Francisco","region":"California","postalCode":"94107","phone":"415-369-0900","hoursOfOperation":"Monday
         - Thursday: 11:30am to 12:00am\r\nFriday & Saturday: 11:30am to 1:00am\r\nSunday:
         10:00am to 12:00am","latitude":37.7824175,"longitude":-122.3925921,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"brewpub","locationTypeDisplay":"Brewpub","countryIsoCode":"US","yearOpened":"2000","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
@@ -56,7 +56,7 @@ http_interactions:
         barrel specific mechanical system is Andy French, whose clean, dry, true-to-style
         beers are the main features of a drinks lineup that boasts many attractions,
         including unique guest brews and high-caliber specialty cocktails","website":"http:\/\/www.southernpacificbrewing.com\/","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/f0wIsY\/upload_LjJkRu-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/f0wIsY\/upload_LjJkRu-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/f0wIsY\/upload_LjJkRu-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2013-05-15
-        23:26:26","updateDate":"2013-05-17 14:12:59"},"country":{"isoCode":"US","name":"UNITED
+        23:26:26","updateDate":"2014-03-03 16:03:00"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"OcFATq","name":"Main Brewery","streetAddress":"650 Fifth
         Street #403","locality":"San Francisco","region":"California","postalCode":"94107","latitude":37.7758088,"longitude":-122.3980099,"isPrimary":"Y","inPlanning":"N","isClosed":"Y","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
@@ -71,18 +71,68 @@ http_interactions:
         Kitchen & Brewery","website":"http:\/\/www.socialkitchenandbrewery.com\/","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:42:08","updateDate":"2012-03-21 19:06:19"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":"2MDtOB","name":"Main Brewery","streetAddress":"1150 Howard
+        Street","locality":"San Francisco","region":"California","postalCode":"94103","phone":"(415)
+        863-3940","website":"http:\/\/www.cellarmakerbrewing.com","hoursOfOperation":"Tue
+        - Fri: 3:00 pm - 11:00 pm\r\nSat: 12:00 pm - 11:00 pm\r\nSun: 2:00 pm - 8:00
+        pm","latitude":37.777218,"longitude":-122.410768,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
+        Brewery","countryIsoCode":"US","yearOpened":"2013","status":"verified","statusDisplay":"Verified","createDate":"2014-02-24
+        21:02:33","updateDate":"2014-02-24 21:02:33","breweryId":"kSUGO5","brewery":{"id":"kSUGO5","name":"Cellarmaker
+        Brewing Company","description":"Cellarmaker Brewing Company has been in the
+        works for quite some time. Look for our beers to start making their way around
+        better known beer bars and beer focused restaurants in San Francisco starting
+        in September. \r\n\r\nWe have a tasting room in the same building as the brewery
+        and will offer tasters, pints, and growlers. Some beers may be bottled further
+        down the line but for now it''s all draft. The only way you can take our beer
+        away is in the form of a growler - which by the way, is a great way to drink
+        beer! \r\n\r\nLook for a focus of plenty of hoppy beers, belgian-style saisons,
+        dark beers, and sour beers. We are huge fans of wine and bourbon barrel aged
+        beers as well so it''s only natural for us to have a barrel program. Think
+        bourbon barrels loaded with big chewy imperial stouts, excessively hopped
+        IPAs, fruited sour beers, and funky saisons. This is what we love. This is
+        what we are all about. We hope you are too!\r\n\r\nPlease follow along for
+        the ride as we build San Francisco''s next great brewery.\r\n\r\nCheers!","website":"http:\/\/www.cellarmakerbrewing.com","established":"2013","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/kSUGO5\/upload_xhExEK-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/kSUGO5\/upload_xhExEK-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/kSUGO5\/upload_xhExEK-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2014-02-24
+        20:56:28","updateDate":"2014-02-24 21:05:11"},"country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":"lV8gC4","name":"Main Brewery","streetAddress":"3801 18th
+        Street","locality":"San Francisco","region":"California","postalCode":"94114","phone":"415-273-9295","website":"http:\/\/www.mateveza.com\/","hoursOfOperation":"12pm
+        to 10pm","latitude":37.761089,"longitude":-122.428521,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
+        Brewery","countryIsoCode":"US","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:01","updateDate":"2013-08-13 11:07:24","breweryId":"QeR22V","brewery":{"id":"QeR22V","name":"Mateveza
+        Yerba Mate Ale","description":"Jim Woods (artistic rendering left) is an avid
+        yerba mate drinker. When not lounging around in his flowing camisa roja and
+        matching gorra, he enjoys brewing flavorful craft beers and drinking them
+        responsibly.\r\n\r\nIt was his love for hoppy beers and yerba mate coupled
+        with his thirst for adventure, as evidenced by his ambitious patillas, that
+        led him to discover MateVeza.\r\n\r\nOne day while partaking in an afternoon
+        mate, he cracked open a pale ale that had a prominent flavor and aroma of
+        cascade hops. Chispas flew as the flavors of yerba mate and cascade hops frolicked
+        on his lengua, and the original perky pale ale was born.","website":"http:\/\/www.mateveza.com\/","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QeR22V\/upload_GhALQy-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QeR22V\/upload_GhALQy-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QeR22V\/upload_GhALQy-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:01","updateDate":"2012-03-21 19:06:12"},"country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"t559gG","name":"Main Brewery","streetAddress":"1195-A Evans
         Avenue","locality":"San Francisco","region":"California","postalCode":"94124","phone":"415-642-3371","website":"http:\/\/www.goodbeer.com\/","hoursOfOperation":"Mon
         - Thu:\t9:00 am - 10:00 am\r\nFri - Sat:\t12:00 pm - 10:00 pm","latitude":37.7382569,"longitude":-122.3802492,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
         Brewery","countryIsoCode":"US","yearOpened":"1997","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:42:08","updateDate":"2012-03-21 20:05:26","breweryId":"QPe57Z","brewery":{"id":"QPe57Z","name":"Speakeasy
-        Ales and Lagers","website":"http:\/\/www.goodbeer.com\/","established":"1997","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QPe57Z\/upload_4ue2lE-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QPe57Z\/upload_4ue2lE-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QPe57Z\/upload_4ue2lE-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:08","updateDate":"2013-05-06 21:26:55"},"country":{"isoCode":"US","name":"UNITED
+        Ales and Lagers","description":"In a typically foggy San Francisco summer
+        in 1997, we were determined to bring our unique West Coast-style beers from
+        the underground to the masses. Defiantly producing small batches of beer in
+        a secret warehouse in San Francisco\u2019s long forgotten Butchertown District,
+        we quickly gained a fiercely loyal following with bold, complex beers and
+        striking 1920\u2019s imagery. Starting with a single, iconic beer that immortalized
+        the spirit of the bootleggers who persevered when America\u2019s taps ran
+        dry\u2014a bold, hoppy amber ale known as Prohibition Ale\u2014we now brew
+        a wide array of acclaimed beers from hoppy pale ales to stouts aged in whiskey
+        barrels. After 16 years of making great beer in the Bay Area, we have grown
+        by leaps and bounds, yet we still produce many of our beers on the original
+        steam-fired brewhouse that started it all.","website":"http:\/\/www.goodbeer.com\/","established":"1997","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QPe57Z\/upload_t8ClLn-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QPe57Z\/upload_t8ClLn-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QPe57Z\/upload_t8ClLn-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:08","updateDate":"2013-08-09 12:26:41"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
-        02:41:33"}},{"id":"L9Xqwc","name":"Main Brewery","streetAddress":"3145 Geary
-        Blvd","extendedAddress":"Suite 410","locality":"San Francisco","region":"California","postalCode":"94118","phone":"415-598-8811","website":"http:\/\/www.triplevoodoobrewing.com\/","latitude":37.781605,"longitude":-122.4529066,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
+        02:41:33"}},{"id":"L9Xqwc","name":"Main Brewery","streetAddress":"2245 3rd
+        St","locality":"San Francisco","region":"California","postalCode":"94107","phone":"415-598-8811","website":"http:\/\/www.triplevoodoobrewing.com\/","latitude":37.7611898,"longitude":-122.3885367,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
         Brewery","countryIsoCode":"US","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:11","updateDate":"2012-03-21 19:08:19","breweryId":"GoDmMT","brewery":{"id":"GoDmMT","name":"Triple
+        02:42:11","updateDate":"2013-11-28 16:01:51","breweryId":"GoDmMT","brewery":{"id":"GoDmMT","name":"Triple
         Voodoo Brewing","description":"Triple Voodoo Brewing is life to the extreme
         and at full volume. Born from the underground beer scene in San Francisco,
         we have been brewing some of the most extreme beer styles this city has seen
@@ -91,7 +141,7 @@ http_interactions:
         Beer in the World\", our mission is to bring you an amazing high ABV craft
         beer line-up. Here''s the team who work around the clock 24\/7 to make all
         these happen.","website":"http:\/\/www.triplevoodoobrewing.com\/","established":"2010","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/GoDmMT\/upload_7DybkD-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/GoDmMT\/upload_7DybkD-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/GoDmMT\/upload_7DybkD-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:10","updateDate":"2012-09-27 12:43:46"},"country":{"isoCode":"US","name":"UNITED
+        02:42:10","updateDate":"2013-12-11 12:29:30"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"NzbBOK","name":"Main Brewery","streetAddress":"1705 Mariposa
         St","locality":"San Francisco","region":"California","postalCode":"94107","phone":"415-863-8350","website":"http:\/\/www.anchorbrewing.com\/","hoursOfOperation":"Two
@@ -99,18 +149,20 @@ http_interactions:
         call: 415-863-8350","latitude":37.763487,"longitude":-122.401367,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
         Brewery","countryIsoCode":"US","yearOpened":"1896","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:41:44","updateDate":"2012-03-21 20:05:24","breweryId":"6PBXvz","brewery":{"id":"6PBXvz","name":"Anchor
-        Brewing Company","description":"Anchor''s beers are produced in one of the
-        most traditional and handsome breweries anywhere in the world.\r\n\r\nOur
-        brewers employ no modern shortcuts. Each brew is virtually handmade with an
-        all-malt mash in our handmade copper brewhouse, a veritable museum of the
-        simple, traditional brewhouses of old. We strive to practice the art of classical
-        brewing, and we employ state-of-the-art methods to ensure that our products
-        are clean and clear, pure and fresh. \r\n\r\nEvery bottle and keg of our precious
-        beer is kept under refrigeration at the brewery, and at the warehouse of your
-        local distributor. We know of no brewery in the world that matches our efforts
-        to combine traditional, natural brewing methods with the most careful and
-        modern methods of sanitation, finishing, packaging, and transporting.","website":"http:\/\/www.anchorbrewing.com\/","established":"1896","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/6PBXvz\/upload_GcROfI-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/6PBXvz\/upload_GcROfI-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/6PBXvz\/upload_GcROfI-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:44","updateDate":"2012-09-11 23:23:32"},"country":{"isoCode":"US","name":"UNITED
+        Brewing Company","description":"Anchor Brewing Company\u2019s roots date back
+        to the California gold rush making it one of America\u2019s oldest breweries.
+        Its Anchor Steam\u00ae Beer is San Francisco\u2019s original since 1896.\r\n\r\nIn
+        1965, Fritz Maytag acquired and revived the struggling brewery at a time when
+        mass production of beer dominated and seemed unstoppable. Maytag started a
+        revolution in beer that originated today\u2019s craft beer movement.\r\n\r\nAn
+        undisputed icon, Anchor is America\u2019s first craft brewery where beers
+        are handmade in our traditional copper brewhouse from an all-malt mash. At
+        Anchor, we practice the time-honored art of classical brewing, employing state-of-the-art
+        methods to ensure that our beers are always pure and fresh.\r\n\r\nWe know
+        of no brewery in the world that matches our efforts to combine traditional,
+        natural brewing with such carefully applied, modern methods of sanitation,
+        finishing, packaging and transporting.","website":"http:\/\/www.anchorbrewing.com\/","established":"1896","mailingListUrl":"http:\/\/www.anchorbrewing.com\/connect\/contact","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/6PBXvz\/upload_GcROfI-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/6PBXvz\/upload_GcROfI-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/6PBXvz\/upload_GcROfI-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:44","updateDate":"2013-08-09 20:11:55"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"4CFzKV","name":"Main Brewery","streetAddress":"1203 Bosworth
         St","locality":"San Francisco","region":"California","postalCode":"94131","phone":"415-585-8866","website":"http:\/\/www.bosworthbrewery.com\/","latitude":37.735219,"longitude":-122.441103,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
@@ -158,20 +210,6 @@ http_interactions:
         Gate Park Brewery","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:41:56","updateDate":"2012-03-21 19:06:06"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
-        02:41:33"}},{"id":"jivaao","name":"Main Brewery","streetAddress":"912 Cole
-        St., #338","locality":"San Francisco","region":"California","postalCode":"94117","phone":"818-825-8765","website":"http:\/\/www.shmaltz.com\/","latitude":37.7654594,"longitude":-122.4497845,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
-        Brewery","countryIsoCode":"US","yearOpened":"1996","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:08","updateDate":"2012-03-21 20:05:26","breweryId":"hgjj29","brewery":{"id":"hgjj29","name":"Shmaltz
-        Brewing Company","description":"Shmaltz Brewing Company is an American craft
-        brewing company based in San Francisco, California that owns HE''BREW Beer
-        and Coney Island Lagers. Founded as \u201ca celebration craft beer for Jews\u201d
-        by proprietor Jeremy Cowan, the company\u2019s beers now are distributed in
-        over thirty-one U.S. states, Canada, and England. Shmaltz is known for blurring
-        beer styles and using puns, art, history, and pop culture in every aspect
-        of their products. As a contract brewer, third-party brewers produce their
-        beers using the Shmaltz Brewing Company''s proprietary recipes.","website":"http:\/\/www.shmaltz.com\/","established":"1996","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/hgjj29\/upload_YKgXiM-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/hgjj29\/upload_YKgXiM-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/hgjj29\/upload_YKgXiM-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:08","updateDate":"2012-04-23 23:55:21"},"country":{"isoCode":"US","name":"UNITED
-        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"P7Ug6t","name":"Main Brewery","streetAddress":"1000 Great
         Highway","locality":"San Francisco","region":"California","postalCode":"94121","phone":"415-386-8439","website":"http:\/\/www.beachchalet.com\/","latitude":37.7694097,"longitude":-122.5105452,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"brewpub","locationTypeDisplay":"Brewpub","countryIsoCode":"US","yearOpened":"1997","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:41:45","updateDate":"2012-03-21 20:05:24","breweryId":"rGUQ04","brewery":{"id":"rGUQ04","name":"Beach
@@ -194,13 +232,6 @@ http_interactions:
         wonderful San Francisco experience while visiting Golden Gate Park and Ocean
         Beach. Join us and find out why the Beach Chalet is your kind of place.","website":"http:\/\/www.beachchalet.com\/","established":"1997","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/rGUQ04\/upload_mrm1Fb-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/rGUQ04\/upload_mrm1Fb-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/rGUQ04\/upload_mrm1Fb-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:41:45","updateDate":"2012-03-21 19:06:03"},"country":{"isoCode":"US","name":"UNITED
-        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
-        02:41:33"}},{"id":"M2eOkF","name":"Main Brewery","streetAddress":"3435 Cesar
-        Chavez #227","locality":"San Francisco","region":"California","postalCode":"94110","phone":"1-650-343-2739","latitude":37.7480196,"longitude":-122.4194251,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
-        Brewery","countryIsoCode":"US","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:08","updateDate":"2012-03-21 19:08:17","breweryId":"K0SXBa","brewery":{"id":"K0SXBa","name":"Shmaltz
-        Enterprises","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:08","updateDate":"2012-03-21 19:06:09"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"k8SEYZ","name":"Main Brewery","streetAddress":"694 Peralta
         Ave","locality":"San Francisco","region":"California","postalCode":"94110","latitude":37.741461,"longitude":-122.409038,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
@@ -246,12 +277,14 @@ http_interactions:
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"o8mhnm","name":"Main Brewery","streetAddress":"1398 Haight
         Street","locality":"San Francisco","region":"California","postalCode":"94117","phone":"(415)
-        864-7468","website":"http:\/\/www.magnoliapub.com\/","hoursOfOperation":"11
-        am until midnight Monday through Thursday,\r\n11 am until 1 am Friday,\r\n10
-        am until 1 am Saturday\r\nand 10 am until midnight on Sundays.","latitude":37.7702334,"longitude":-122.4453252,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"brewpub","locationTypeDisplay":"Brewpub","countryIsoCode":"US","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:01","updateDate":"2013-05-09 19:08:35","breweryId":"ScZdj3","brewery":{"id":"ScZdj3","name":"Magnolia
-        Pub and Brewery","website":"http:\/\/www.magnoliapub.com\/","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:01","updateDate":"2013-05-09 19:10:00"},"country":{"isoCode":"US","name":"UNITED
+        864-7468","website":"http:\/\/www.magnoliapub.com\/","hoursOfOperation":"Mon
+        - Thu: 11:00 am - 12:00 am\r\nFri: 11:00 am - 1:00 am\r\nSat: 10:00 am - 1:00
+        am\r\nSun: 10:00 am - 11:00 pm","latitude":37.7702334,"longitude":-122.4453252,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"brewpub","locationTypeDisplay":"Brewpub","countryIsoCode":"US","yearOpened":"1997","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:01","updateDate":"2013-08-06 22:18:16","breweryId":"ScZdj3","brewery":{"id":"ScZdj3","name":"Magnolia
+        Gastropub and Brewery","description":"Brewery and gastropub in San Francisco''s
+        Haight Ashbury District with a production brewery and BBQ restaurant on the
+        way this fall in the Dogpatch neighborhood.","website":"http:\/\/www.magnoliapub.com\/","established":"1997","mailingListUrl":"http:\/\/magnoliapub.com\/brewsletter.html","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/ScZdj3\/upload_eUt0Jz-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/ScZdj3\/upload_eUt0Jz-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/ScZdj3\/upload_eUt0Jz-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:01","updateDate":"2014-03-04 12:43:54"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}},{"id":"d6chX4","name":"Main Brewery","streetAddress":"Noe Valley","locality":"San
         Francisco","region":"California","phone":"415-244-5496","website":"http:\/\/elizabethstreetbrewery.com\/","latitude":37.74839,"longitude":-122.433487,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"micro","locationTypeDisplay":"Micro
@@ -263,7 +296,38 @@ http_interactions:
         ESB is a pub for the people, by the people.","website":"http:\/\/elizabethstreetbrewery.com\/","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:41:53","updateDate":"2012-03-21 19:06:16"},"country":{"isoCode":"US","name":"UNITED
         STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":"JJzXl0","name":"Main Brewpub","streetAddress":"3801 18th
+        Street","locality":"San Francisco","region":"California","postalCode":"94114","phone":"(415)
+        273-9295","website":"http:\/\/cerveceriasf.com\/","hoursOfOperation":"Tuesday
+        through Sunday \u2013 12pm to 10pm\r\nMonday \u2013 5pm to 10pm","latitude":37.7611033,"longitude":-122.4284314,"isPrimary":"Y","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"brewpub","locationTypeDisplay":"Brewpub","countryIsoCode":"US","status":"verified","statusDisplay":"Verified","createDate":"2014-01-07
+        12:59:01","updateDate":"2014-01-07 12:59:01","breweryId":"vpdrzj","brewery":{"id":"vpdrzj","name":"Cervecer\u00eda
+        de MateVeza","description":"Cervecer\u00eda de MateVeza is a cafe and small
+        brewery dedicated to providing locally-sourced, Argentinian-style empanadas
+        paired with creative artisanal beers.","website":"http:\/\/cerveceriasf.com\/","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/vpdrzj\/upload_m5jG8G-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/vpdrzj\/upload_m5jG8G-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/vpdrzj\/upload_m5jG8G-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2014-01-07
+        05:09:49","updateDate":"2014-01-07 12:57:55"},"country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
+        02:41:33"}},{"id":"jivaao","name":"San Francisco","streetAddress":"912 Cole
+        St.","extendedAddress":"#338","locality":"San Francisco","region":"California","postalCode":"94117","phone":"818-825-8765","website":"http:\/\/www.shmaltz.com\/","latitude":37.7654594,"longitude":-122.4497845,"isPrimary":"N","inPlanning":"N","isClosed":"N","openToPublic":"Y","locationType":"brewpub","locationTypeDisplay":"Brewpub","countryIsoCode":"US","yearOpened":"1996","status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:08","updateDate":"2013-11-21 17:10:48","breweryId":"hgjj29","brewery":{"id":"hgjj29","name":"Shmaltz
+        Brewing Company","description":"Shmaltz Brewing Company is an American craft
+        brewing company born in San Francisco, California in 1996 that handcrafts
+        HE''BREW Beer and Coney Island Lagers. Founded as the first and still only
+        \"Jewish-celebration beer,\"  proprietor, Jeremy Cowan, moved production to
+        New York in 2003 and now distributes in over thirty-one U.S. states and Canada.  Shmaltz
+        is known for blurring beer styles and using puns, art, history, and pop culture
+        in every aspect of its products. Starting out as a contract brewer, third-party
+        brewers produce their lineup using Shmaltz Brewing Company''s proprietary
+        recipes. In 2013, Shmaltz was \u201creborn\u201d in Clifton Park, NY, opening
+        its own 50-barrel brewhouse in a 20,000 square foot warehouse just north of
+        the Capitol district. Taking over 100% of their production meant bringing
+        in the Brewmaster, Paul McErlean who designed every one of their award winning
+        recipes, as well as Bob Craven, General Manager, and two of the experienced
+        contract brewers. Shmaltz Brewing now has a true \"home\" for its family of
+        fermented offerings and a tasting room for fans and curious beer lovers to
+        come join the tribe. L''Chaim!","website":"http:\/\/www.shmaltzbrewing.com\/","established":"1996","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/hgjj29\/upload_dMhdW6-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/hgjj29\/upload_dMhdW6-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/hgjj29\/upload_dMhdW6-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:08","updateDate":"2013-11-25 12:49:29"},"country":{"isoCode":"US","name":"UNITED
+        STATES","displayName":"United States","isoThree":"USA","numberCode":840,"createDate":"2012-01-03
         02:41:33"}}],"status":"success"}'
     http_version: 
-  recorded_at: Mon, 22 Jul 2013 00:05:50 GMT
+  recorded_at: Mon, 31 Mar 2014 20:13:24 GMT
 recorded_with: VCR 2.4.0

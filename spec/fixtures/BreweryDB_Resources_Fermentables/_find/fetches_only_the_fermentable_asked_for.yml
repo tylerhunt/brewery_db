@@ -8,35 +8,35 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Fri, 02 Aug 2013 01:31:26 GMT
+      - Mon, 31 Mar 2014 20:13:23 GMT
       server:
-      - Apache/2.2.24 (Amazon)
-      x-powered-by:
-      - PHP/5.3.26
-      x-ratelimit-limit:
-      - '400'
-      x-ratelimit-remaining:
-      - '386'
+      - Apache/2.2.26 (Amazon)
       vary:
       - Accept-Encoding
+      x-powered-by:
+      - PHP/5.3.28
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
       content-length:
       - '253'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
       string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":1924,"name":"CaraMunich","characteristics":[{"id":5,"name":"Caramel","description":"Imparts
         a caramel quality upon the beer.","createDate":"2013-06-24 16:07:26"}],"category":"malt","categoryDisplay":"Malts,
         Grains, & Fermentables","createDate":"2013-06-24 16:07:57"},"status":"success"}'
     http_version: 
-  recorded_at: Fri, 02 Aug 2013 01:31:27 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 31 Mar 2014 20:13:23 GMT
+recorded_with: VCR 2.4.0

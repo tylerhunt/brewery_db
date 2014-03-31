@@ -8,33 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Fri, 02 Aug 2013 02:35:02 GMT
+      - Mon, 31 Mar 2014 20:13:27 GMT
       server:
-      - Apache/2.2.24 (Amazon)
-      x-powered-by:
-      - PHP/5.3.26
-      x-ratelimit-limit:
-      - '400'
-      x-ratelimit-remaining:
-      - '382'
+      - Apache/2.2.26 (Amazon)
       vary:
       - Accept-Encoding
+      x-powered-by:
+      - PHP/5.3.28
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
       content-length:
       - '4353'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
-      string: '{"currentPage":1,"numberOfPages":9,"totalResults":403,"data":[{"id":1531,"name":"10th
+      string: '{"currentPage":1,"numberOfPages":9,"totalResults":404,"data":[{"id":1531,"name":"10th
         Anniversary Blend","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
         16:08:57"},{"id":1756,"name":"Abbey Ale","description":"Used to produce Trappist
         style beers. Similar to WLP500, but is less fruity and more alcohol tolerant
@@ -218,5 +218,5 @@ http_interactions:
         at least 90?F (32?C) or the use of a secondary strain can accelerate attenuation.","yeastType":"ale","attenuationMin":76,"attenuationMax":80,"fermentTempMin":70,"fermentTempMax":95,"alcoholToleranceMin":12,"alcoholToleranceMax":12,"productId":"3724","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
         16:09:24","updateDate":"2013-06-24 16:10:53"}],"status":"success"}'
     http_version: 
-  recorded_at: Fri, 02 Aug 2013 02:35:03 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 31 Mar 2014 20:13:26 GMT
+recorded_with: VCR 2.4.0

@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Search, :resource do
     let(:response) { described_class.new(config).all(q: 'IPA') }
 
     it 'fetches all of the search results at once' do
-      expect(response.count).to eq(6260)
+      expect(response.count).to eq(7202)
     end
   end
 

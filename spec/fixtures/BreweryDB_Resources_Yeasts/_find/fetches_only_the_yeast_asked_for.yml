@@ -8,30 +8,30 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Fri, 02 Aug 2013 02:35:02 GMT
+      - Mon, 31 Mar 2014 20:13:27 GMT
       server:
-      - Apache/2.2.24 (Amazon)
-      x-powered-by:
-      - PHP/5.3.26
-      x-ratelimit-limit:
-      - '400'
-      x-ratelimit-remaining:
-      - '381'
+      - Apache/2.2.26 (Amazon)
       vary:
       - Accept-Encoding
+      x-powered-by:
+      - PHP/5.3.28
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
       content-length:
       - '584'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
       string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":1836,"name":"American
@@ -45,5 +45,5 @@ http_interactions:
         filtration.","yeastType":"ale","attenuationMin":72,"attenuationMax":76,"fermentTempMin":60,"fermentTempMax":72,"alcoholToleranceMin":10,"alcoholToleranceMax":10,"productId":"1272","supplier":"Wyeast","yeastFormat":"liquid","category":"yeast","categoryDisplay":"Yeast","createDate":"2013-06-24
         16:09:23","updateDate":"2013-06-24 16:10:52"},"status":"success"}'
     http_version: 
-  recorded_at: Fri, 02 Aug 2013 02:35:03 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 31 Mar 2014 20:13:26 GMT
+recorded_with: VCR 2.4.0

@@ -8,30 +8,30 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Mon, 22 Jul 2013 00:05:49 GMT
+      - Mon, 31 Mar 2014 20:13:24 GMT
       server:
-      - Apache/2.2.24 (Amazon)
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
       x-powered-by:
-      - PHP/5.3.26
+      - PHP/5.3.28
       x-ratelimit-limit:
       - Unlimited
       x-ratelimit-remaining:
       - Unlimited
-      vary:
-      - Accept-Encoding
       content-length:
       - '251'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
       string: '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"name":"Flute","createDate":"2012-01-03
@@ -43,5 +43,5 @@ http_interactions:
         02:41:33"},{"id":13,"name":"Willi","createDate":"2012-01-03 02:41:33"},{"id":14,"name":"Thistle","createDate":"2012-01-03
         02:41:33"}],"status":"success"}'
     http_version: 
-  recorded_at: Mon, 22 Jul 2013 00:05:49 GMT
+  recorded_at: Mon, 31 Mar 2014 20:13:23 GMT
 recorded_with: VCR 2.4.0

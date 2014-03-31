@@ -8,30 +8,30 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.2
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Fri, 04 Oct 2013 00:33:46 GMT
+      - Mon, 31 Mar 2014 20:13:16 GMT
       server:
-      - Apache/2.2.25 (Amazon)
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
       x-powered-by:
-      - PHP/5.3.27
+      - PHP/5.3.28
       x-ratelimit-limit:
       - Unlimited
       x-ratelimit-remaining:
       - Unlimited
-      vary:
-      - Accept-Encoding
       content-length:
       - '1342'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
       string: '{"currentPage":1,"numberOfPages":1,"totalResults":1,"data":[{"id":"LVjHK1","name":"Brooklyn
@@ -62,5 +62,5 @@ http_interactions:
         not be perceived. Chill haze is allowable at cold temperatures.","ibuMin":"25","ibuMax":"45","abvMin":"4","abvMax":"6.4","srmMin":"15","srmMax":"26","ogMin":"1.04","fgMin":"1.01","fgMax":"1.018","createDate":"2012-03-21
         20:06:46"},"fluidSize":{"id":9,"volume":"case","createDate":"2012-01-03 02:41:33"}}],"status":"success"}'
     http_version: 
-  recorded_at: Fri, 04 Oct 2013 00:33:57 GMT
-recorded_with: VCR 2.6.0
+  recorded_at: Mon, 31 Mar 2014 20:13:16 GMT
+recorded_with: VCR 2.4.0

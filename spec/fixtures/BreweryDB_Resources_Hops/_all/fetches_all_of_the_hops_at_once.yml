@@ -8,33 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
-      date:
-      - Fri, 02 Aug 2013 01:49:44 GMT
-      server:
-      - Apache/2.2.24 (Amazon)
-      x-powered-by:
-      - PHP/5.3.26
-      x-ratelimit-limit:
-      - '400'
-      x-ratelimit-remaining:
-      - '385'
-      vary:
-      - Accept-Encoding
-      content-length:
-      - '5328'
-      connection:
-      - close
       content-type:
       - application/json
+      date:
+      - Mon, 31 Mar 2014 20:13:24 GMT
+      server:
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - PHP/5.3.28
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '5327'
+      connection:
+      - Close
     body:
       encoding: UTF-8
-      string: '{"currentPage":1,"numberOfPages":4,"totalResults":165,"data":[{"id":1976,"name":"#06300","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
+      string: '{"currentPage":1,"numberOfPages":4,"totalResults":166,"data":[{"id":1976,"name":"#06300","category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
         16:07:41"},{"id":1,"name":"Admiral","description":"Bred at Wye as a replacement
         for Target and released in 1998, Admiral is a high-alpha variety considered
         to have a more pleasing, less harsh bitterness.","countryOfOrigin":"GB","alphaAcidMin":13,"betaAcidMin":4.8,"betaAcidMax":6.1,"humuleneMin":7,"humuleneMax":26,"caryophylleneMin":6,"caryophylleneMax":8,"cohumuloneMin":37,"cohumuloneMax":45,"myrceneMin":39,"myrceneMax":48,"farneseneMin":1.8,"farneseneMax":2.2,"category":"hop","categoryDisplay":"Hops","createDate":"2013-06-24
@@ -244,5 +244,5 @@ http_interactions:
         16:10:37","country":{"isoCode":"GB","name":"UNITED KINGDOM","displayName":"United
         Kingdom","isoThree":"GBR","numberCode":826,"createDate":"2012-01-03 02:41:33"}}],"status":"success"}'
     http_version: 
-  recorded_at: Fri, 02 Aug 2013 01:49:45 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 31 Mar 2014 20:13:24 GMT
+recorded_with: VCR 2.4.0

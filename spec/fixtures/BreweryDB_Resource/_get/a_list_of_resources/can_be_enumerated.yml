@@ -8,40 +8,40 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Mon, 22 Jul 2013 00:05:45 GMT
+      - Mon, 31 Mar 2014 20:13:20 GMT
       server:
-      - Apache/2.2.24 (Amazon)
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
       x-powered-by:
-      - PHP/5.3.26
+      - PHP/5.3.28
       x-ratelimit-limit:
       - Unlimited
       x-ratelimit-remaining:
       - Unlimited
-      vary:
-      - Accept-Encoding
       content-length:
-      - '13953'
+      - '13473'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
-      string: '{"currentPage":1,"numberOfPages":2,"totalResults":66,"data":[{"id":"snQlvg","name":"10
+      string: '{"currentPage":1,"numberOfPages":2,"totalResults":74,"data":[{"id":"snQlvg","name":"10
         Barrel Brewing Company","description":"We brew into a 10 Barrel Brewhouse,
         giving us the freedom to experiment with our recipes in order to produce the
         highest quality of beer that we can.  This isn\u2019t just any 10 Barrel brewhouse
         though, it\u2019s a state of the art system that allows us to blend new technology
         with the tradition of craft fundamentals.  In other words we can\u2019t produce
         a TON of beer, but we can make it the highest quality.","website":"http:\/\/www.10barrel.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/snQlvg\/upload_qMSc0A-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/snQlvg\/upload_qMSc0A-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/snQlvg\/upload_qMSc0A-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:43","updateDate":"2012-12-03 11:44:27"},{"id":"QtDyxR","name":"612 Brew","description":"At
+        02:41:43","updateDate":"2013-10-12 01:15:45"},{"id":"QtDyxR","name":"612 Brew","description":"At
         612Brew, the newest beer company in the 612, we want to make your newest favorite
         beer you\u2019ve never had.\r\n\r\nWith our operation moving to a larger location
         in Uptown, we have the opportunity to make and test out much larger batches
@@ -111,7 +111,7 @@ http_interactions:
         We believe in rustic, natural quality over fancy-pants snobbery. Our marketing
         and branding efforts try to reinforce this and we choose to market by talking
         to folks instead of blaring messages through mass-market advertising.","website":"http:\/\/beaus.ca\/","established":"2006","isOrganic":"Y","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OR1ggJ\/upload_due5zU-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OR1ggJ\/upload_due5zU-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OR1ggJ\/upload_due5zU-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2013-03-21
-        10:33:23","updateDate":"2013-03-21 10:42:31"},{"id":"pwfPCD","name":"Big Boss
+        10:33:23","updateDate":"2013-09-15 18:47:50"},{"id":"pwfPCD","name":"Big Boss
         Brewing Company","description":"Big Boss Brewing Company was started in 2006
         and shipped its first beer in the 2nd quarter of 2007 in the triangle area
         of North Carolina. It was formed as collaboration between Geoff Lamb, a UNC
@@ -154,7 +154,7 @@ http_interactions:
         enterprise of this type, we seek to realize an alternative business model
         for brewpubs and to help expand the co-operative movement into new and innovative
         areas \u2014 both in Austin and around the world.","website":"http:\/\/www.blackstar.coop\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/NYOvdO\/upload_yun5pM-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/NYOvdO\/upload_yun5pM-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/NYOvdO\/upload_yun5pM-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:46","updateDate":"2012-06-27 13:53:30"},{"id":"GKA5lt","name":"Brasseurs
+        02:41:46","updateDate":"2013-08-14 13:52:40"},{"id":"GKA5lt","name":"Brasseurs
         du Hameau","description":"The Brewers of Hamlet took up residence in the village
         to make a craft beer quality.\r\nThe term nano-brewery is a project which
         initially is modest in terms of quantity, about 750 liters per week. This
@@ -175,7 +175,9 @@ http_interactions:
         in Fraserburgh produced its first brew in April 2007. It is Scotland''s largest
         independently owned brewery producing about 120,000 bottles per month for
         export all over the world.","website":"http:\/\/brewdog.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/wfAwfx\/upload_tn2qSA-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/wfAwfx\/upload_tn2qSA-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/wfAwfx\/upload_tn2qSA-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:48","updateDate":"2012-08-23 12:47:02"},{"id":"OVYjJ8","name":"Burlington
+        02:41:48","updateDate":"2012-08-23 12:47:02"},{"id":"wN2mAf","name":"BrickStone
+        Restaurant & Brewery","website":"http:\/\/www.brickstonebrewery.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/wN2mAf\/upload_7BecqY-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/wN2mAf\/upload_7BecqY-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/wN2mAf\/upload_7BecqY-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:48","updateDate":"2013-08-10 00:05:53"},{"id":"OVYjJ8","name":"Burlington
         Beer Company","description":"Vermont''s first community supported brewery.
         We''re planning to open a Brewery in the Burlington Area featuring hand crafted
         ales & lagers. Follow our adventures from idea to brewery!","website":"http:\/\/www.burlingtonbeercompany.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OVYjJ8\/upload_F5jiIP-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OVYjJ8\/upload_F5jiIP-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OVYjJ8\/upload_F5jiIP-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-10-10
@@ -187,7 +189,14 @@ http_interactions:
         the end of the alley between 20 and 22 Main Street. Stop by the brewery any
         Saturday from 11am until 5pm to for a taste (or two). We''ll even sell you
         a growler or a keg to take home.","website":"http:\/\/chathambrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/cSJ6eN\/upload_mddF1S-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/cSJ6eN\/upload_mddF1S-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/cSJ6eN\/upload_mddF1S-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:50","updateDate":"2012-03-30 12:00:04"},{"id":"195Jl2","name":"Cody
+        02:41:50","updateDate":"2012-03-30 12:00:04"},{"id":"Lli3HQ","name":"Check
+        Six Brewing Company","description":"A craft brewery in the making!\r\nCoFounded
+        by Noah Goldman, Tim Hassel and Norm Weiss. With a special thanks to Mike
+        and J.R. Goldman!","website":"http:\/\/checksixbeer.com","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Lli3HQ\/upload_1GKu6N-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Lli3HQ\/upload_1GKu6N-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Lli3HQ\/upload_1GKu6N-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2014-03-17
+        15:11:13","updateDate":"2014-03-17 15:11:51"},{"id":"v5bPRk","name":"Cherry
+        Street Brewing Cooperative","description":"Forsyth''s only Brewpub. The Community
+        Brewery. Do You Know Your Brewer?","website":"http:\/\/www.cherrystreetbrewing.com","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/v5bPRk\/upload_s4rzy1-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/v5bPRk\/upload_s4rzy1-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/v5bPRk\/upload_s4rzy1-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2013-08-02
+        19:13:55","updateDate":"2013-11-22 16:13:41"},{"id":"195Jl2","name":"Cody
         Brewing Company","description":"Cody Brewing Company is located in Historic
         Amesbury, Massachusetts on the Powow River. We make hand crafted beer that
         combines traditional styles with rule breaking ideas to make the best beer
@@ -208,8 +217,8 @@ http_interactions:
         fun doing what we love - Making Great Beer.\r\n\r\nThe Crabtree Brewing Company,
         ltd. is a Colorado based company providing premium ale, wheat, stout, and
         lager style beers. Established in 2006, this is the first micro-brewery located
-        within Greeley, Colorado.","website":"http:\/\/www.crabtreebrewing.com","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OQJeOY\/upload_Yfs90V-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OQJeOY\/upload_Yfs90V-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OQJeOY\/upload_Yfs90V-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:51","updateDate":"2012-03-21 19:06:05"},{"id":"supFO9","name":"Dead
+        within Greeley, Colorado.","website":"http:\/\/www.crabtreebrewing.com","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OQJeOY\/upload_97eBIx-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OQJeOY\/upload_97eBIx-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/OQJeOY\/upload_97eBIx-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:51","updateDate":"2013-08-12 21:52:41"},{"id":"supFO9","name":"Dead
         Frog Brewery","description":"A Canadian Craft Brewery located in Aldergrove
         BC and home of the finest beer in the universe! Do It Froggy Style!!!","website":"http:\/\/www.deadfrogbrewery.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/supFO9\/upload_sAyr6d-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/supFO9\/upload_sAyr6d-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/supFO9\/upload_sAyr6d-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:41:52","updateDate":"2012-03-21 19:06:13"},{"id":"MpYI7s","name":"Doolally","description":"Doolally
@@ -273,7 +282,13 @@ http_interactions:
         \r\n\r\nWe make different beers throughout the year, some we brew all the
         time and some are only around for a very short period. Our focus is to expand
         our abilities and enjoy our work.","website":"http:\/\/www.halfacrebeer.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/lZfiot\/upload_A0HxP0-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/lZfiot\/upload_A0HxP0-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/lZfiot\/upload_A0HxP0-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:56","updateDate":"2012-10-23 15:16:03"},{"id":"s6FkDL","name":"High
+        02:41:56","updateDate":"2013-08-09 14:22:06"},{"id":"h5HYz6","name":"Hamburger
+        Mary''s","description":"Opened in 2006, Hamburger Mary''s Chicago is a classy-kitsch
+        American diner serving gourmet half-pound burgers with a side of sass.  Mary''s
+        expanded in 2009 and added a small brewery, making her the oldest nano-brewery
+        in Chicago.  Mary''s motto is \"an open-air bar & grill for open-minded people,\"  where
+        all are welcome to \"Eat, Drink.. .and be MARY!\"","website":"http:\/\/www.hamburgermarys.com\/chicago","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/h5HYz6\/upload_rNDRL5-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/h5HYz6\/upload_rNDRL5-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/h5HYz6\/upload_rNDRL5-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:41:56","updateDate":"2013-08-09 16:24:56"},{"id":"s6FkDL","name":"High
         & Mighty Beer Company","description":"High & Mighty Beer Company began in
         2006 as an offshoot of Shelton Brothers beer importing company. Will Shelton
         took his idea for a novel German-style ale to Paper City Brewery in Holyoke,
@@ -334,7 +349,15 @@ http_interactions:
         people can enjoy fishing, hiking, camping, sailing, antiquing, and bird watching
         or simply kicking back and taking in the spectacular views of the Sierra Nevada
         mountain range.","website":"http:\/\/www.kernriverbrewingcompany.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/E1zSFp\/upload_m8yLwX-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/E1zSFp\/upload_m8yLwX-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/E1zSFp\/upload_m8yLwX-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:41:59","updateDate":"2012-03-21 19:06:10"},{"id":"6QNMyS","name":"Laht
+        02:41:59","updateDate":"2012-03-21 19:06:10"},{"id":"QoD9Zu","name":"La Gardenia","description":"ROSITA,
+        the main brand, is a honey-colored ale, that delivers elegance with a certain
+        density in the glass, ivory tones with white foam, creamy and consistent with
+        a wholesome persistence. Due to the presence of secondary fermentation yeast,
+        the appearance is cloudy.\r\n\r\nWe recommend tasting it cold, not frozen
+        (42 to 46\u00baF) in order to envelop its aromatic presence.\r\n\r\nOnes olfactory
+        will detect fruit such as banana and red apple notes along with molasses which
+        is very subtle but also very complex.","website":"http:\/\/www.rosita.cat","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QoD9Zu\/upload_EwOgAZ-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QoD9Zu\/upload_EwOgAZ-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QoD9Zu\/upload_EwOgAZ-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2013-08-16
+        11:11:33","updateDate":"2013-08-18 13:54:32"},{"id":"6QNMyS","name":"Laht
         Neppur Brewing Company","description":"We couldn''t have said it better ourselves.
         Laht Neppur Brewing Co., located in Waitsburg, WA, offers premium handcrafted
         ale by the glass or pitcher in our tap room. Sampler trays are highly recommended
@@ -361,7 +384,7 @@ http_interactions:
         each stage of the brewing cycle, never skimp on how long each step takes and
         only use the highest quality ingredients: malted barley, hops, yeast, plus
         a healthy dose of science.","website":"http:\/\/www.lightningbrewery.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/L3ozHK\/upload_N1uLAM-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/L3ozHK\/upload_N1uLAM-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/L3ozHK\/upload_N1uLAM-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:00","updateDate":"2012-03-21 19:06:12"},{"id":"hSeoOy","name":"Microbrasserie
+        02:42:00","updateDate":"2014-03-16 21:21:48"},{"id":"hSeoOy","name":"Microbrasserie
         de l''\u00cele d''Orl\u00e9ans","website":"http:\/\/www.microorleans.com\/","established":"2006","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2013-07-03
         15:20:18","updateDate":"2013-07-05 11:13:51"},{"id":"zpGIxB","name":"Moccasin
         Bend Brewing Company","description":"Moccasin Bend Brewing Company is located
@@ -398,7 +421,58 @@ http_interactions:
         before bringing them to market. Years of minor tweaks, arguments over hop
         profiles, and experiments with different brands of base malts are poured into
         every glass that we brew.","website":"http:\/\/mondaynightbrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/1cfDau\/upload_24Ushu-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/1cfDau\/upload_24Ushu-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/1cfDau\/upload_24Ushu-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:02","updateDate":"2013-03-18 11:22:48"},{"id":"QlLikG","name":"Naukabout
+        02:42:02","updateDate":"2013-11-22 16:19:28"}],"status":"success"}'
+    http_version: 
+  recorded_at: Mon, 31 Mar 2014 20:13:20 GMT
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/breweries?key=API_KEY&established=2006&p=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.3
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Mon, 31 Mar 2014 20:13:20 GMT
+      server:
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - PHP/5.3.28
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '8136'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"currentPage":2,"numberOfPages":2,"totalResults":74,"data":[{"id":"I0AWx9","name":"Murray''s
+        Craft Brewing Co","description":"At Murray\u2019s we are fanatical about the
+        quality of our beers. We use only the best quality ingredients sourced from
+        Australia and around the world and we give all of our beers extended conditioning
+        times \u2013 no rushing.\r\n\r\nEstablished in late 2006 by passionate craft
+        beer enthusiast, Murray Howe, Murray\u2019s Craft Brewing Co. has quickly
+        gained a reputation as one of Aust best Craft Brewers. So much so that we
+        were awarded \u2018Best Brewer in Australia\u2019 in October 2012. \r\n\r\nCrafted
+        in Port Stephens on the beach on the NSW Hunter region our hugely sought-after
+        range of unconventional, unique and sometimes just plain weird \u2013 full-flavoured
+        beers are available across Australia.\r\n\r\nWe\u2019re not a corporation
+        and we\u2019d NEVER lower our standards to sell more beer. Rest-assured our
+        beers have won more awards than our ads. Murray\u2019s is proudly 100% Australian-owned.\r\n\r\nMurray\u2019s\u2026
+        Made of the Right Stuff.","website":"http:\/\/www.murraysbrewingco.com.au\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/I0AWx9\/upload_BEc42I-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/I0AWx9\/upload_BEc42I-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/I0AWx9\/upload_BEc42I-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2014-03-03
+        23:24:05","updateDate":"2014-03-03 23:29:23"},{"id":"QlLikG","name":"Naukabout
         Beer Company","website":"http:\/\/naukabout.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QlLikG\/upload_HPPVas-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QlLikG\/upload_HPPVas-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/QlLikG\/upload_HPPVas-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2013-01-09
         12:14:30","updateDate":"2013-01-09 12:16:56"},{"id":"8hMBS3","name":"Nils
         Oscar Bryggeri","description":"We brew beer and produce good spirits\r\n\r\nOur
@@ -412,18 +486,47 @@ http_interactions:
         please let us know if you want to know more: info@nilsoscar.se You can also
         sign up to Nils Oscar Good Friends . Welcome!","website":"http:\/\/www.nilsoscar.se\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/8hMBS3\/upload_haARwd-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/8hMBS3\/upload_haARwd-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/8hMBS3\/upload_haARwd-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-06-14
         10:30:50","updateDate":"2012-06-14 11:59:08"},{"id":"V4I9FT","name":"Ninkasi
-        Brewing Company","description":"Ninkasi Brewing began its history on June
-        15th, 2006 when Jamie Floyd and Nikos Ridge spent 17 hours brewing their first
-        batch of Total Domination IPA in leased space inside a German restaurant in
-        Springfield, Oregon. Once a brewery, the building was equipped with a 15 barrel
-        brew house set up for brewpub brewing.\r\n\r\nWithin the next few months Ninkasi
-        maximized its first home as they pushed their maximum annual output of 1600
-        barrels. Meanwhile, the two worked with the City of Eugene, the SBA, Liberty
-        Bank and some investors to purchase their current location in the heart of
-        the Historic Whiteaker neighborhood in Eugene. Over time, Ninkasi transformed
-        the old plumbing company\u2019s building into the modern production brewery
-        it is today.","website":"http:\/\/www.ninkasibrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/V4I9FT\/upload_vJvHqO-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/V4I9FT\/upload_vJvHqO-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/V4I9FT\/upload_vJvHqO-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:03","updateDate":"2012-11-01 11:22:37"},{"id":"WwE6W1","name":"Oakshire
+        Brewing Company","description":"In late 2005, Nikos Ridge and Jamie Floyd
+        met at a favorite local bottle\r\nshop in Eugene, Ore. Nikos was sampling
+        a beer Jamie had brewed at a local\r\nrestaurant\/brewery and through mutual
+        friends, the two started talking.\r\nThe conversation landed on the question,
+        \u201cWhat would you do if you could\r\nopen your own brewery?\u201d With
+        Nikos\u2019 background in finance and Jamie\u2019s\r\nexperience in brewing,
+        it seemed like a good skillset for starting a brewery.\r\nThe two began brewing
+        about six months later, on June 15, 2006, when\r\nNikos and Jamie spent 17
+        hours brewing the first batch of Total Domination\r\nIPA. The first kegs were
+        produced in a leased space inside of a German\r\nrestaurant in Springfield,
+        Ore. Once a brewery, the building was equipped\r\nwith a 15-barrel brew house.
+        Here, a new craft brewery was born with one\r\nsoul driving purpose\u2014through
+        the creation of the highest quality beers;\r\nto improve the lives of its
+        customers, the residents of its communities, its\r\nemployees, and business
+        partners.\r\n\r\nBoth founders knew they wanted to do things differently\u2014within
+        the beer\r\nindustry and in the local community. In a time when the industry
+        landscape\r\nwas home to male-centric brands, Nikos and Jamie strived for
+        a company\r\nthat represented what beer meant to them\u2014a source of community
+        and\r\nthe root of human existence. And so, Ninkasi\u2014the Sumerian goddess
+        of\r\nfermentation\u2014was selected as the name. Throughout human history,
+        beer\r\nnot only was a catalyst for written language and organized education,
+        but\r\nwas also the center of community and culture, one never in operation\r\nwithout
+        the other\u2014a driving force behind the new brewery. In a quest to\r\nfind
+        property that could cultivate community spirit, the two purchased real\r\nestate
+        in Eugene\u2019s Whiteaker neighborhood and moved the brewery to its\r\ncurrent
+        location in 2007.\r\nSince then, Ninkasi has undergone three expansions, to
+        produce more\r\nbeer for more people. The expansions included a larger production
+        facility,\r\ntasting room, office spaces, and local distribution, all while
+        keeping the\r\nfocus on brewing excellent craft beer. Ninkasi\u2019s culture
+        continues to embody\r\n\u201cBelieve in the Goddess\u201d\u2014symbolizing
+        the Ninkasi ideal in an elevated\r\nhuman experience through the social enjoyment
+        and sharing of beer.\r\nThe current brewery features a 55-barrel brewing system,
+        with a capacity of\r\n95,000 barrels per year of craft beer to be distributed
+        throughout Alaska,\r\nCalifornia, Idaho, Montana, Oregon, Washington, and
+        British Columbia.\r\nThe Ninkasi family of beers, known as its Flagship Series,
+        has grown from\r\nits first batch of Total Domination IPA to include Tricerahops
+        Double IPA,\r\nBeliever Double Red, Oatis Oatmeal Stout, Vanilla Oatis Oatmeal
+        Stout,\r\nand Quantum Pale Ale. Today, the Ninkasi family of brands includes
+        its\r\nFlagship, Seasonal Release, Special Release, Prismatic Lager, Single
+        Hop,\r\nand R&D Series.","website":"http:\/\/www.ninkasibrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/V4I9FT\/upload_V8Ophh-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/V4I9FT\/upload_V8Ophh-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/V4I9FT\/upload_V8Ophh-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:03","updateDate":"2013-11-01 11:44:26"},{"id":"WwE6W1","name":"Oakshire
         Brewing Company","description":"The name Oakshire represents Strength, Independence,
         Community and Bioregion, values held by our owners and employees.   Begun
         in October 2006 by brothers Jeff and Chris Althouse, Oakshire Brewing operates
@@ -434,51 +537,20 @@ http_interactions:
         single batch beers only available on draft.  The brewery aims to make clean,
         consistent, high quality beer \u2013 humble brewers of delicious beer.\r\n\r\nFormerly
         know as Willamette Brewery","website":"http:\/\/oakbrew.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/WwE6W1\/upload_lV4GZt-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/WwE6W1\/upload_lV4GZt-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/WwE6W1\/upload_lV4GZt-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:04","updateDate":"2012-03-21 19:06:11"},{"id":"ayEBYP","name":"Port
+        02:42:04","updateDate":"2012-03-21 19:06:11"},{"id":"bTThBS","name":"Orlando
+        Brewing Partners, INC.","description":"They have a wide variety of beers made
+        on premises, with more than a dozen on tap. Bar is is in an industrial area
+        and is kinda bare, but it''s got good beer, and good people, and that''s what
+        counts. Try the ''Monk-in-the-trunk'' stay the hell away from the Winter Park
+        beer.  Bottles, and kegs available as well.","website":"http:\/\/www.orlandobrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/bTThBS\/upload_uBCRRD-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/bTThBS\/upload_uBCRRD-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/bTThBS\/upload_uBCRRD-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:04","updateDate":"2013-11-27 12:42:07"},{"id":"ayEBYP","name":"Port
         Brewing Company","description":"We officially opened on May 5th 2006. Now
         we will be able to make up to 5000 barrels of beer enabling you more chances
         to drink your favorite Port Brewed beers at home and around town. More impressive
         is our oak barrel room where we age our barrel aged specialty beers. Come
         check out our tasting bar on Fridays and Saturdays where you can get bottles,
         jugs & merchandise to go while you sample what we''ve been brewing!","website":"http:\/\/www.portbrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/ayEBYP\/upload_jgHQ5x-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/ayEBYP\/upload_jgHQ5x-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/ayEBYP\/upload_jgHQ5x-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:06","updateDate":"2013-07-05 23:39:59"}],"status":"success"}'
-    http_version: 
-  recorded_at: Mon, 22 Jul 2013 00:05:46 GMT
-- request:
-    method: get
-    uri: http://api.brewerydb.com/v2/breweries?key=API_KEY&established=2006&p=2
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      date:
-      - Mon, 22 Jul 2013 00:05:46 GMT
-      server:
-      - Apache/2.2.24 (Amazon)
-      x-powered-by:
-      - PHP/5.3.26
-      x-ratelimit-limit:
-      - Unlimited
-      x-ratelimit-remaining:
-      - Unlimited
-      vary:
-      - Accept-Encoding
-      content-length:
-      - '4882'
-      connection:
-      - close
-      content-type:
-      - application/json
-    body:
-      encoding: UTF-8
-      string: '{"currentPage":2,"numberOfPages":2,"totalResults":66,"data":[{"id":"6UQcqZ","name":"Robens
+        02:42:06","updateDate":"2014-03-16 21:21:54"},{"id":"6UQcqZ","name":"Robens
         Kerkerbr\u00e4u","website":"http:\/\/www.robens-kerkerbraeu.de\/","established":"2006","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-08-07
         10:18:43","updateDate":"2012-08-16 14:56:53"},{"id":"3Q48Ed","name":"R\u00f6merbr\u00e4u
         Riegel","website":"http:\/\/www.roemerbraeu.de\/","established":"2006","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-08-07
@@ -517,7 +589,10 @@ http_interactions:
         of quality and returning a percentage of our profits to the local community.","website":"http:\/\/www.sobrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/GANyEU\/upload_2aXCOU-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/GANyEU\/upload_2aXCOU-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/GANyEU\/upload_2aXCOU-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:42:08","updateDate":"2012-03-21 19:06:10"},{"id":"DWG9s4","name":"Spezialit\u00e4tenbrauerei
         Eckart","website":"http:\/\/www.brauerei-eckart.de\/","established":"2006","isOrganic":"N","status":"verified","statusDisplay":"Verified","createDate":"2012-08-07
-        10:20:23","updateDate":"2012-08-16 15:11:37"},{"id":"g6S9WB","name":"Square
+        10:20:23","updateDate":"2012-08-16 15:11:37"},{"id":"W0G7sk","name":"Spring
+        House Brewing Company","description":"Located in Conestoga, PA in the heart
+        of Lancaster County.","website":"http:\/\/www.springhousebeer.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/W0G7sk\/upload_h98Shl-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/W0G7sk\/upload_h98Shl-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/W0G7sk\/upload_h98Shl-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:08","updateDate":"2013-08-12 23:44:10"},{"id":"g6S9WB","name":"Square
         One Brewery & Distillery","description":"The Square One Brewery & Distillery
         began operations as a brewery \/restaurant in February of 2006. In August
         of 2008 Square One became the first microdistillery restaurant in the state
@@ -533,7 +608,7 @@ http_interactions:
         it was worth it. We hope you agree.\r\n \r\nSurly: The anger fueled by the
         inability to find good beer.\r\n\r\n\"We brewed beer for people who didn''t
         know they wanted to drink it until they had it.\" - Omar Ansari","website":"http:\/\/www.surlybrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/cPRfoj\/upload_h0oqUF-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/cPRfoj\/upload_h0oqUF-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/cPRfoj\/upload_h0oqUF-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:09","updateDate":"2012-07-30 21:46:09"},{"id":"9x7wNn","name":"The Lost
+        02:42:09","updateDate":"2013-11-21 13:00:24"},{"id":"9x7wNn","name":"The Lost
         Abbey","description":"Founded in 2006, Port Brewing Company produces a line
         of award-winning American ales and the groundbreaking Lost Abbey family of
         Belgian-inspired beers. Craft brewed under the direction of co-founder and
@@ -547,7 +622,7 @@ http_interactions:
         and The Lost Abbey beers have won more nearly 100 medals in regional, national
         and international competitions. Rate Beer ranks the brewery number three in
         the world, and six of its beers are among the 100 best beers.","website":"http:\/\/www.lostabbey.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/9x7wNn\/upload_iFoVyB-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/9x7wNn\/upload_iFoVyB-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/9x7wNn\/upload_iFoVyB-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:10","updateDate":"2012-03-21 19:06:09"},{"id":"VcP5iA","name":"Twin
+        02:42:10","updateDate":"2014-03-16 21:21:53"},{"id":"VcP5iA","name":"Twin
         Lakes Brewing Company","description":"In 1985, while attending the University
         of California at Berkeley, Samuel Hobbs wrote a chemistry paper, for a laugh,
         on \u201caqueous beer foam\u201d (the head of a beer). It would take 21 years
@@ -572,13 +647,14 @@ http_interactions:
         are available at most regional beer and liquor stores.","website":"http:\/\/twinlakesbrewingcompany.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/VcP5iA\/upload_AT5fnN-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/VcP5iA\/upload_AT5fnN-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/VcP5iA\/upload_AT5fnN-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:42:11","updateDate":"2012-04-21 12:38:05"},{"id":"Mgxzcw","name":"Weasel
         Boy Brewing Company","description":"Founded by Jay and Lori Wince in 2006
-        Weasel Boy Brewing  Company is committed to our local community and works
-        with many  local organizations to promote Zanesville and the Muskingum  County
-        Area. By taking an active part in community events,  supporting local businesses,
-        local charities, local artisans and  promoting a family friendly environment,
-        Weasel Boy endeavors  to be a good citizen and good neighbor. Allow us to
-        introduce our founders.","website":"http:\/\/www.weaselboybrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Mgxzcw\/upload_XaKMC5-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Mgxzcw\/upload_XaKMC5-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Mgxzcw\/upload_XaKMC5-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
-        02:42:12","updateDate":"2012-09-29 20:55:25"},{"id":"6oEP92","name":"Wells
+        Weasel Boy Brewing Company began brewing operations in July of 2007. The brewpub
+        brews mostly traditional style ales specializing in well balanced session
+        strength offerings. \r\nWinners of GABF medals in both 2010 (bronze) and 2012
+        (gold) for their Anastasia Russian Imperial Stout, Weasel Boy is well recognized
+        for brewing high quality products. \r\nThe brewpub offers artisan pizza made
+        with fresh local ingredients, supports local art and music, and regularly
+        participates in community events benefiting local causes.","website":"http:\/\/www.weaselboybrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Mgxzcw\/upload_XaKMC5-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Mgxzcw\/upload_XaKMC5-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/Mgxzcw\/upload_XaKMC5-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:12","updateDate":"2013-08-12 13:08:46"},{"id":"6oEP92","name":"Wells
         and Young''s Brewing Company","description":"Wells and Young''s Brewing Company
         is the epitome of all-round business excellence, demonstrating sustained growth
         for its beers and stockists whilst combining traditional family values with
@@ -607,5 +683,5 @@ http_interactions:
         private room you can rent upstairs.","website":"http:\/\/woodruffbrewing.com\/","established":"2006","isOrganic":"N","images":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/IgdWNj\/upload_HoAg3q-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/IgdWNj\/upload_HoAg3q-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/brewery\/IgdWNj\/upload_HoAg3q-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
         02:42:16","updateDate":"2012-11-15 16:40:40"}],"status":"success"}'
     http_version: 
-  recorded_at: Mon, 22 Jul 2013 00:05:46 GMT
+  recorded_at: Mon, 31 Mar 2014 20:13:20 GMT
 recorded_with: VCR 2.4.0

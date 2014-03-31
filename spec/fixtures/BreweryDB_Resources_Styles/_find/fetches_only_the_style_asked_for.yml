@@ -8,30 +8,30 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Mon, 22 Jul 2013 00:05:52 GMT
+      - Mon, 31 Mar 2014 20:13:26 GMT
       server:
-      - Apache/2.2.24 (Amazon)
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
       x-powered-by:
-      - PHP/5.3.26
+      - PHP/5.3.28
       x-ratelimit-limit:
       - Unlimited
       x-ratelimit-remaining:
       - Unlimited
-      vary:
-      - Accept-Encoding
       content-length:
       - '603'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
       string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":1,"categoryId":1,"category":{"id":1,"name":"British
@@ -48,5 +48,5 @@ http_interactions:
         when at very low levels.","ibuMin":"20","ibuMax":"40","abvMin":"4.5","abvMax":"5.5","srmMin":"5","srmMax":"5","ogMin":"1.04","fgMin":"1.008","fgMax":"1.016","createDate":"2012-03-21
         20:06:45"},"status":"success"}'
     http_version: 
-  recorded_at: Mon, 22 Jul 2013 00:05:52 GMT
+  recorded_at: Mon, 31 Mar 2014 20:13:26 GMT
 recorded_with: VCR 2.4.0

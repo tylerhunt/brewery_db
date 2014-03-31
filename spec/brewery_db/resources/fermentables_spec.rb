@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Fermentables, :resource do
     let(:response) { described_class.new(config).all }
 
     it 'fetches all of the fermentables at once' do
-      expect(response.count).to eq(220)
+      expect(response.count).to eq(222)
     end
   end
 

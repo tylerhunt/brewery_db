@@ -8,30 +8,30 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
+      content-type:
+      - application/json
       date:
-      - Mon, 22 Jul 2013 00:05:51 GMT
+      - Mon, 31 Mar 2014 20:13:25 GMT
       server:
-      - Apache/2.2.24 (Amazon)
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
       x-powered-by:
-      - PHP/5.3.26
+      - PHP/5.3.28
       x-ratelimit-limit:
       - Unlimited
       x-ratelimit-remaining:
       - Unlimited
-      vary:
-      - Accept-Encoding
       content-length:
-      - '30149'
+      - '31281'
       connection:
-      - close
-      content-type:
-      - application/json
+      - Close
     body:
       encoding: UTF-8
       string: '{"message":"READ ONLY MODE: Request Successful","data":[{"id":1,"categoryId":1,"category":{"id":1,"name":"British
@@ -271,15 +271,15 @@ http_interactions:
         from negligible to medium. Diacetyl is acceptable at very low levels. Fruity
         esters should be evident, balanced with roast malt and hop bitterness.","ibuMin":"25","ibuMax":"40","abvMin":"5","abvMax":"6.5","srmMin":"30","srmMax":"30","ogMin":"1.045","fgMin":"1.008","fgMax":"1.016","createDate":"2012-03-21
         20:06:45"},{"id":20,"categoryId":1,"category":{"id":1,"name":"British Origin
-        Ales","createDate":"2012-03-21 20:06:45"},"name":"Sweet Stout","description":"Sweet
+        Ales","createDate":"2012-03-21 20:06:45"},"name":"Sweet or Cream Stout","description":"Sweet
         stouts, also referred to as cream stouts, have less roasted bitter flavor
         and a full-bodied mouthfeel. The style can be given more body with milk sugar
         (lactose) before bottling. Malt sweetness, chocolate, and caramel flavor should
         dominate the flavor profile and contribute to the aroma. Hops should balance
         and suppress some of the sweetness without contributing apparent flavor or
         aroma. The overall impression should be sweet and full-bodied.","ibuMin":"15","ibuMax":"25","abvMin":"3","abvMax":"6","srmMin":"40","srmMax":"40","ogMin":"1.045","fgMin":"1.012","fgMax":"1.02","createDate":"2012-03-21
-        20:06:45"},{"id":21,"categoryId":1,"category":{"id":1,"name":"British Origin
-        Ales","createDate":"2012-03-21 20:06:45"},"name":"Oatmeal Stout","description":"Oatmeal
+        20:06:45","updateDate":"2013-08-10 12:39:33"},{"id":21,"categoryId":1,"category":{"id":1,"name":"British
+        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Oatmeal Stout","description":"Oatmeal
         stouts include oatmeal in their grist, resulting in a pleasant, full flavor
         and a smooth profile that is rich without being grainy. A roasted malt character
         which is caramel-like and chocolate-like should be evident - smooth and not
@@ -335,15 +335,17 @@ http_interactions:
         should be moderate to strong. Diacetyl should be absent or present at very
         low levels. Chill haze is allowable at cold temperatures.","ibuMin":"30","ibuMax":"42","abvMin":"4.5","abvMax":"5.6","srmMin":"6","srmMax":"14","ogMin":"1.044","fgMin":"1.008","fgMax":"1.014","createDate":"2012-03-21
         20:06:45"},{"id":26,"categoryId":3,"category":{"id":3,"name":"North American
-        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Fresh Hop Ale","description":"Fresh
-        hop ales are hopped exclusively with fresh and undried (\"wet\") hops. This
-        ale should have characters similar to the style to which it is brewed with
-        the added nuances of green, almost chlorophyll-like character with fresh,
-        new beers. These beers may be aged and enjoyed after the initial \"fresh-hop\"
-        character diminishes. Unique character from \"aged\" fresh hop beers may emerge,
-        but they have yet to be identified and discussed. Brewers may provide information
-        indicating style of beer.","createDate":"2012-03-21 20:06:45"},{"id":27,"categoryId":3,"category":{"id":3,"name":"North
-        American Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Pale American-Belgo-Style
+        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Fresh \"Wet\" Hop
+        Ale","description":"Any style of ale can be made into a fresh hop or wet hop
+        version. These ales are hopped predominantly with fresh (newly harvested and
+        kilned) and\/or undried (\u201cwet\u201d) hops. These beers will exhibit especially
+        aromas and flavors of green, almost chlorophyll-like or other fresh hop characters,
+        in harmony with the characters of the base style of the beer. These beers
+        may be aged and enjoyed after the initial \u201cfresh-hop\u201d character
+        diminishes. Unique character from \u201caged\u201d fresh hop beers may emerge,
+        but they have yet to be defined.","createDate":"2012-03-21 20:06:45","updateDate":"2013-08-10
+        12:40:40"},{"id":27,"categoryId":3,"category":{"id":3,"name":"North American
+        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"Pale American-Belgo-Style
         Ale","description":"These beers must portray the unique characters imparted
         by yeasts typically used in fruity and big Belgian-Style ales - These beers
         are not traditional Belgian styles which are already defined. They are unique
@@ -1857,7 +1859,44 @@ http_interactions:
         20:06:46"},{"id":157,"categoryId":12,"category":{"id":12,"name":"Mead, Cider,
         & Perry","createDate":"2012-03-21 20:06:46"},"name":"Other Specialty Cider
         or Perry","abvMin":"5","abvMax":"12","ogMin":"1.045","ogMax":"1.1","fgMin":"0.995","fgMax":"1.02","createDate":"2012-03-21
-        20:06:46"}],"status":"success"}'
+        20:06:46"},{"id":158,"categoryId":3,"category":{"id":3,"name":"North American
+        Origin Ales","createDate":"2012-03-21 20:06:45"},"name":"American-Style Imperial
+        Porter","description":"American-style imperial porters are black in color.
+        No roast barley or strong burnt\/astringent black malt character should be
+        perceived. Medium malt, caramel and cocoa-like sweetness. Hop bitterness is
+        perceived at a medium-low to medium level. Hop flavor and aroma may vary from
+        being low to medium-high. This is a full bodied beer. Ale-like fruity esters
+        should be evident but not overpowering and compliment hop character and malt
+        derived sweetness. Diacetyl (butterscotch) levels should be absent.","ibuMin":"35","ibuMax":"50","abvMin":"5.5","abvMax":"9.5","srmMin":"40","srmMax":"40","ogMin":"1.08","ogMax":"1.1","fgMin":"1.02","fgMax":"1.03","createDate":"2013-08-10
+        12:42:51"},{"id":159,"categoryId":4,"category":{"id":4,"name":"German Origin
+        Ales","createDate":"2012-03-21 20:06:46"},"name":"Adambier","description":"Adambier
+        is light brown to very dark in color. It may or may not use wheat in its formulation.
+        Original styles of this beer may have a low or medium low degree of smokiness.
+        Smoke character may be absent in contemporary versions of this beer. Astringency
+        of highly roasted malt should be absent. Toast and caramel-like malt characters
+        may be evident. Low to medium hop bitterness are perceived. Low hop flavor
+        and aroma are perceived. It is originally a style from Dortmund. Adambier
+        is a strong, dark, hoppy, sour ale extensively aged in wood barrels. Extensive
+        aging and the acidification of this beer can mask malt and hop character to
+        varying degrees. Traditional and non-hybrid varieties of European hops were
+        traditionally used. A K\u00f6lsch-like ale fermentation is typical Aging in
+        barrels may contribute some level of Brettanomyces and lactic character. The
+        end result is a medium to full bodied complex beer in hop, malt, Brett and
+        acidic balance.","ibuMin":"30","ibuMax":"50","abvMin":"7.1","abvMax":"8.7","srmMin":"15","srmMax":"35","ogMin":"1.07","ogMax":"1.09","fgMin":"1.01","fgMax":"1.02","createDate":"2013-08-10
+        12:43:56"},{"id":160,"categoryId":13,"category":{"id":13,"name":"Other Origin","createDate":"2013-08-10
+        12:44:20"},"name":"Grodzisz","description":"Grodzisz (also Grodziskie, and
+        often referred to as Gr\u00e4tzer since WWII) is a Polish style of straw to
+        golden colored ale. Chill haze is allowable at cold temperatures. The distinctive
+        character comes from 100% oak wood smoked wheat malt. The overall balance
+        is a sessionably medium to medium-high assertively oak- smoky malt emphasized
+        beer. Aroma is dominated by oak smoke notes. They have a medium low to medium
+        perceived clean hop bitterness. European noble hop flavor notes are very low
+        to low, and low ester may also be present. Body is low to medium low. A K\u00f6lsch-like
+        ale fermentation and aging process lends a crisp overall flavor impression
+        and low degree of ester fruitiness. Sourness, diacetyl, and sweet corn-like
+        DMS (dimethylsulfide) should not be perceived. Historic versions were most
+        often bottle conditioned to relatively high carbonation levels.","ibuMin":"15","ibuMax":"25","abvMin":"2.1","abvMax":"2.9","srmMin":"3","srmMax":"6","ogMin":"1.028","ogMax":"1.036","fgMin":"1.006","fgMax":"1.01","createDate":"2013-08-10
+        12:45:30"}],"status":"success"}'
     http_version: 
-  recorded_at: Mon, 22 Jul 2013 00:05:52 GMT
+  recorded_at: Mon, 31 Mar 2014 20:13:26 GMT
 recorded_with: VCR 2.4.0

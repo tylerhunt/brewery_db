@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Beers, :resource do
     let(:response) { described_class.new(config).all(abv: '5.5') }
 
     it 'fetches all of the beers at once' do
-      expect(response.count).to eq(807)
+      expect(response.count).to eq(985)
     end
   end
 

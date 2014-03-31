@@ -8,33 +8,33 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - BreweryDB Ruby Gem 0.2.0
+      - BreweryDB Ruby Gem 0.2.3
   response:
     status:
       code: 200
       message: 
     headers:
-      date:
-      - Fri, 02 Aug 2013 01:31:26 GMT
-      server:
-      - Apache/2.2.24 (Amazon)
-      x-powered-by:
-      - PHP/5.3.26
-      x-ratelimit-limit:
-      - '400'
-      x-ratelimit-remaining:
-      - '387'
-      vary:
-      - Accept-Encoding
-      content-length:
-      - '2726'
-      connection:
-      - close
       content-type:
       - application/json
+      date:
+      - Mon, 31 Mar 2014 20:13:23 GMT
+      server:
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - PHP/5.3.28
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '2727'
+      connection:
+      - Close
     body:
       encoding: UTF-8
-      string: '{"currentPage":1,"numberOfPages":5,"totalResults":220,"data":[{"id":165,"name":"Abbey
+      string: '{"currentPage":1,"numberOfPages":5,"totalResults":222,"data":[{"id":165,"name":"Abbey
         Malt","category":"malt","categoryDisplay":"Malts, Grains, & Fermentables","createDate":"2013-06-24
         16:07:41"},{"id":166,"name":"Acidulated Malt","description":"Lowers mash,
         wort, and beer pH. Contains 1-2% lactic acid. Enhances enzymatic activity
@@ -185,5 +185,5 @@ http_interactions:
         16:07:54"},{"id":566,"name":"Caramel\/Crystal Malt - Light","category":"malt","categoryDisplay":"Malts,
         Grains, & Fermentables","createDate":"2013-06-24 16:07:51"}],"status":"success"}'
     http_version: 
-  recorded_at: Fri, 02 Aug 2013 01:31:27 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 31 Mar 2014 20:13:23 GMT
+recorded_with: VCR 2.4.0

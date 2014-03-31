@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Categories, :resource do
     let(:response) { described_class.new(config).all }
 
     it 'fetches all of the cagtegories at once' do
-      expect(response.length).to eq(12)
+      expect(response.length).to eq(13)
     end
   end
 

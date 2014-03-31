@@ -5,7 +5,7 @@ describe BreweryDB::Resources::FluidSize, :resource do
     let(:response) { described_class.new(config).all }
 
     it 'fetches all of the fluid sizes at once' do
-      expect(response.count).to eq(17)
+      expect(response.count).to eq(19)
     end
   end
 

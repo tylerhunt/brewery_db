@@ -1,3 +1,5 @@
+require 'dotenv'
+Dotenv.load
 require 'brewery_db'
 
 # This API key is only for use when developing this client library. Please do

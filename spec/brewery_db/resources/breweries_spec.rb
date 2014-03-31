@@ -7,7 +7,7 @@ describe BreweryDB::Resources::Breweries, :resource do
     let(:response) { described_class.new(config).all(established: 2006) }
 
     it 'fetches all of the breweries at once' do
-      expect(response.count).to eq(66)
+      expect(response.count).to eq(74)
     end
   end
 
