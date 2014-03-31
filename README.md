@@ -1,9 +1,9 @@
 # BreweryDB
 
-[![Build Status][travis]][travis-web]
-
-[travis]: https://secure.travis-ci.org/tylerhunt/brewery_db.png
-[travis-web]: http://travis-ci.org/tylerhunt/brewery_db
+[![Gem Version](http://img.shields.io/gem/v/brewery_db.svg)](https://rubygems.org/gems/brewery_db)
+[![Build Status](https://img.shields.io/travis/tylerhunt/brewery_db.svg)](https://travis-ci.org/tylerhunt/brewery_db)
+[![Code Climate](http://img.shields.io/codeclimate/github/tylerhunt/brewery_db.svg)](https://codeclimate.com/github/tylerhunt/brewery_db)
+[![Dependency Status](https://img.shields.io/gemnasium/tylerhunt/brewery_db.svg)](https://gemnasium.com/tylerhunt/brewery_db)
 
 A Ruby library for using the [BreweryDB][] API.
 
