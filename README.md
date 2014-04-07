@@ -73,6 +73,7 @@ Once an API key has been set, resources can be called on the client instance.
 ```ruby
 brewery_db.beers.all(abv: '5.5')
 brewery_db.beers.find('vYlBZQ')
+brewery_db.beers.random
 
 brewery_db.breweries.all(established: 2006)
 brewery_db.breweries.find('d1zSa7')

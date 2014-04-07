@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.brewerydb.com/v2/beer/random?key=API_KEY&hasLabels=Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - BreweryDB Ruby Gem 0.2.3
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Mon, 07 Apr 2014 18:41:19 GMT
+      server:
+      - Apache/2.2.26 (Amazon)
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - PHP/5.3.28
+      x-ratelimit-limit:
+      - Unlimited
+      x-ratelimit-remaining:
+      - Unlimited
+      content-length:
+      - '675'
+      connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"message":"READ ONLY MODE: Request Successful","data":{"id":"7WbFtq","name":"Bornem
+        Double","abv":"8","styleId":70,"isOrganic":"N","labels":{"icon":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/7WbFtq\/upload_f5WnFM-icon.png","medium":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/7WbFtq\/upload_f5WnFM-medium.png","large":"https:\/\/s3.amazonaws.com\/brewerydbapi\/beer\/7WbFtq\/upload_f5WnFM-large.png"},"status":"verified","statusDisplay":"Verified","createDate":"2012-01-03
+        02:42:53","updateDate":"2012-11-03 17:25:31","style":{"id":70,"categoryId":5,"category":{"id":5,"name":"Belgian
+        And French Origin Ales","createDate":"2012-03-21 20:06:46"},"name":"Other
+        Belgian-Style Ales","description":"Recognizing the uniqueness and traditions
+        of several other styles of Belgian Ales, the beers entered in this category
+        will be assessed on the merits that they do not fit existing style guidelines
+        and information that the brewer provides explaining the history and tradition
+        of the style. Balance of character is a key component when assessing these
+        beers. Barrel or wood-aged entries in competitions may be directed to other
+        categories by competition director. In competitions the brewer must provide
+        the historical or regional tradition of the style, or his interpretation of
+        the style, in order to be assessed properly by the judges.","createDate":"2012-03-21
+        20:06:46"}},"status":"success"}'
+    http_version: 
+  recorded_at: Mon, 07 Apr 2014 18:41:19 GMT
+recorded_with: VCR 2.9.0

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.4 (2014-04-07)
+
+  * Add support for `beer/random` endpoint. ([Steven Harman][stevenharman])
+
 ## 0.2.3 (2014-02-21)
 
   * Add support for `search/upc` endpoint. ([Matt Griffin][betamatt])

@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'rspec', '~> 2.14'
   gem.add_development_dependency 'vcr', '~> 2.0'
+  gem.add_development_dependency 'rake', '~> 10.2'
 
   gem.files = `git ls-files`.split($\)
   gem.executables = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
