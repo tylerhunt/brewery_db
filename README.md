@@ -14,9 +14,9 @@ A Ruby library for using the [BreweryDB][] API.
 
 Tested and known to work with the following Rubies:
 
-  - Ruby/MRI 1.9.2, 1.9.3, 2.0.0
+  - Ruby/MRI 1.9.2, 1.9.3, 2.0.0, 2.1
   - [JRuby][] 1.7.x in 1.9 mode
-  - [Rubinius][] in 1.9 mode
+  - [Rubinius][] ~> 2.2
 
 [jruby]: http://jruby.org/
 [rubinius]: http://rubini.us/
