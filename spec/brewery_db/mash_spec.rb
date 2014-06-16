@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe BreweryDB::Mash do
-  it { should be_a(Hashie::Mash) }
+  it { is_expected.to be_a(Hashie::Mash) }
 
   context '#convert_key' do
     it 'underscores camelcased keys' do

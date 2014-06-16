@@ -8,7 +8,6 @@ require 'brewery_db'
 ENV['BREWERY_DB_API_KEY'] ||= '1c394d8947e4a5873920d2333c9e9364'
 
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
 end
